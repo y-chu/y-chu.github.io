@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &YueSPH
 facebook:
   username               :
   app_id                 :
@@ -80,14 +80,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
-  employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  name             : "Yue Chu"
+  avatar           : "https://twitter.com/YueSPH/photo"
+  bio              : "Grad student in Demography/Population Health/Statistics"
+  location         : "Columbus, OH"
+  employer         : "Institute for Population Research"
+  pubmed           : ""
   googlescholar    : "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F4b_KkxAkwb8m31CrJ86C1TKS7zizdfbHo4_2lTyrgYwuHkydvZXpbJ7qRiZupqv5fZV5iakMUfZMDXc6M56-1euyHnCQ&user=35jZ0usAAAAJ"
-  email            :
+  email            : "chu.282@osu.edu"
+  email            : "ychu19@jhu.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
