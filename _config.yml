@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Panda"
+title                    : "Yue Chu"
 title_separator          : "-"
-name                     : &name "Panda"
-description              : &description "personal description"
+name                     : &name "Yue"
+description              : &description "Grad student @ OSU"
 url                      : https://y-chu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "https://y-chu.github.io"
