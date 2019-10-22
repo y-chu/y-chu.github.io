@@ -8,11 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-This is the home page for Yue Chu.
-
-Brief Bio
-======
-Yue is a junior population health professional with multidisciplinary training and working experience in demography and population health, biostatistics, epidemiology, maternal and child health, and clinical medicine. Yue received a M.B.B.S in China concentrating on public health and preventive medicine and then a Master in Public Health and worked as a research associate in Johns Hopkins University Bloomberg School of Public Health. Yue is now a graduate student at Department of Sociology and an affiliate of Institute for Population Research.   
+Yue is a population health professional with multidisciplinary training and working experience in demography and population health, biostatistics, epidemiology, maternal and child health, and clinical medicine. Yue received a M.B.B.S in China concentrating on public health and preventive medicine and then a Master in Public Health and worked as a research associate in Johns Hopkins University Bloomberg School of Public Health. Yue is now a graduate student at Department of Sociology and an affiliate of Institute for Population Research.   
 
 Research interest
 ======
