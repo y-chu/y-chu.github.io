@@ -9,14 +9,6 @@ main:
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
   - title: "CV"
     url: /https://www.dropbox.com/s/wurzqaw5epplr54/CHU_Yue_CV_20190210.pdf?dl=0/
-    
-  - title: "Guide"
-    url: /markdown/
+ 
