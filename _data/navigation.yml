@@ -2,21 +2,24 @@
 main:
   - title: "Publications"
     url: /publications/
-
-  - title: "Talks"
+    
+  - title: "Presentation"
     url: /talks/    
 
   - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
+    url: /teaching/   
     
   - title: "CV"
-    url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+    url: https://github.com/y-chu/y-chu.github.io/blob/master/_data/Yue_Chu_CV.pdf
+ 
+  # - title: "Talks"
+  #   url: /talks/    
+
+  # - title: "Portfolio"
+  #   url: /portfolio/
+        
+  # - title: "Blog Posts"
+  #   url: /year-archive/
+        
+  # - title: "Guide"
+  #   url: /markdown/
