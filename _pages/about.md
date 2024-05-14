@@ -8,11 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I'm a demographer and population health researcher, with multidisciplinary training and working experience in demography, population health, data science, computational social science, epidemiology, and clinical medicine. Yue received a M.B.B.S in China concentrating on public health and preventive medicine and then a Master in Public Health and worked as a research associate in Johns Hopkins University Bloomberg School of Public Health. Yue is now a Ph.D candidate at Department of Sociology and an affiliate of Institute for Population Research, Translational Data Analytics Institute, and alumni of Nationwide Center for Advanced Customer Insights. 
+I'm a demographer and population health researcher, with multidisciplinary training and working experience in demography, population health, data science, computational social science, epidemiology, and clinical medicine. I received a M.B.B.S in Fudan University, China concentrating on public health and preventive medicine and then a Master in Public Health and worked as a research associate in Johns Hopkins University Bloomberg School of Public Health. I'm now a Ph.D candidate at Department of Sociology and an affiliate of Institute for Population Research, Translational Data Analytics Institute, and alumni of Nationwide Center for Advanced Customer Insights at the Ohio State University. 
 
 
 Research interest
-======
+------
 My research mainly focuses on improving estimates and estimation methodologies of demographic and health statistics in low-and-middle-income countries, and global health inequalities. I’m also interested in facilitating the translation of research findings into evidence-based practices. 
 
 Currently I’m applying statistical and demographic methods to various projects including: 1) leveraging machine learning and large language models to improve cause of death classification from verbal autopsies; 2) development of Bayesian model for indirect estimation of mortality and fertility for detailed age groups; 3) development of Reference Death Archive, a relational database for knowledge sharing in developing countries; 4) explore the association between cause of death and social determinants of health for children; 5) evaluating data quality in population surveys and demographic surveillance system.
@@ -44,5 +44,5 @@ Skills
 
 Contact info
 ------
-chu.282@osu.edu
-ychu612@gmail.com
+- [chu.282@osu.edu](mailto:chu.282@osu.edu)
+- [ychu612@gmail.com](mailto:ychu612@gmail.com)
