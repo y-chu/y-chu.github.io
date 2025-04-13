@@ -1,15 +1,11 @@
 ---
-title: "Temporal Changes in Cause of Death among Adolescents and Adults in Six Countries in Eastern and Southern
-Africa: a Multi-country Cohort Study using Verbal Autopsy Data"
+title: "Temporal changes in cause of death among adolescents and adults in six countries in Eastern and Southern Africa: a multi-country cohort study using verbal autopsy data."
 collection: publications
 permalink: /publication/Chu2024_ALPHA
-date: 2024-06-12
+date: 2024-03-04
 venue: 'Lancet Global Health'
-citation: 'Chu, Yue, Milly Marston, Albert Dube, Charles Festo, Eveline Geubbels, Simon Gregson, Kobus Herbst, Chodziwadziwa
-Kabudula, Kathleen Kahn, Tom Lutalo, Louisa Moorhouse, Robert Newton, Constance Nyamukapa, Rondad Makenga,
-Emma Slaymaker, Mark Urassa, Abdhalah Ziraba, Clara Calvert, and SAMUEL J. CLARK†. 2024 in-press.
-“Temporal Changes in Cause of Death among Adolescents and Adults in Six Countries in Eastern and Southern
-Africa: a Multi-country Cohort Study using Verbal Autopsy Data.” Lancet Global Health.'
+paperurl: 'https://doi.org/10.1016/S2214-109X(24)00171-2'
+citation: 'Chu Y, Marston M, Dube A, Festo C, Geubbels E, Gregson S, Herbst K, Kabudula C, Kahn K, Lutalo T, Moorhouse L. Temporal changes in cause of death among adolescents and adults in six countries in Eastern and Southern Africa: a multi-country cohort study using verbal autopsy data. The Lancet Global Health. 2024 Mar 4.'
 ---
 
 **Background**  

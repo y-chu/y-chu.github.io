@@ -4,8 +4,8 @@ collection: publications
 permalink: /publication/Kline2021
 date: 2021-06-25
 venue: 'PNAS'
-paperurl: 'https://www.pnas.org/doi/abs/10.1073/pnas.2023947118'
-citation: 'Kline, David, Zehang Li, Yue Chu, Jon Wakefield, William C. Miller, Abigail Norris Turner, and Samuel J. Clark. "Estimating seroprevalence of SARS-CoV-2 in Ohio." Proceedings of the National Academy of Sciences of the United States of America 118, no. 26 (2021): 1-7.'
+paperurl: 'https://doi.org/10.1073/pnas.2023947118'
+citation: 'Kline D, Li Z, Chu Y, Wakefield J, Miller WC, Norris Turner A, Clark SJ. Estimating seroprevalence of SARS-CoV-2 in Ohio: A Bayesian multilevel poststratification approach with multiple diagnostic tests. Proceedings of the National Academy of Sciences. 2021 Jun 29;118(26):e2023947118.'
 ---
 
 
