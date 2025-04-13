@@ -7,13 +7,13 @@ main:
     url: /talks/    
 
   - title: "Projects"
-    url: /projects/    
+    url: /projects/
 
   - title: "Teaching"
     url: /teaching/   
     
   - title: "CV"
-    url: https://github.com/y-chu/y-chu.github.io/blob/master/_CV/Yue_Chu_CV.pdf
+    url: /_CV/Yue_Chu_CV.pdf
  
   # - title: "Talks"
   #   url: /talks/    

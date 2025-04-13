@@ -1,7 +1,7 @@
 ---
 title: "Automating cause of death classification from verbal autopsy : using pretrained language models and multi-modal learning"
 collection: projects
-permalink: /projects/2025Ensem_VA
+permalink: /projects/2025Ensem_VA.md
 ---
 
 This project developed analytical frameworks for automating cause of death classification from verbal autopsy, utilizing both the unstructured narratives and structured question responses. This project aimed to answer the following research questions: 
