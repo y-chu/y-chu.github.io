@@ -1,8 +1,18 @@
 ---
 layout: single
-title: "Projects"
+title:  "Projects"
 permalink: /projects/projects_sum
+header:
+  teaser: ""
+categories: 
+  - Jekyll
+tags:
+  - projects
+redirect_from: 
+  - /projects/
 ---
+
+
 
 Ongoing projects
 ------
