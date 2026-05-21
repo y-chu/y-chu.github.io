@@ -20,18 +20,20 @@ This file is the working guide for this website repository. It is meant to keep 
 Top-level navigation content should live in folders that match the nav tabs.
 
 - Home: `_pages/about.md`
-- Profile: `_profile/index.md`
 - Research: `_research/index.md`
-- Software: `_software/index.md`
 - Projects: `_projects/index.md` plus item pages in `_projects/*.md`
-- Publications: `_publications/index.md` plus item pages in `_publications/*.md`
-- Talks: `_talks/index.md` plus item pages in `_talks/*.md`
+- Publications: `_publications/index.md` (full list lives in the page front matter)
+- Presentations: `_presentations/index.md` (full list lives in the page front matter; replaced the old `_talks/` collection)
+- Software: `_software/index.md`
 - News: `_news/index.md`
-- Personal: `_personal/index.md`
-- Teaching: `_teaching/index.md` plus item pages in `_teaching/*.md`
+- Personal: `_personal/index.md` (kept but currently unlinked from the nav)
 - CV route: `_pages/cv.md`
+
+Nav order is defined in `_data/navigation.yml`. Removed sections: Profile (merged into Home), Teaching (covered by the CV). Their folders/collections were deleted in cleanup.
 - Served CV file: `files/Yue_Chu_CV.pdf`
 - CV source materials: `_CV/`
+- CV build command (outputs the source directly to the served file, so no manual copy/drift):
+  `quarto render _CV/Yue_Chu_CV.qmd --output-dir ../files`
 - Legacy consulting route: `_pages/consulting.md` redirects to the consulting section on `/projects/`
 
 ## Core Principle
