@@ -4,7 +4,13 @@ collection: publications
 permalink: /publication/Perin2022
 date: 2022-01-10
 venue: 'Population health metrics'
-paperurl: 'https://link.springer.com/article/10.1186/s12963-021-00277-w'
+paperurl: 'https://pophealthmetrics.biomedcentral.com/articles/10.1186/s12963-021-00277-w'
+paper_page_url: 'https://pophealthmetrics.biomedcentral.com/articles/10.1186/s12963-021-00277-w'
+doi: '10.1186/s12963-021-00277-w'
+doi_url: 'https://doi.org/10.1186/s12963-021-00277-w'
+pdf_url: 'https://pophealthmetrics.biomedcentral.com/counter/pdf/10.1186/s12963-021-00277-w.pdf'
+code_url:
+poster_url:
 citation: 'Perin, Jamie, Yue Chu, Francisco Villaviciencio, Austin Schumacher, Tyler McCormick, Michel Guillot, and Li Liu. "Adapting and validating the log quadratic model to derive under-five age-and cause-specific mortality (U5ACSM): a preliminary analysis." Population health metrics 20 (2022): 1-12.'
 ---
 
@@ -24,8 +30,4 @@ We estimate U5ACSM within 0.1–0.7 deaths per 1000 livebirths in hold out strat
 Conclusion
 
 The log quadratic model is a significant improvement over the standard approach for deriving U5ACSM based on both simulation and empirical results.
-
-
-Recommended citation: Perin, Jamie, Yue Chu, Francisco Villaviciencio, Austin Schumacher, Tyler McCormick, Michel Guillot, and Li Liu. "Adapting and validating the log quadratic model to derive under-five age-and cause-specific mortality (U5ACSM): a preliminary analysis." Population health metrics 20 (2022): 1-12.
-[Download paper here](https://link.springer.com/article/10.1186/s12963-021-00277-w)
 

@@ -1,0 +1,22 @@
+{% assign paper = include.paper %}
+<article class="publication-card publication-card--featured">
+  <div class="feature-card__header">
+    <div>
+      <h3 class="publication-card__title">{{ paper.title }}</h3>
+      <p class="publication-card__meta">{{ paper.authors }}{% if paper.year or paper.venue %} · {% endif %}{% if paper.year %}{{ paper.year }}{% endif %}{% if paper.venue %} · {{ paper.venue }}{% endif %}</p>
+    </div>
+  </div>
+  {% if paper.summary %}
+    <p class="publication-card__blurb">{{ paper.summary }}</p>
+  {% endif %}
+  {% if paper.paper_url or paper.code_url %}
+    <div class="link-row">
+      {% if paper.paper_url %}
+        <a class="link-chip" href="{{ paper.paper_url }}">Paper</a>
+      {% endif %}
+      {% if paper.code_url %}
+        <a class="link-chip" href="{{ paper.code_url }}">{{ paper.code_label | default: "Code" }}</a>
+      {% endif %}
+    </div>
+  {% endif %}
+</article>

@@ -1,0 +1,28 @@
+{% assign publication = include.publication | default: page %}
+{% assign paper_page_url = publication.paper_page_url | default: publication.paperurl | default: publication.paper_url %}
+{% assign doi_value = publication.doi %}
+{% assign doi_url = publication.doi_url %}
+{% if doi_url == nil and doi_value %}
+  {% capture doi_url %}https://doi.org/{{ doi_value }}{% endcapture %}
+{% endif %}
+{% assign pdf_url = publication.pdf_url %}
+{% assign code_url = publication.code_url %}
+{% assign poster_url = publication.poster_url %}
+
+<div class="link-row publication-links">
+  {% if paper_page_url %}
+    <a class="link-chip" href="{{ paper_page_url }}">Paper page</a>
+  {% endif %}
+  {% if doi_url %}
+    <a class="link-chip" href="{{ doi_url }}">DOI</a>
+  {% endif %}
+  {% if pdf_url %}
+    <a class="link-chip" href="{{ pdf_url }}">PDF</a>
+  {% endif %}
+  {% if code_url %}
+    <a class="link-chip" href="{{ code_url }}">{{ publication.code_label | default: "Code" }}</a>
+  {% endif %}
+  {% if poster_url %}
+    <a class="link-chip" href="{{ poster_url }}">Poster</a>
+  {% endif %}
+</div>

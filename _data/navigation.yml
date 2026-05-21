@@ -1,20 +1,26 @@
 # main links links
 main:
+  - title: "Research"
+    url: /research/
+
   - title: "Publications"
     url: /publications/
-    
+
   - title: "Presentations"
-    url: /talks/    
+    url: /presentations/
 
-  # - title: "Projects"
-  #   url: /projects/
-
-  - title: "Teaching"
-    url: /teaching/   
-    
   - title: "CV"
-    url: https://github.com/y-chu/y-chu.github.io/blob/master/_CV/Yue_Chu_CV.pdf
- 
+    url: /files/Yue_Chu_CV.pdf
+
+  - title: "Projects"
+    url: /projects/
+
+  - title: "Software"
+    url: /software/
+
+  - title: "News"
+    url: /news/
+
   # - title: "Talks"
   #   url: /talks/    
 

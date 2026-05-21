@@ -1,0 +1,21 @@
+{% assign publication = include.publication %}
+<article class="publication-card">
+  <h4 class="publication-card__title">{{ publication.title }}</h4>
+  {% if publication.citation %}
+    <p class="publication-card__meta">{{ publication.citation }}</p>
+  {% endif %}
+  {% if publication.blurb %}
+    <p class="publication-card__blurb">{{ publication.blurb }}</p>
+  {% endif %}
+  <div class="link-row">
+    {% if publication.paper_url %}
+      <a class="link-chip" href="{{ publication.paper_url }}">Paper</a>
+    {% endif %}
+    {% if publication.download_url %}
+      <a class="link-chip" href="{{ publication.download_url }}">Download</a>
+    {% endif %}
+    {% if publication.code_url %}
+      <a class="link-chip" href="{{ publication.code_url }}">{{ publication.code_label | default: "GitHub" }}</a>
+    {% endif %}
+  </div>
+</article>

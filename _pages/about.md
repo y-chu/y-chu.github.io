@@ -1,68 +1,89 @@
 ---
 permalink: /
-title: "About Yue"
-excerpt: "About me"
+excerpt: "Population health, demography, and data-driven research"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a population health expert, demographer, and data scientist, with a multidisciplinary background spanning population health, demography, sociology, epidemiology, applied statistics, and clinical medicine.
+{% assign research_page = site.research | where: "entry_type", "index" | first %}
+{% assign publications_page = site.publications | where: "entry_type", "index" | first %}
 
-My current research focuses on applying advanced statistical and demographic methods to address key questions in population health estimation, particularly in resource-limited settings. My work bridges cutting-edge technologies and methodologies — such as AI, large language models, machine learning, bayesian models — with most challenging public health issues in some of the world’s most pressing and underserved areas, ensuring practical impact and real-world relevance.
+<div class="page-intro">
+  <p class="page-lead">I am a population health expert, demographer, and data scientist working at the intersection of global health, demographic estimation, and applied AI.</p>
+  <p>My research examines how <strong>advanced statistical, demographic, and AI-driven methods</strong> can help close persistent <strong>data and evidence gaps</strong> in low- and middle-income countries and other resource-limited settings.</p>
+  <p>Across work on mortality, fertility, disease burden, data quality, evaluation, and research infrastructure, I focus on three priorities:</p>
+</div>
 
+<ul class="priorities">
+  <li>
+    <span class="priority__title">Reliable population health estimates</span>
+    <span class="priority__desc">More accurate, interpretable, and decision-ready estimates of mortality, fertility, disease burden, and health disparities.</span>
+  </li>
+  <li>
+    <span class="priority__title">Stronger data systems</span>
+    <span class="priority__desc">Improving the quality and usability of survey and surveillance data, and examining how social determinants, data gaps, and measurement choices shape the evidence.</span>
+  </li>
+  <li>
+    <span class="priority__title">Research translated into practice</span>
+    <span class="priority__desc">Validation studies, evaluation frameworks, and practical data tools that turn research and measurement into usable evidence and public health action in underserved populations.</span>
+  </li>
+</ul>
 
-Background
-------
+## Background
 
-I am Postdoc in the Health and Environment Modeling Co-laboratory at The Ohio State University (OSU). I hold a Ph.D in Sociology with a minor in Statistics from OSU. Prior to my doctoral studies, I earned an MSPH in Population, Family and Reproductive Health, and worked for a few years at Department of International Health and Institute for International Programs, at Johns Hopkins Bloomberg School of Public Health. I am also an alumnus of the Nationwide Center for Advanced Customer Insights with OSU Fisher College of Business, where I worked as Data Science Intern at Nationwide Mutual Insurance Company.
+I am a Postdoctoral Fellow in the Health and Environment Modeling Co-Laboratory at The Ohio State University. My training spans clinical medicine, population health, demography, sociology, epidemiology, and applied statistics. I hold a PhD in Sociology with a minor in Statistics from The Ohio State University and an MSPH in Population, Family and Reproductive Health from the Johns Hopkins Bloomberg School of Public Health, with earlier clinical training that grounds my work in the practical realities of health systems and patient care. Across graduate training and collaborative research, I have worked with WHO, AHRI, Swiss TPH, and other public health partners on projects that connect methodological research with real-world population health measurement, evidence generation, and decision-making in resource-limited settings.
 
+## Selected Research Areas
 
-Research projects
-------
+<div class="info-rows">
+  {% for theme in research_page.themes limit: 3 %}
+    <article class="info-row">
+      <div class="info-row__side">
+        <h3 class="info-row__title">{{ theme.title }}</h3>
+      </div>
+      <div class="info-row__body">
+        <p>{{ theme.summary }}</p>
+        <div class="tag-row tag-row--sm">
+          {% for tag in theme.tags limit: 3 %}
+            <span class="tag-pill">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+</div>
 
-I am deeply involved in a range of research projects, applying statistical and demographic methods to address key questions in population health and global health estimation. My current work focuses on:
+<p><a href="/research/">Explore the full research page</a></p>
 
-- Leveraging language models and multimodal learning to enhance data collection and analysis for population health in low- and middle- income countries (LMICs) 
-- Assessing and improving data quality in population surveys and demographic surveillance systems in LMICs
-- Indirect estimation of mortality and fertility using Bayesian models
-- Developing the Reference Data Archive, a centralized repository for survey and surveillance data with a publicly accessible catalog and trusted research environment
+## Selected Papers
 
-Previous projects I have contributed to include:
-- Estimating cause of death and disease burden at local, regional, and global levels
-- Estimating COVID-19 prevalence using bayesian multilevel model in Ohio, USA
-- Analyzing changes in age at last birth during contemporary fertility declines
-- Quantifying misclassification between stillbirths and neonatal deaths in African countries
-- Investigating the relationship between cause of death and social determinants of health among children
-- Evaluating multiple public health intervention projects using mixed-methods approaches
-- Conducting a systematic review and meta-analysis on patient outcomes
+<div class="info-rows">
+  {% for paper in publications_page.featured_publications limit: 3 %}
+    <article class="info-row">
+      <div class="info-row__side">
+        {% if paper.year %}<p class="info-row__year">{{ paper.year }}</p>{% endif %}
+        {% if paper.venue %}<p class="info-row__meta">{{ paper.venue }}</p>{% endif %}
+      </div>
+      <div class="info-row__body">
+        <h3 class="info-row__title">{{ paper.title }}</h3>
+        {% if paper.authors %}<p class="info-row__meta">{{ paper.authors }}</p>{% endif %}
+        {% if paper.summary %}<p>{{ paper.summary }}</p>{% endif %}
+        {% if paper.paper_url or paper.code_url %}
+          <div class="link-row">
+            {% if paper.paper_url %}<a class="link-chip" href="{{ paper.paper_url }}">Paper</a>{% endif %}
+            {% if paper.code_url %}<a class="link-chip" href="{{ paper.code_url }}">{{ paper.code_label | default: "Code" }}</a>{% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>
 
-Consultancies
-------
+<p><a href="/publications/">Browse all publications</a></p>
 
-I have provided analytical and technical support to a range of global health projects in collaboration with institutions such as the World Health Organization (WHO), the African Health Research Institute (AHRI), and the Swiss Tropical and Public Health Institute (Swiss TPH), among others. 
+## Contact
 
-- Development of the Reference Data Archive and related Julia modules (WHO, AHRI)
-- Design, monitoring, and implementation of the Probbase Elicitation Project (CDC/OSU)
-- Revision of the WHO 2016 Verbal Autopsy Instrument (WHO)
-- Setup of the ODK system and central server for verbal autopsy data collection and storage in Guinea-Bissau (Ministry of Health, Guinea-Bissau)
-- Evaluation of data quality in global health estimates (WHO)
-- Estimation of cause of death for the 2018 Afghanistan Health Survey (Swiss TPH)
-
-
-Skills
-------
-- R, Python, Julia, Stata, SPSS, SQL/SQLite, RJAGS, RNIMBLE.
-- Kubeflow, Snowflake, Teradata, DBeaver, Amazon Web Services.
-
-
-Key words
-------
-- demography, global health, population health, verbal autopsy, mortality, vital statistics, demographic surveillance, survey methodology, applied statistics, Bayesian modeling, data science, computational social science, language models, machine learning, multimodal fusion.
-
-
-Contact info
-------
 - University email: [chu.282@osu.edu](mailto:chu.282@osu.edu)
 - Personal email: [ychu612@gmail.com](mailto:ychu612@gmail.com)

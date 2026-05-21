@@ -1,0 +1,40 @@
+{% assign project = include.project %}
+<article class="feature-card project-card">
+  <div class="feature-card__header">
+    <div>
+      <h3 class="feature-card__title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+      {% if project.role %}
+        <p class="feature-card__meta">{{ project.role }}</p>
+      {% elsif project.status %}
+        <p class="feature-card__meta">{{ project.status | capitalize }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if project.excerpt %}
+    <p class="feature-card__summary">{{ project.excerpt | markdownify | strip_html | strip }}</p>
+  {% endif %}
+
+  {% if project.tags %}
+    <div class="tag-row">
+      {% for tag in project.tags %}
+        <span class="tag-pill">{{ tag }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if project.status %}
+    <div class="tag-row">
+      <span class="tag-pill tag-pill--status">{{ project.status | capitalize }}</span>
+    </div>
+  {% endif %}
+
+  <div class="link-row">
+    <a class="link-chip" href="{{ project.url | relative_url }}">Project page</a>
+    {% if project.links %}
+      {% for link in project.links %}
+        <a class="link-chip" href="{{ link.url }}">{{ link.label }}</a>
+      {% endfor %}
+    {% endif %}
+  </div>
+</article>

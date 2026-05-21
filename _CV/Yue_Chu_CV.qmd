@@ -1,0 +1,319 @@
+---
+title: ""
+author: ""
+format:
+  pdf:
+    pdf-engine: xelatex
+    documentclass: article
+    papersize: letter
+    fontsize: 11pt
+    geometry:
+      - left=1.0in
+      - right=1.0in
+      - top=1.1in
+      - bottom=1.0in
+    keep-tex: true
+    toc: false
+    colorlinks: true
+header-includes:
+  - |
+    \usepackage{fontspec}
+    \usepackage[dvipsnames]{xcolor}
+    \usepackage{titlesec}
+    \usepackage{enumitem}
+    \usepackage{etaremune}
+    \usepackage{fancyhdr}
+    \usepackage{hyperref}
+    \usepackage{setspace}
+    \usepackage{ragged2e}
+    \usepackage{needspace}
+    \usepackage{etoolbox}
+    \setmainfont{Helvetica}
+    \setsansfont{Helvetica}
+    \definecolor{cvink}{HTML}{1F242B}
+    \definecolor{cvmuted}{HTML}{6B7178}
+    \definecolor{cvlink}{HTML}{345D7A}
+    \hypersetup{colorlinks=true, linkcolor=cvlink, urlcolor=cvlink}
+    \urlstyle{same}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyhead[C]{\small Curriculum Vitae - April 1, 2026}
+    \fancyfoot[C]{\small \thepage}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+    \fancypagestyle{plain}{%
+      \fancyhf{}%
+      \fancyhead[C]{\small Curriculum Vitae - April 1, 2026}%
+      \fancyfoot[C]{\small \thepage}%
+      \renewcommand{\headrulewidth}{0pt}%
+      \renewcommand{\footrulewidth}{0pt}%
+    }
+    \setstretch{1.04}
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{0.28em}
+    \setlength{\emergencystretch}{2em}
+    \raggedbottom
+    \widowpenalty=10000
+    \clubpenalty=10000
+    \color{cvink}
+    \setlist[itemize]{leftmargin=1.2em,itemsep=0.18em,topsep=0.22em,parsep=0em,partopsep=0em}
+    \setlist[enumerate]{leftmargin=1.6em,itemsep=0.42em,topsep=0.28em,parsep=0em,partopsep=0em}
+    \titleformat{\section}{\large\bfseries\color{cvink}}{}{0em}{\MakeUppercase}[{\vspace{0.18em}\color{cvmuted}\titlerule[0.6pt]}]
+    \titleformat{\subsection}{\normalsize\bfseries\itshape\color{cvink}}{}{0em}{}
+    \titlespacing*{\section}{0pt}{1.5em}{0.55em}
+    \titlespacing*{\subsection}{0pt}{0.8em}{0.2em}
+    \newlength{\cvdatewidth}
+    \setlength{\cvdatewidth}{1.25in}
+    \newcommand{\cventry}[2]{%
+      \noindent
+      \makebox[\cvdatewidth][l]{\color{cvmuted}\small #1}%
+      \hspace{0.9em}%
+      \parbox[t]{\dimexpr\linewidth-\cvdatewidth-0.9em\relax}{#2}%
+      \par\vspace{0.5em}
+    }
+    \newcommand{\cvname}[1]{{\fontsize{24}{26}\selectfont\bfseries #1}}
+    \pretocmd{\section}{\needspace{5\baselineskip}}{}{}
+execute:
+  enabled: false
+---
+
+```{=latex}
+\cvname{Yue Chu}\\[0.18em]
+{\normalsize PhD, MSPH, MA, MBBS}\\[0.5em]
+Department of Sociology, Institute for Population Research \\
+The Ohio State University\\
+Columbus, Ohio, USA\\
+\href{mailto:chu.282@osu.edu}{chu.282@osu.edu}
+
+\vspace{0.75em}
+```
+
+# Research Areas
+
+Population health, demography, epidemiology, global health estimates, mortality modeling, demographic and disease surveillance, AI in global health, data systems, health disparities.
+
+# Education and Training
+
+\cventry{2025}{\textbf{PhD in Sociology}, The Ohio State University, Columbus, USA\newline
+Minor in Statistics and Demography\newline
+\textit{Dissertation: Leveraging Language Models and Machine Learning in Verbal Autopsy Analysis}}
+\cventry{2020}{\textbf{MA in Sociology}, The Ohio State University, Columbus, USA\newline
+\textit{Thesis: SVD-Bayes: A Singular Value Decomposition-Based Approach Under Bayesian Framework for Indirect Estimation of Age-Specific Fertility and Mortality}}
+\cventry{2014}{\textbf{MSPH}, Johns Hopkins Bloomberg School of Public Health, Baltimore, USA\newline
+Concentration in Population, Family and Reproductive Health\newline
+\textit{Thesis: The influence of family environment factors on children's consumption of healthy foods among 5-9 years old children from low-income families in New York City}}
+\cventry{2012}{\textbf{Bachelor of Medicine}, Fudan University, Shanghai, China\newline
+Specialty in Preventive Medicine\newline
+\textit{Thesis: Evaluation of tuberculosis patient management strategies: evidence from a randomized controlled trial}}
+
+# Professional Experience
+
+\cventry{May 2025--present}{\textbf{Postdoctoral Fellow}, Health and Environment Modeling Laboratory and Institute for Population Research, The Ohio State University, Columbus, OH}
+\cventry{Aug 2023--Sep 2023}{\textbf{Visiting Scholar}, Africa Health Research Institute, Somkele, South Africa}
+\cventry{May 2022--May 2023}{\textbf{Data Science Intern}, Nationwide Mutual Insurance Company / Nationwide Center for Advanced Customer Insights, Columbus, OH}
+\cventry{Jan 2019--May 2025}{\textbf{Graduate Research Associate}, Institute for Population Research, The Ohio State University, Columbus, OH}
+\cventry{Jan 2015--Jul 2018}{\textbf{Research Associate}, Department of International Health, Johns Hopkins Bloomberg School of Public Health}
+\cventry{Sep 2014--Jan 2015}{\textbf{Research Assistant}, Department of Health Policy and Management, Johns Hopkins Bloomberg School of Public Health}
+\cventry{Apr 2013--Sep 2014}{\textbf{Research Assistant}, Johns Hopkins Bloomberg School of Public Health}
+\cventry{May 2013--Aug 2013}{\textbf{Research Assistant}, Technical Division, United Nations Population Fund (UNFPA), New York}
+\cventry{Apr 2012--Jun 2012}{\textbf{Research Assistant}, Department of Health Statistics and Social Medicine, School of Public Health, Fudan University, Shanghai, China}
+\cventry{Feb 2012--Mar 2012}{\textbf{Intern}, Division of Vital Statistics, Center for Disease Control and Prevention, Shanghai, China}
+\cventry{Mar 2011--Aug 2011}{\textbf{Clinical Intern}, Fifth People's Hospital, Shanghai, China}
+
+# Publications
+
+## Working papers
+
+```{=latex}
+\begin{etaremune}
+\item \textbf{Chu, Y.} Leveraging language models and machine learning in verbal autopsy analysis [preprint]. \emph{arXiv}. 2025. \url{https://doi.org/10.48550/arXiv.2508.19274}
+\item \textbf{Chu, Y.} SVD-Bayes: A singular value decomposition-based approach under Bayesian framework for indirect estimation of age-specific fertility and mortality [master's thesis]. The Ohio State University; 2020. \url{https://rave.ohiolink.edu/etdc/view?acc_num=osu1609638415015896}
+\end{etaremune}
+```
+
+
+## Journal Articles
+
+```{=latex}
+\begin{etaremune}
+\item \textbf{Chu, Y.}, Marston, M., Dube, A., Festo, C., Geubbels, E., Gregson, S., Herbst, K., et al. Temporal changes in cause of death among adolescents and adults in six countries in eastern and southern Africa in 1995-2019: A multi-country surveillance study of verbal autopsy data. \emph{Lancet Global Health}. 2024;12(8):e1278-e1287. \url{https://doi.org/10.1016/S2214-109X(24)00171-2}
+\item Damerow, S. M., Yeung, D., Martins, J. S., Pathak, I., \textbf{Chu, Y.}, Liu, L., Fisker, A. B. Provider-mother interactions are associated with birth outcome misclassifications in household surveys: A case-control study in Guinea-Bissau. \emph{Journal of Global Health}. 2023;13:04086. \url{https://doi.org/10.7189/jogh.13.04086}
+\item Liu, Y., \textbf{Chu, Y.}, Yeung, D., Wang, W., Wang, L., Yin, P., Liu, J., Zhou, M., Liu, L. National and sub-national levels and causes of mortality among 5-19-year-olds in China in 2004-2019: A systematic analysis of evidence from the Disease Surveillance Points System. \emph{Journal of Global Health}. 2022;12:11008. \url{https://doi.org/10.7189/jogh.12.11008} [joint first authorship]
+\item Perin, J., \textbf{Chu, Y.}, Villavicencio, F., Schumacher, A., McCormick, T., Guillot, M., Liu, L. Adapting and validating the log quadratic model to derive under-five age- and cause-specific mortality (U5ACSM): a preliminary analysis. \emph{Population Health Metrics}. 2022;20(1):3. \url{https://doi.org/10.1186/s12963-021-00277-w}
+\item Turner, A. N., Kline, D., Norris, A., Phillips, W. G., Root, E., Wakefield, J., Li, Z., Lemeshow, S., Spahnie, M., Luff, A., \textbf{Chu, Y.}, et al. Prevalence of current and past COVID-19 in Ohio adults. \emph{Annals of Epidemiology}. 2022;67:50-60. \url{https://doi.org/10.1016/j.annepidem.2021.11.009}
+\item Schumacher, A. E., McCormick, T. H., Wakefield, J., \textbf{Chu, Y.}, Perin, J., Villavicencio, F., Simon, N., Liu, L. A flexible Bayesian framework to estimate age- and cause-specific child mortality over time from sample registration data. \emph{Annals of Applied Statistics}. 2022;16(1):124-143. \url{https://doi.org/10.1214/21-AOAS1489}
+\item Kline, D., Li, Z., \textbf{Chu, Y.}, Wakefield, J., Miller, W. C., Turner, A. N., Clark, S. J. Estimating seroprevalence of SARS-CoV-2 in Ohio: A Bayesian multilevel poststratification approach with multiple diagnostic tests. \emph{Proceedings of the National Academy of Sciences of the United States of America}. 2021;118(26):e2023947118. \url{https://doi.org/10.1073/pnas.2023947118}
+\item Chandramohan, D., Fottrell, E., Leitao, J., Nichols, E., Clark, S. J., Alsokhn, C., Cobos Munoz, D., AbouZahr, C., Di Pasquale, A., Mswia, R., Choi, E., \textbf{Chu, Y.}, et al. Estimating causes of death where there is no medical certification: Evolution and state of the art of verbal autopsy. \emph{Global Health Action}. 2021;14(sup1):1982486. \url{https://doi.org/10.1080/16549716.2021.1982486}
+\item Helleringer, S., Liu, L., \textbf{Chu, Y.}, Rodrigues, A., Fisker, A. B. Biases in survey estimates of neonatal mortality: Results from a validation study in urban areas of Guinea-Bissau. \emph{Demography}. 2020;57(5):1705-1726. \url{https://doi.org/10.1007/s13524-020-00911-6}
+\item Wahl, B., Deloria Knoll, M., Shet, A., Gupta, M., Kumar, R., Liu, L., \textbf{Chu, Y.}, et al. National, regional, and state-level pneumonia and severe pneumonia morbidity in children in India: modelled estimates for 2000 and 2015. \emph{Lancet Child and Adolescent Health}. 2020;4(9):678-687. \url{https://doi.org/10.1016/S2352-4642(20)30129-2}
+\item McAllister, D. A., Liu, L., Shi, T., \textbf{Chu, Y.}, Reed, C., Burrows, J., Adeloye, D., et al. Global, regional, and national estimates of pneumonia morbidity and mortality in children younger than 5 years between 2000 and 2015: a systematic analysis. \emph{Lancet Global Health}. 2019;7(1):e47-e57. \url{https://doi.org/10.1016/S2214-109X(18)30408-X}
+\item Liu, L., \textbf{Chu, Y.}, Oza, S., Hogan, D., Perin, J., Bassani, D. G., Ram, U., et al. National, regional, and state-level all-cause and cause-specific under-5 mortality in India in 2000-15: a systematic analysis with implications for the Sustainable Development Goals. \emph{Lancet Global Health}. 2019;7(6):e721-e734. \url{https://doi.org/10.1016/S2214-109X(19)30080-4} [joint first authorship]
+\item Wahl, B., Sharan, A., Deloria Knoll, M., Kumar, R., Liu, L., \textbf{Chu, Y.}, McAllister, D. A., et al. National, regional, and state-level burden of \emph{Streptococcus pneumoniae} and \emph{Haemophilus influenzae} type b disease in children in India: modelled estimates for 2000-15. \emph{Lancet Global Health}. 2019;7(6):e735-e747. \url{https://doi.org/10.1016/S2214-109X(19)30081-6}
+\item Choudhary, T. S., Sinha, B., Khera, A., Bhandari, N., \textbf{Chu, Y.}, Jackson, B., Walker, N., et al. Factors associated with the decline in under-five diarrhea mortality in India: a LiST analysis. \emph{Journal of Global Health}. 2019;9(2):020804. \url{https://doi.org/10.7189/jogh.09.020804}
+\item Black, R., Fontaine, O., Lamberti, L., Bhan, M., Huicho, L., El Arifeen, S., Masanja, H., \textbf{Chu, Y.}, et al. Drivers of the reduction in childhood diarrhea mortality 1980-2015 and interventions to eliminate preventable diarrhea deaths by 2030. \emph{Journal of Global Health}. 2019;9(2):020801. \url{https://doi.org/10.7189/jogh.09.020801}
+\item Countdown to 2030 Collaboration. Countdown to 2030: Tracking progress towards universal coverage for reproductive, maternal, newborn and child health. \emph{Lancet}. 2018;391(10129):1538-1548. \url{https://doi.org/10.1016/S0140-6736(18)30104-1}
+\item Wahl, B., O'Brien, K. L., Greenbaum, A., Majumder, A., Liu, L., \textbf{Chu, Y.}, Luksic, I., et al. Burden of \emph{Streptococcus pneumoniae} and \emph{Haemophilus influenzae} type b disease in children in the era of conjugate vaccines: global, regional, and national estimates for 2000-15. \emph{Lancet Global Health}. 2018;6(7):e744-e757. \url{https://doi.org/10.1016/S2214-109X(18)30247-X}
+\item He, C., Liu, L., \textbf{Chu, Y.}, Perin, J., Dai, L., Li, X., Miao, L., et al. National and subnational all-cause and cause-specific child mortality in China, 1996-2015: a systematic analysis with implications for the Sustainable Development Goals. \emph{Lancet Global Health}. 2017;5(2):e186-e197. \url{https://doi.org/10.1016/S2214-109X(16)30334-5}
+\item Wilson, L. M., Rebholz, C. M., Jirru, E., Liu, M. C., Zhang, A., Gayleard, J., \textbf{Chu, Y.}, Robinson, K. A. Benefits and harms of osteoporosis medications in patients with chronic kidney disease: a systematic review and meta-analysis. \emph{Annals of Internal Medicine}. 2017;166(9):649-658. \url{https://doi.org/10.7326/M16-2752}
+\item Liu, L., Oza, S., Hogan, D., \textbf{Chu, Y.}, Perin, J., Zhu, J., Lawn, J. E., et al. Global, regional, and national causes of under-5 mortality in 2000-15: an updated systematic analysis with implications for the Sustainable Development Goals. \emph{Lancet}. 2016;388(10063):3027-3035. \url{https://doi.org/10.1016/S0140-6736(16)31593-8}
+\item Liu, L., Kalter, H. D., \textbf{Chu, Y.}, Kazmi, N., Koffi, A. K., Amouzou, A., Joos, O., Munos, M., Black, R. E. Understanding misclassification between neonatal deaths and stillbirths: empirical evidence from Malawi. \emph{PLOS ONE}. 2016;11(12):e0168743. \url{https://doi.org/10.1371/journal.pone.0168743}
+\item Song, P., Theodoratou, E., Li, X., Liu, L., \textbf{Chu, Y.}, Black, R. E., Campbell, H., Rudan, I., Chan, K. Y. Causes of death in children younger than five years in China in 2015: an updated analysis. \emph{Journal of Global Health}. 2016;6(2):020802. \url{https://doi.org/10.7189/jogh.06.020802}
+\item Maruthur, N. M., Tseng, E., Hutfless, S., Wilson, L. M., Suarez-Cuervo, C., Berger, Z., \textbf{Chu, Y.}, Iyoha, E., Segal, J. B., Bolen, S. Diabetes medications as monotherapy or metformin-based combination therapy for type 2 diabetes: a systematic review and meta-analysis. \emph{Annals of Internal Medicine}. 2016;164(11):740-751. \url{https://doi.org/10.7326/M15-2650}
+\end{etaremune}
+```
+
+## Technical reports and book chapters
+
+```{=latex}
+\begin{etaremune}
+\item Ministry of Public Health (Afghanistan), Royal Tropical Institute. Afghanistan Health Survey 2018. \url{https://www.kit.nl/wp-content/uploads/2026/03/AHS-2018-report-final_30.11.2018_erratum12.02.2026.pdf}
+\item Liu, L., Hill, K., Oza, S., Hogan, D., \textbf{Chu, Y.}, Cousens, S., Mathers, C., Stanton, C., Lawn, J., Black, R. E. Levels and Causes of Mortality under Age Five Years. In: \emph{Reproductive, Maternal, Newborn, and Child Health: Disease Control Priorities, Third Edition (Volume 2)}. Washington, DC: The World Bank; 2016. Chapter 4. \url{https://doi.org/10.1596/978-1-4648-0348-2_ch4}
+\item Bolen, S., Tseng, E., Hutfless, S., Segal, J. B., Suarez-Cuervo, C., Berger, Z., Wilson, L. M., \textbf{Chu, Y.}, et al. \emph{Medications for adults with type 2 diabetes: An update focused on monotherapy and add-on therapy to metformin} (EHC-2014-11-0075.R4). AHRQ Comparative Effectiveness Review Report No. 16-EHC013-EF. Rockville, MD: Agency for Healthcare Research and Quality; 2015. \url{https://www.ncbi.nlm.nih.gov/books/NBK362863/}
+\end{etaremune}
+```
+
+# Presentations
+
+*Posters are marked with \textsuperscript{\dagger}.*
+
+## Academic Presentations
+
+\cventry{May 2026}{\textit{AI as Measurement Infrastructure: Adaptive Survey Design in Verbal Autopsy.}\textsuperscript{\dagger} FDS Workshop: AI for Social Science Research Methods. Yale University, New Haven, CT.}
+\cventry{May 2026}{\textit{Sufficiency of Information in Population Surveys: Evidence from Verbal Autopsy.}\textsuperscript{\dagger} Annual Meeting of the Population Association of America, St. Louis, MO.}
+\cventry{May 2025}{\textit{Leveraging language models and machine learning techniques for verbal autopsy analysis.} Gates Foundation, Dubai, United Arab Emirates. Invited talk.}
+\cventry{Apr 2025}{\textit{Automating cause of death classification from verbal autopsy: Using pretrained language models and multimodal learning.} Annual Meeting of the Population Association of America, Washington, DC.}
+\cventry{Nov 2024}{\textit{Leveraging machine learning techniques for verbal autopsy analysis.} Demystifying Machine Learning Workshop, Max Planck Institute for Demographic Research, Rostock, Germany.}
+\cventry{Apr 2023}{\textit{Temporal changes in cause of death among adults in six countries in Eastern and Southern Africa: A multi-country cohort study using verbal autopsy data.} Annual Meeting of the Population Association of America, New Orleans, LA.}
+\cventry{May 2021}{\textit{Indirect estimation of age-specific fertility and mortality: SVD-Bayes model.} Annual Meeting of the Population Association of America, Virtual.}
+\cventry{Nov 2018}{\textit{Global estimates for meningitis-specific mortality.} Meningitis Disease Burden Evaluation Alignment Meeting of the World Health Organization and Bill and Melinda Gates Foundation, Seattle, WA. Invited talk.}
+\cventry{Apr 2017}{\textit{Understanding misclassification between neonatal deaths and stillbirths: Empirical evidence from Malawi.} Annual Meeting of the Population Association of America, Chicago, IL.}
+\cventry{Apr 2017}{\textit{National and subnational levels and causes of child mortality in China, 1996-2015: Implications for the SDGs.} Annual Meeting of the Population Association of America, Chicago, IL.}
+\cventry{Sep 2016}{\textit{Estimating national and subnational causes of child deaths using data from the China Maternal and Child Health Surveillance System.} Sixth Child Survival Forum in China, Chengdu, China.}
+\cventry{Aug 2016}{\textit{Understanding misclassification between neonatal deaths and stillbirths: Empirical evidence from Malawi.} WHO Informal Technical Consultation on Maternal and Neonatal Deaths and Stillbirths, Geneva, Switzerland.}
+\cventry{Apr 2016}{\textit{Global, regional, and national causes of child mortality in 2000-2015: Reflecting on MDG 4 and prioritizing for SDG 3.2.} Annual Meeting of the Population Association of America, Washington, DC.}
+\cventry{Apr 2015}{\textit{Progress in estimating causes of death among children aged 1-59 months -- Update for 2000-2015.} Maternal and Child Epidemiology Estimation Project Review Meeting, Geneva, Switzerland.}
+\cventry{Apr 2015}{\textit{Differences in cause-of-death distribution estimates in China: MCMSS vs MCEE.} Maternal and Child Epidemiology Estimation Project Review Meeting, Geneva, Switzerland.}
+
+## Contributed presentations
+
+\cventry{May 2021}{\textit{Changes in age at last birth over the course of contemporary fertility declines.} Annual Meeting of the Population Association of America, St. Louis, MO.}
+\cventry{Apr 2019}{\textit{Understanding reporting errors of population survey-based neonatal mortality: A validation study from Guinea-Bissau.} Annual Meeting of the Population Association of America, Austin, TX.}
+\cventry{Apr 2018}{\textit{Cause-specific mortality rates for fine age groups among children under five.} Annual Meeting of the Population Association of America, Denver, CO.}
+\cventry{Dec 2017}{\textit{China Maternal and Child Health Surveillance System.} Global Age Patterns of Under-Five Mortality Project Kickoff Meeting, Philadelphia, PA.}
+\cventry{Aug 2017}{\textit{Age-specific child causes of death.} IUSSP International Seminar on Mortality: Past, Present and Future, Campinas, Brazil.}
+\cventry{Aug 2016}{\textit{Estimating national and subnational causes of child deaths using data from the China Maternal and Child Health Surveillance System.} WHO Informal Technical Consultation on Maternal and Neonatal Deaths and Stillbirths, Geneva, Switzerland.}
+\cventry{Jun 2016}{\textit{Global burden of Streptococcus pneumoniae in children under 5 in the era of PCV: 2000-2015.} International Symposium on Pneumococci and Pneumococcal Disease, Glasgow, Scotland.}
+\cventry{Jun 2016}{\textit{Mortality caused by Streptococcus pneumoniae in children under 5 in India: A state-by-state analysis from 2000 to 2015.} International Symposium on Pneumococci and Pneumococcal Disease, Glasgow, Scotland.}
+\cventry{Dec 2015}{\textit{Subnational child cause of death estimation in China.} UN IGME Technical Advisory Group Bi-annual Meeting, Washington, DC.}
+\cventry{Nov 2015}{\textit{Causes of child mortality in 2000-2015: The global picture and current state in Nigeria.} Nigeria Verbal/Social Autopsy Technical Working Group Meeting, Abuja, Nigeria.}
+\cventry{May 2015}{\textit{Progress in estimating causes of child mortality in 2000-2015.} UN IGME Technical Advisory Group Bi-annual Meeting, New York, NY.}
+
+
+## Department Seminars
+
+\cventry{Feb 2026}{\textit{Leveraging language models and machine learning techniques for verbal autopsy analysis.} Computational Demography Working Group Seminar, University of Washington, Seattle, WA.}
+\cventry{Apr 2025}{\textit{Automating cause of death classification.} HEALMOD Professional Seminar, The Ohio State University, Columbus, OH.}
+\cventry{Apr 2021}{\textit{Indirect estimation of age-specific fertility and mortality: SVD-Bayes model.}\textsuperscript{\dagger} Hayes Graduate Research Forum, Columbus, OH.}
+\cventry{2021}{\textit{Indirect estimation of age-specific fertility and mortality: SVD-Bayes model.} TDAI Fall Forum, The Ohio State University, Columbus, OH.}
+
+# Grant Participation
+
+\cventry{Aug 2022--Jan 2025}{\textbf{Reference Data Archive} (no-cost extension to Jan 2026)\newline
+Funding: The Ohio State University (Prime: Bill and Melinda Gates Foundation)\newline
+Principal Investigator: Samuel Clark. Role: Key personnel}
+\cventry{Apr 2022--May 2023}{\textbf{Development and Validation of Verbal Autopsy Algorithms Using openVA Tools}\newline
+Funding: The Ohio State University (Prime: CDC Foundation)\newline
+Principal Investigator: Samuel Clark. Role: Graduate Research Assistant}
+\cventry{May 2021--Dec 2021}{\textbf{COVID-19 Rapid Mortality Surveillance Methods Development}\newline
+Funding: The Ohio State University (Prime: Vital Strategies)\newline
+Principal Investigator: Samuel Clark. Role: Graduate Research Assistant}
+\cventry{Dec 2009--Apr 2011}{\textbf{Student Principal Investigator}, Department of Maternal and Child Health, Fudan University, Shanghai, China}
+
+
+# Consultancy
+
+\cventry{May 2023--present}{\textbf{Consultant, Reference Data Archive project}, World Health Organization}
+\cventry{Dec 2022--Jan 2023}{\textbf{Consultant}, Setting up survey ODK data collection and centralized data system. Ministry of Health, Guinea-Bissau}
+\cventry{Apr 2021--May 2021}{\textbf{Consultant}, WHO VARG Workshop / verbal autopsy instrument revision, World Health Organization}
+\cventry{Jul 2018--Aug 2018}{\textbf{Consultant}, Review data quality in Global Health Estimates portal. Maternal, Newborn, Child and Adolescent Health Division, World Health Organization, Geneva, Switzerland}
+\cventry{Jul 2018--Aug 2018}{\textbf{Consultant}, Mortality and cause-specific mortality modeling for Afghanistan Health Survey. KIT Royal Tropical Institute, Amsterdam, Netherlands}
+
+
+# Teaching and Mentoring
+
+## Teaching
+
+\cventry{SP2026}{\textbf{SOCIOL 8607 (OSU)}, Teaching Assistant for Causal Modeling}
+\cventry{AU2021}{\textbf{SOCIOL 3549 (OSU)}, Recitation Leader for Statistics in Sociology}
+\cventry{AU2016--AU2017}{\textbf{380.651 (JHSPH)}, Teaching Assistant for Methods and Measures in Population Studies}
+\cventry{AU2013--AU2014}{\textbf{380.603 (JHSPH)}, Teaching Assistant for Demographic Methods in Public Health}
+
+
+## Mentoring
+
+\cventry{SP2024}{Elenzie France, Undergraduate Research Assistant, The Ohio State University}
+\cventry{SU2018}{Ambre Flowers, Undergraduate, JHSPH Diversity Summer Internship Program}
+\cventry{SU2017}{Jayla Johnson, Undergraduate, JHSPH Diversity Summer Internship Program}
+
+## Workshops
+
+\cventry{2022}{Workshops on R hosted by Sociology Graduate Student Association}
+\cventry{2018--2020}{Verbal autopsy data analysis workshops}
+
+# Professional Activities
+
+## Society Membership
+
+\cventry{2015--present}{Population Association of America (PAA)}
+\cventry{2019--present}{International Union for the Scientific Study of Population (IUSSP)}
+
+## Center Affiliations
+
+\cventry{2024--present}{Health and Environment Modeling Laboratory, The Ohio State University}
+\cventry{2018--present}{Institute for Population Research, The Ohio State University}
+\cventry{2018--present}{Translational Data Analytics Institute, The Ohio State University}
+\cventry{2022--2023}{Nationwide Center for Advanced Customer Insights, The Ohio State University}
+\cventry{2015--2018}{Johns Hopkins Institute for International Programs}
+\cventry{2014}{Johns Hopkins Evidence-based Practice Center}
+\cventry{2013--2014}{Johns Hopkins Center for Adolescent Health}
+
+## Conference Organization
+
+\cventry{2025}{Session Chair and Discussant, Annual Meeting of the Population Association of America}
+\cventry{2021}{Session Chair, Annual Meeting of the Population Association of America}
+\cventry{2021}{Session Chair, Annual Meeting of Applied Linguistics and Professional Practice}
+\cventry{Sep 2016}{The Sixth Child Survival Forum in China, Chengdu, China}
+\cventry{Jun 2013}{Technical Advisory Group Annual Meeting on High Impact Practices in Family Planning, UNFPA, New York, USA}
+
+# Editorial Activities
+
+## Peer Review
+
+*PNAS*; *Demographic Research*; *Population Health Metrics*; *Annals of Epidemiology*; *Nature*; *Journal of Global Health*; *Preventing Chronic Disease*; *European Journal of Population*; *PLOS ONE*; *PLOS Global Health*; *Clinical Epidemiology*; *BMC Public Health*; *BMC Pediatrics*; *Journal of Epidemiology and Global Health*; *Frontiers*; *Population*; *Clinical Epidemiology and Global Health*; *Journal of Human Anatomy*.
+
+# Honors and Awards
+
+\cventry{2018, 2023}{Distinguished University Fellowship, The Ohio State University}
+\cventry{2013}{Tuition Scholarship, Johns Hopkins Bloomberg School of Public Health}
+\cventry{2011--2012}{People's Scholarship of Fudan University}
+\cventry{2007--2009}{People's Scholarship of Fudan University}
+
+# Professional Development
+
+\cventry{2025}{PAA workshop: A Primer on Machine Learning and Artificial Intelligence for Population Research}
+\cventry{2024}{Max Planck Institute for Demographic Research workshop: Demystifying Machine Learning}
+\cventry{2022}{Berkeley Population Center Annual Workshop on Formal Demography}
+\cventry{2021}{Pedagogical training with The Drake Institute for Teaching and Learning, Columbus, USA}
+\cventry{2019}{Data Carpentry workshop in Social Sciences, Columbus, USA}
+\cventry{2018}{D4H/WHO workshop on Verbal Autopsy Methods, Columbus, USA}
+\cventry{2018}{IUSSP workshop: Bayesian Small Area Estimation using Complex Survey Data: Methods and Applications, Denver, USA}
+\cventry{2018}{Survey Research Design, Johns Hopkins Bloomberg School of Public Health, Baltimore, USA}
+\cventry{2017}{PAA workshop: Social Media and Demographic Methods, Chicago, USA}
+\cventry{2017}{Methods and Measures in Population Studies, Johns Hopkins Bloomberg School of Public Health, Baltimore, USA}
+\cventry{2016}{PAA workshop: Bayesian Population Projections: Theory and Practice, Washington, DC, USA}
+\cventry{2015}{Analysis of Longitudinal Data, Johns Hopkins Bloomberg School of Public Health, Baltimore, USA}
+
+# Skills
+
+\cventry{Statistical software}{R, Python, Julia, Stata, SPSS, SQLite/SQL, RJAGS, RNIMBLE, JMP}
+\cventry{Data science toolkits}{Hugging Face, Optuna, prompt engineering, Azure, Kubeflow, Snowflake, Teradata, DBeaver, Amazon Web Services (AWS/S3)}

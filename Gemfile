@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
-group :jekyll_plugins do
-  gem 'jekyll'
-  gem 'jekyll-feed'
-  gem 'jekyll-sitemap'
-  gem 'jekyll-redirect-from'
-  gem 'jemoji'
-  gem 'webrick', '~> 1.8'
-end
-
-gem 'github-pages'
+gem 'ffi', '< 1.17'
+gem 'jekyll', '3.9.5'
+gem 'jekyll-feed', '0.17.0'
+gem 'jekyll-gist', '1.5.0'
+gem 'jekyll-paginate', '1.1.0'
+gem 'jekyll-redirect-from', '0.16.0'
+gem 'jekyll-sitemap', '1.4.0'
+gem 'jemoji', '0.13.0'
+gem 'kramdown-parser-gfm', '1.1.0'
+gem 'webrick', '~> 1.8'

@@ -1,0 +1,26 @@
+{% assign package = include.package %}
+<article class="feature-card software-card">
+  <div class="feature-card__header">
+    <div>
+      <h2 class="feature-card__title">{{ package.title }}</h2>
+      {% if package.language %}
+        <p class="feature-card__meta">{{ package.language }}</p>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if package.summary %}
+    <p class="feature-card__summary">{{ package.summary }}</p>
+  {% endif %}
+
+  <div class="link-row">
+    {% for link in package.links %}
+      <a class="link-chip" href="{{ link.url }}">{{ link.label }}</a>
+    {% endfor %}
+    {% if package.placeholders %}
+      {% for label in package.placeholders %}
+        <span class="link-chip link-chip--muted">{{ label }}</span>
+      {% endfor %}
+    {% endif %}
+  </div>
+</article>

@@ -4,7 +4,13 @@ collection: publications
 permalink: /publication/Chu2024_ALPHA
 date: 2024-03-04
 venue: 'Lancet Global Health'
-paperurl: 'https://doi.org/10.1016/S2214-109X(24)00171-2'
+paperurl: 'https://www.sciencedirect.com/science/article/pii/S2214109X24001712'
+paper_page_url: 'https://www.sciencedirect.com/science/article/pii/S2214109X24001712'
+doi: '10.1016/S2214-109X(24)00171-2'
+doi_url: 'https://doi.org/10.1016/S2214-109X(24)00171-2'
+pdf_url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC11416856/pdf/main.pdf'
+code_url:
+poster_url:
 citation: 'Chu Y, Marston M, Dube A, Festo C, Geubbels E, Gregson S, Herbst K, Kabudula C, Kahn K, Lutalo T, Moorhouse L. Temporal changes in cause of death among adolescents and adults in six countries in Eastern and Southern Africa: a multi-country cohort study using verbal autopsy data. The Lancet Global Health. 2024 Mar 4.'
 ---
 
@@ -19,5 +25,4 @@ All-cause mortality has generally decreased across the HDSS sites, particularly 
 
 **Interpretation**  
 This study shows that there has been progress in reducing mortality across Eastern and Southern Africa but also points to age, sex and between-HDSS differences in causes of adolescent and adult deaths. This highlights the importance of detailed local-level data to inform health needs to ensure continued improvements in survival.
-
 

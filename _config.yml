@@ -14,7 +14,7 @@ name                     : &name "Yue"
 description              : &description "PhD candidate @ OSU"
 url                      : https://y-chu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "https://y-chu.github.io"
+repository               :
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -172,6 +172,19 @@ kramdown:
 
 # Collections
 collections:
+  profile:
+    output: true
+  research:
+    output: true
+  software:
+    output: true
+  news:
+    output: true
+  personal:
+    output: true
+  projects:
+    output: true
+    permalink: /projects/:path/
   teaching:
     output: true
     permalink: /:collection/:path/
@@ -184,6 +197,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  presentations:
+    output: true
+    permalink: /presentations/:path/
 
 
 # Defaults
@@ -215,6 +231,14 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: false
   # _publications
   - scope:
       path: ""
@@ -241,6 +265,13 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _presentations
+  - scope:
+      path: ""
+      type: presentations
+    values:
+      layout: single
+      author_profile: true
 
 
 # Sass/SCSS

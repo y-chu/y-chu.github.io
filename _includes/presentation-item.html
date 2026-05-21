@@ -1,0 +1,14 @@
+{% assign talk = include.talk %}
+<article class="presentation-item">
+  <h3 class="presentation-item__title">{{ talk.title }}</h3>
+  {% if talk.authors %}
+    <p class="presentation-item__authors">{{ talk.authors }}</p>
+  {% endif %}
+  <ul class="presentation-item__venues">
+    {% for venue in talk.venues %}
+      <li class="presentation-venue">
+        <span class="presentation-venue__event">{{ venue.event }}</span>{% if venue.location %} <span class="presentation-venue__sep">&middot;</span> <span class="presentation-venue__location">{{ venue.location }}</span>{% endif %}{% if venue.date %} <span class="presentation-venue__sep">&middot;</span> <span class="presentation-venue__date">{{ venue.date }}</span>{% endif %}{% if venue.type %} <span class="presentation-venue__tag">{{ venue.type }}</span>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</article>
