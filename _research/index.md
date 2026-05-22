@@ -39,7 +39,7 @@ themes:
       - title: "Temporal changes in cause of death among adolescents and adults in six countries in eastern and southern Africa in 1995-2019"
         citation: "The Lancet Global Health, 2024."
         blurb: "A multi-country surveillance study using verbal autopsy data to trace how cause-specific mortality changed across eastern and southern Africa, with a clear picture of shifting burdens by age, sex, site, and period."
-        paper_url: "https://pubmed.ncbi.nlm.nih.gov/39030059/"
+        paper_url: "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(24)00171-2/fulltext"
         download_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11416856/pdf/main.pdf"
       - title: "National and sub-national levels and causes of mortality among 5-19-year-olds in China in 2004-2019"
         citation: "Journal of Global Health, 2022."

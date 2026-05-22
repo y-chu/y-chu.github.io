@@ -17,7 +17,7 @@ featured_publications:
     year: "2024"
     venue: "The Lancet Global Health"
     summary: "A multi-country surveillance study using verbal autopsy data to examine long-run changes in cause-specific mortality across eastern and southern Africa."
-    paper_url: "https://doi.org/10.1016/S2214-109X(24)00171-2"
+    paper_url: "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(24)00171-2/fulltext"
   - title: "Estimating seroprevalence of SARS-CoV-2 in Ohio: A Bayesian multilevel poststratification approach with multiple diagnostic tests"
     authors: "David Kline, Zehang Li, Yue Chu, and collaborators"
     year: "2021"

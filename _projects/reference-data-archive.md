@@ -13,10 +13,8 @@ tags:
   - "Mortality Data"
   - "Verbal Autopsy"
 links:
-  - label: "Project site"
-    url: "https://data.who.int/platforms/rda"
-  - label: "RDA data repository"
-    url: "https://data.who.int/platforms/rda"
+  - label: "RDA platform"
+    url: "https://data.who.int/rda"
 ---
 
 The Reference Data Archive (RDA) is a publicly accessible archive and analytics infrastructure for mortality data hosted by the World Health Organization. It is designed to make mortality-related datasets easier to discover, understand, and reuse, including verbal autopsy reference deaths with trustworthy reference causes and supporting metadata.

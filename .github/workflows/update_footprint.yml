@@ -1,0 +1,34 @@
+name: Update Footprint Map
+
+on:
+  push:
+    paths:
+      - 'footprint/footprint.py'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        pip install geopy certifi
+
+    - name: Generate footprint map
+      run: |
+        python footprint/footprint.py
+
+    - name: Commit changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Automated update of footprint map" || echo "No changes to commit"
+        git push

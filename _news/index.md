@@ -45,7 +45,7 @@ items:
     title: "Lancet Global Health paper published"
     category: "Publication"
     blurb: "Published a multi-country surveillance study on temporal changes in cause of death among adolescents and adults across eastern and southern Africa."
-    url: "https://pubmed.ncbi.nlm.nih.gov/39030059/"
+    url: "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(24)00171-2/fulltext"
     link_label: "View publication"
 
   - date: "2022-10-01"

@@ -79,7 +79,7 @@ execute:
 
 ```{=latex}
 \cvname{Yue Chu}\\[0.18em]
-{\normalsize PhD, MSPH, MA, MBBS}\\[0.5em]
+{\normalsize PhD, MSPH, MBBS}\\[0.5em]
 Department of Sociology, Institute for Population Research \\
 The Ohio State University\\
 Columbus, Ohio, USA\\
@@ -108,11 +108,12 @@ Specialty in Preventive Medicine\newline
 
 # Professional Experience
 
-\cventry{May 2025--present}{\textbf{Postdoctoral Fellow}, Health and Environment Modeling Laboratory and Institute for Population Research, The Ohio State University, Columbus, OH}
+\cventry{Feb 2026--present}{\textbf{Postdoctoral Fellow}, Institute for Population Research, The Ohio State University, Columbus, OH}
+\cventry{May 2025--Jan 2026}{\textbf{Postdoctoral Fellow}, Health and Environment Modeling Laboratory, The Ohio State University, Columbus, OH}
 \cventry{Aug 2023--Sep 2023}{\textbf{Visiting Scholar}, Africa Health Research Institute, Somkele, South Africa}
 \cventry{May 2022--May 2023}{\textbf{Data Science Intern}, Nationwide Mutual Insurance Company / Nationwide Center for Advanced Customer Insights, Columbus, OH}
 \cventry{Jan 2019--May 2025}{\textbf{Graduate Research Associate}, Institute for Population Research, The Ohio State University, Columbus, OH}
-\cventry{Jan 2015--Jul 2018}{\textbf{Research Associate}, Department of International Health, Johns Hopkins Bloomberg School of Public Health}
+\cventry{Jan 2015--Jul 2018}{\textbf{Research Associate}, Department of International Health, Johns Hopkins Bloomberg School of Public Health, Baltimore, MD}
 \cventry{Sep 2014--Jan 2015}{\textbf{Research Assistant}, Department of Health Policy and Management, Johns Hopkins Bloomberg School of Public Health}
 \cventry{Apr 2013--Sep 2014}{\textbf{Research Assistant}, Johns Hopkins Bloomberg School of Public Health}
 \cventry{May 2013--Aug 2013}{\textbf{Research Assistant}, Technical Division, United Nations Population Fund (UNFPA), New York}
@@ -122,20 +123,11 @@ Specialty in Preventive Medicine\newline
 
 # Publications
 
-## Working papers
+## Papers
 
 ```{=latex}
 \begin{etaremune}
 \item \textbf{Chu, Y.} Leveraging language models and machine learning in verbal autopsy analysis [preprint]. \emph{arXiv}. 2025. \url{https://doi.org/10.48550/arXiv.2508.19274}
-\item \textbf{Chu, Y.} SVD-Bayes: A singular value decomposition-based approach under Bayesian framework for indirect estimation of age-specific fertility and mortality [master's thesis]. The Ohio State University; 2020. \url{https://rave.ohiolink.edu/etdc/view?acc_num=osu1609638415015896}
-\end{etaremune}
-```
-
-
-## Journal Articles
-
-```{=latex}
-\begin{etaremune}
 \item \textbf{Chu, Y.}, Marston, M., Dube, A., Festo, C., Geubbels, E., Gregson, S., Herbst, K., et al. Temporal changes in cause of death among adolescents and adults in six countries in eastern and southern Africa in 1995-2019: A multi-country surveillance study of verbal autopsy data. \emph{Lancet Global Health}. 2024;12(8):e1278-e1287. \url{https://doi.org/10.1016/S2214-109X(24)00171-2}
 \item Damerow, S. M., Yeung, D., Martins, J. S., Pathak, I., \textbf{Chu, Y.}, Liu, L., Fisker, A. B. Provider-mother interactions are associated with birth outcome misclassifications in household surveys: A case-control study in Guinea-Bissau. \emph{Journal of Global Health}. 2023;13:04086. \url{https://doi.org/10.7189/jogh.13.04086}
 \item Liu, Y., \textbf{Chu, Y.}, Yeung, D., Wang, W., Wang, L., Yin, P., Liu, J., Zhou, M., Liu, L. National and sub-national levels and causes of mortality among 5-19-year-olds in China in 2004-2019: A systematic analysis of evidence from the Disease Surveillance Points System. \emph{Journal of Global Health}. 2022;12:11008. \url{https://doi.org/10.7189/jogh.12.11008} [joint first authorship]
@@ -146,6 +138,7 @@ Specialty in Preventive Medicine\newline
 \item Chandramohan, D., Fottrell, E., Leitao, J., Nichols, E., Clark, S. J., Alsokhn, C., Cobos Munoz, D., AbouZahr, C., Di Pasquale, A., Mswia, R., Choi, E., \textbf{Chu, Y.}, et al. Estimating causes of death where there is no medical certification: Evolution and state of the art of verbal autopsy. \emph{Global Health Action}. 2021;14(sup1):1982486. \url{https://doi.org/10.1080/16549716.2021.1982486}
 \item Helleringer, S., Liu, L., \textbf{Chu, Y.}, Rodrigues, A., Fisker, A. B. Biases in survey estimates of neonatal mortality: Results from a validation study in urban areas of Guinea-Bissau. \emph{Demography}. 2020;57(5):1705-1726. \url{https://doi.org/10.1007/s13524-020-00911-6}
 \item Wahl, B., Deloria Knoll, M., Shet, A., Gupta, M., Kumar, R., Liu, L., \textbf{Chu, Y.}, et al. National, regional, and state-level pneumonia and severe pneumonia morbidity in children in India: modelled estimates for 2000 and 2015. \emph{Lancet Child and Adolescent Health}. 2020;4(9):678-687. \url{https://doi.org/10.1016/S2352-4642(20)30129-2}
+\item \textbf{Chu, Y.} SVD-Bayes: A singular value decomposition-based approach under Bayesian framework for indirect estimation of age-specific fertility and mortality [master's thesis]. The Ohio State University; 2020. \url{https://rave.ohiolink.edu/etdc/view?acc_num=osu1609638415015896}
 \item McAllister, D. A., Liu, L., Shi, T., \textbf{Chu, Y.}, Reed, C., Burrows, J., Adeloye, D., et al. Global, regional, and national estimates of pneumonia morbidity and mortality in children younger than 5 years between 2000 and 2015: a systematic analysis. \emph{Lancet Global Health}. 2019;7(1):e47-e57. \url{https://doi.org/10.1016/S2214-109X(18)30408-X}
 \item Liu, L., \textbf{Chu, Y.}, Oza, S., Hogan, D., Perin, J., Bassani, D. G., Ram, U., et al. National, regional, and state-level all-cause and cause-specific under-5 mortality in India in 2000-15: a systematic analysis with implications for the Sustainable Development Goals. \emph{Lancet Global Health}. 2019;7(6):e721-e734. \url{https://doi.org/10.1016/S2214-109X(19)30080-4} [joint first authorship]
 \item Wahl, B., Sharan, A., Deloria Knoll, M., Kumar, R., Liu, L., \textbf{Chu, Y.}, McAllister, D. A., et al. National, regional, and state-level burden of \emph{Streptococcus pneumoniae} and \emph{Haemophilus influenzae} type b disease in children in India: modelled estimates for 2000-15. \emph{Lancet Global Health}. 2019;7(6):e735-e747. \url{https://doi.org/10.1016/S2214-109X(19)30081-6}
@@ -159,6 +152,16 @@ Specialty in Preventive Medicine\newline
 \item Liu, L., Kalter, H. D., \textbf{Chu, Y.}, Kazmi, N., Koffi, A. K., Amouzou, A., Joos, O., Munos, M., Black, R. E. Understanding misclassification between neonatal deaths and stillbirths: empirical evidence from Malawi. \emph{PLOS ONE}. 2016;11(12):e0168743. \url{https://doi.org/10.1371/journal.pone.0168743}
 \item Song, P., Theodoratou, E., Li, X., Liu, L., \textbf{Chu, Y.}, Black, R. E., Campbell, H., Rudan, I., Chan, K. Y. Causes of death in children younger than five years in China in 2015: an updated analysis. \emph{Journal of Global Health}. 2016;6(2):020802. \url{https://doi.org/10.7189/jogh.06.020802}
 \item Maruthur, N. M., Tseng, E., Hutfless, S., Wilson, L. M., Suarez-Cuervo, C., Berger, Z., \textbf{Chu, Y.}, Iyoha, E., Segal, J. B., Bolen, S. Diabetes medications as monotherapy or metformin-based combination therapy for type 2 diabetes: a systematic review and meta-analysis. \emph{Annals of Internal Medicine}. 2016;164(11):740-751. \url{https://doi.org/10.7326/M15-2650}
+\end{etaremune}
+```
+
+## Working papers
+
+```{=latex}
+\begin{etaremune}
+\item \textbf{Chu, Y. et al.} Multimodal Artificial Intelligence for Cause-of-Death Assignment From Verbal Autopsy Records: Evaluation Across Two Independent Datasets}
+\item \textbf{Chu, Y. et al.} Sufficiency of Information in Population Surveys: Evidence from Verbal Autopsy}
+
 \end{etaremune}
 ```
 
@@ -214,7 +217,7 @@ Specialty in Preventive Medicine\newline
 \cventry{Feb 2026}{\textit{Leveraging language models and machine learning techniques for verbal autopsy analysis.} Computational Demography Working Group Seminar, University of Washington, Seattle, WA.}
 \cventry{Apr 2025}{\textit{Automating cause of death classification.} HEALMOD Professional Seminar, The Ohio State University, Columbus, OH.}
 \cventry{Apr 2021}{\textit{Indirect estimation of age-specific fertility and mortality: SVD-Bayes model.}\textsuperscript{\dagger} Hayes Graduate Research Forum, Columbus, OH.}
-\cventry{2021}{\textit{Indirect estimation of age-specific fertility and mortality: SVD-Bayes model.} TDAI Fall Forum, The Ohio State University, Columbus, OH.}
+\cventry{Oct 2021}{\textit{Indirect estimation of age-specific fertility and mortality: SVD-Bayes model.} TDAI Fall Forum, The Ohio State University, Columbus, OH.}
 
 # Grant Participation
 
@@ -269,27 +272,27 @@ Principal Investigator: Samuel Clark. Role: Graduate Research Assistant}
 
 ## Center Affiliations
 
-\cventry{2024--present}{Health and Environment Modeling Laboratory, The Ohio State University}
-\cventry{2018--present}{Institute for Population Research, The Ohio State University}
-\cventry{2018--present}{Translational Data Analytics Institute, The Ohio State University}
-\cventry{2022--2023}{Nationwide Center for Advanced Customer Insights, The Ohio State University}
-\cventry{2015--2018}{Johns Hopkins Institute for International Programs}
-\cventry{2014}{Johns Hopkins Evidence-based Practice Center}
-\cventry{2013--2014}{Johns Hopkins Center for Adolescent Health}
+\cventry{2018--present}{Institute for Population Research, OSU}
+\cventry{2018--present}{Translational Data Analytics Institute, OSU}
+\cventry{2024--2026}{Health and Environment Modeling Laboratory, OSU}
+\cventry{2022--2023}{Nationwide Center for Advanced Customer Insights, OSU}
+\cventry{2015--2018}{Johns Hopkins Institute for International Programs, JHSPH}
+\cventry{2014}{Johns Hopkins Evidence-based Practice Center, JHSPH}
+\cventry{2013--2014}{Johns Hopkins Center for Adolescent Health, JHSPH}
 
 ## Conference Organization
 
 \cventry{2025}{Session Chair and Discussant, Annual Meeting of the Population Association of America}
 \cventry{2021}{Session Chair, Annual Meeting of the Population Association of America}
 \cventry{2021}{Session Chair, Annual Meeting of Applied Linguistics and Professional Practice}
-\cventry{Sep 2016}{The Sixth Child Survival Forum in China, Chengdu, China}
-\cventry{Jun 2013}{Technical Advisory Group Annual Meeting on High Impact Practices in Family Planning, UNFPA, New York, USA}
+\cventry{2016}{The Sixth Child Survival Forum in China, Chengdu, China}
+\cventry{2013}{Technical Advisory Group Annual Meeting on High Impact Practices in Family Planning, UNFPA, New York, USA}
 
 # Editorial Activities
 
 ## Peer Review
 
-*PNAS*; *Demographic Research*; *Population Health Metrics*; *Annals of Epidemiology*; *Nature*; *Journal of Global Health*; *Preventing Chronic Disease*; *European Journal of Population*; *PLOS ONE*; *PLOS Global Health*; *Clinical Epidemiology*; *BMC Public Health*; *BMC Pediatrics*; *Journal of Epidemiology and Global Health*; *Frontiers*; *Population*; *Clinical Epidemiology and Global Health*; *Journal of Human Anatomy*.
+*PNAS*; *Demographic Research*; *Population Health Metrics*; *Annals of Epidemiology*; *Nature*; *Journal of Global Health*; *Preventing Chronic Disease*; *European Journal of Population*; *PLOS ONE*; *PLOS Global Health*; *Clinical Epidemiology*; *BMC Public Health*; *BMC Pediatrics*; *Journal of Epidemiology and Global Health*; *Frontiers*; *Population*; *Clinical Epidemiology and Global Health*.
 
 # Honors and Awards
 

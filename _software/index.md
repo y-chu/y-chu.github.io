@@ -21,10 +21,8 @@ packages:
     language: "Julia, R, Python"
     summary: "A Julia package suite for creating and managing the Reference Data Archive (RDA), together with user-facing API packages in Julia, R, and Python for easier dataset loading, browsing, and navigation through the RDA ecosystem."
     links:
-      - label: "RDA project site"
-        url: "https://data.who.int/platforms/rda"
-      - label: "RDA user guide"
-        url: "https://data.who.int/platforms/rda"
+      - label: "RDA platform"
+        url: "https://data.who.int/rda"
     placeholders:
       - "GitHub"
       - "Docs"
