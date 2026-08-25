@@ -5,6 +5,25 @@ permalink: /research/
 author_profile: true
 excerpt: "Research themes and selected publications, with links to papers."
 entry_type: index
+agenda:
+  - title: "Measuring population health when data are incomplete"
+    summary: "I develop demographic and statistical approaches for estimating mortality, fertility, and disease burden from sparse, incomplete, or heterogeneous survey and surveillance data, with uncertainty made explicit."
+    methods:
+      - "Demographic estimation"
+      - "Bayesian methods"
+      - "Mortality and fertility"
+  - title: "Understanding how measurement processes shape observed health patterns"
+    summary: "I study how reporting, classification, survey design, and data quality influence the health patterns and inequalities researchers observe, including validation work that connects reported events with surveillance records."
+    methods:
+      - "Measurement error"
+      - "Survey methods"
+      - "Data quality and disparities"
+  - title: "Building next-generation measurement systems"
+    summary: "I design AI and multimodal methods, reusable research software, and data infrastructure that connect methodological advances to verbal autopsy, adaptive data collection, and operational population-health systems."
+    methods:
+      - "AI and multimodal learning"
+      - "Research software"
+      - "Data infrastructure"
 themes:
   - title: "AI in Global Health"
     slug: "ai-global-health"
@@ -82,7 +101,7 @@ themes:
       - title: "SVD-Bayes: A Singular Value Decomposition-based Approach Under Bayesian Framework for Indirect Estimation of Age-specific Fertility and Mortality"
         citation: "Master's thesis, The Ohio State University, 2020."
         blurb: "My master's thesis introduces an SVD-based Bayesian approach for recovering detailed age schedules of fertility and child mortality from summary birth history data, with uncertainty estimates included from the start."
-        paper_url: "http://rave.ohiolink.edu/etdc/view?acc_num=osu1609638415015896"
+        paper_url: "https://rave.ohiolink.edu/etdc/view?acc_num=osu1609638415015896"
         download_url: "https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=osu1609638415015896&disposition=inline"
 
   - title: "Data Quality in Population Surveys"
@@ -108,7 +127,7 @@ themes:
         paper_url: "https://pubmed.ncbi.nlm.nih.gov/32914335/"
         download_url: "https://link.springer.com/content/pdf/10.1007/s13524-020-00911-6.pdf"
 
-  - title: "Health Outcome Research"
+  - title: "Health Outcomes Research"
     slug: "health-outcome-research"
     summary: "Alongside demographic and population-health methods, I have contributed to applied health outcomes research that synthesizes evidence for clinical decision-making. This work reflects a broader interest in connecting rigorous analysis with questions that matter directly for patient care and health systems."
     tags:
@@ -128,9 +147,23 @@ themes:
 ---
 
 <div class="page-intro">
-  <p class="page-lead">My research sits at the intersection of population health, demography, epidemiology, and statistical computing. I am especially interested in how better methods and better data systems can improve measurement, surveillance, and decision-making in global health.</p>
-  <p>The themes below summarize the main threads of my work. Each section includes a short overview together with selected publications and direct links to papers and downloads.</p>
+  <p class="page-lead">My research program addresses a common problem: how to measure population health when the available data are incomplete, heterogeneous, or shaped by imperfect observation processes.</p>
+  <p>Across demographic estimation, survey data quality, verbal autopsy, AI, and research infrastructure, I move from identifying a measurement problem to developing methods, testing them with empirical data, and translating them into reusable systems.</p>
 </div>
+
+## Research Agenda
+
+{% for item in page.agenda %}
+### {{ forloop.index }}. {{ item.title }}
+
+{{ item.summary }}
+
+**Methods and applications:** {{ item.methods | join: " · " }}
+{% endfor %}
+
+## Research Themes
+
+These questions connect my work across verbal autopsy, surveillance, demographic methods, data quality, and health outcomes research.
 
 <div class="stacked-sections">
   {% for theme in page.themes %}

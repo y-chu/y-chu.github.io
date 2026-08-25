@@ -7,6 +7,10 @@ status: past
 project_group: past
 role: "Core researcher for modeling, data analysis, and publications"
 excerpt: "A long-running line of work at Johns Hopkins focused on mortality estimation, evidence synthesis, and global health measurement, including IMPROVE and earlier CHERG/MCEE efforts."
+problem: "Countries and global agencies need comparable child-mortality and cause-of-death estimates despite gaps and differences in underlying data systems."
+contribution: "Conducted systematic reviews, statistical modeling, data analysis, and publication work; also trained and coordinated research assistants."
+technical_scope: "Mortality and cause-of-death estimation, evidence synthesis, statistical modeling, country and subnational analysis, and research coordination."
+outputs: "Peer-reviewed estimates, reports, and evidence contributing to WHO-facing statistics and global and country-level health measurement."
 tags:
   - "Johns Hopkins"
   - "Child Mortality"
@@ -23,7 +27,7 @@ links:
     url: "https://publichealth.jhu.edu/institute-for-international-programs/our-work/past-projects/maternal-and-child-epidemiology-estimation"
 ---
 
-This project page brings together a major strand of my earlier work at Johns Hopkins Bloomberg School of Public Health on child mortality and cause-of-death estimation, and global health evidence generation. My role across this work was as a core researcher leading systematic reviews, conducting modeling, data analysis, and contributing to publications, including work that fed into WHO statistics, reports, and high-impact papers.
+At Johns Hopkins Bloomberg School of Public Health, I contributed to a major body of work on child mortality, cause-of-death estimation, and global health evidence generation. My role included systematic reviews, modeling, data analysis, research coordination, and contributions to publications and WHO-facing statistics and reports.
 
 The IMPROVE project was designed to improve evidence, estimates, and programming for maternal, newborn, child, and adolescent health and nutrition. It built on earlier initiatives including the Child Health Epidemiology Reference Group (CHERG) and the Maternal and Child Epidemiology Estimation (MCEE) project.
 

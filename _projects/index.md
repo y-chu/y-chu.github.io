@@ -8,7 +8,7 @@ entry_type: index
 ---
 
 <div class="page-intro">
-  <p class="page-lead">This page collects active and past projects across data infrastructure, AI for verbal autopsy, cause-of-death measurement, global mortality estimation, and consulting or technical assistance work.</p>
+  <p class="page-lead">My projects connect population-health measurement problems with methodological research, reusable software, data infrastructure, and implementation alongside international research and public-health partners.</p>
 </div>
 
 {% assign projects = site.projects | where_exp: "item", "item.entry_type != 'index'" | sort: "date" | reverse %}

@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Yue Chu",
-    "email": "ychu612@gmail.com",
+    "email": "chu.282@osu.edu",
     "phone": "",
     "website": "https://y-chu.github.io",
-    "summary": "Global Health, Demography, Epidemiology, Population study, Data Science, Data Engineering",
+    "summary": "Population health scientist and demographer developing statistical, computational, and AI methods for measurement under imperfect data.",
     "location": {
-      "address": "IPR,TDAI,HEALMOD @ OSU",
+      "address": "Institute for Population Research, The Ohio State University",
       "postalCode": "",
       "city": "Columbus, OH",
       "countryCode": "US",
@@ -16,7 +16,7 @@
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=35jZ0usAAAAJ&hl=en&oi=ao"
       },
       {
         "network": "ORCID",
@@ -26,6 +26,11 @@
       {
         "network": "GitHub",
         "username": "y-chu",
+        "url": "https://github.com/y-chu"
+      },
+      {
+        "network": "ResearchGate",
+        "username": "Yue-Chu",
         "url": "https://www.researchgate.net/profile/Yue-Chu"
       }
     ]

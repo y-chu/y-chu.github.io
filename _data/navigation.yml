@@ -6,32 +6,24 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Presentations"
-    url: /presentations/
-
-  - title: "CV"
-    url: /files/Yue_Chu_CV.pdf
-
   - title: "Projects"
     url: /projects/
 
   - title: "Software"
     url: /software/
 
+  - title: "Teaching & Mentoring"
+    url: /teaching/
+
+  - title: "CV"
+    url: /files/Yue_Chu_CV.pdf
+
+secondary:
+  - title: "Presentations"
+    url: /presentations/
+
   - title: "News"
     url: /news/
 
   - title: "Personal"
     url: /personal/
-
-  # - title: "Talks"
-  #   url: /talks/    
-
-  # - title: "Portfolio"
-  #   url: /portfolio/
-        
-  # - title: "Blog Posts"
-  #   url: /year-archive/
-        
-  # - title: "Guide"
-  #   url: /markdown/

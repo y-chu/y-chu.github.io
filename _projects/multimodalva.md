@@ -10,14 +10,18 @@ status: active
 project_group: active
 role: "Developer and maintainer"
 excerpt: "A Python package for cause-of-death classification from verbal autopsy data using text, tabular, and ensemble multimodal pipelines."
+problem: "Most automated verbal autopsy algorithms use structured questions while leaving narrative information unused."
+contribution: "Designed and implemented a unified Python research package for narrative, tabular, and multimodal training, prediction, optimization, and evaluation workflows."
+technical_scope: "Python, pretrained language models, tabular machine learning, multimodal ensembles, hyperparameter optimization, and model evaluation."
+outputs: "Research software supporting dissertation and working-paper analyses; repository currently private."
 tags:
   - "Python"
   - "Machine Learning"
   - "Verbal Autopsy"
   - "Multimodal Learning"
 links:
-  - label: "GitHub repository"
-    url: "https://github.com/y-chu/MultimodalVA"
+  - label: "Dissertation preprint"
+    url: "https://arxiv.org/abs/2508.19274"
   - label: "Research page"
     url: "/research/"
 ---
@@ -35,8 +39,8 @@ The package was built to make verbal autopsy modeling more reproducible and more
 
 ## Why it matters
 
-Verbal autopsy data often contains both structured symptom questions and free-text narratives. MultimodalVA is designed to bring those information sources together in a practical research workflow, making it easier to experiment with models that better reflect the richness of the underlying data.
+Verbal autopsy data often contain both structured symptom questions and free-text narratives. MultimodalVA is designed to bring those information sources together in a practical research workflow, making it easier to experiment with models that better reflect the richness of the underlying data.
 
 ## Current focus
 
-The package continues to support my broader work on AI for global health and verbal autopsy analysis, including model development, benchmarking, and more accessible tooling for research collaborators.
+The package continues to support my broader work on AI for global health and verbal autopsy analysis, including model development, benchmarking, and reusable workflows for research collaborators. The repository is currently private.

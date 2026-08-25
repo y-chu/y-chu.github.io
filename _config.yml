@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Yue Chu"
 title_separator          : "-"
 name                     : &name "Yue"
-description              : &description "PhD candidate @ OSU"
+description              : &description "Population health scientist and demographer developing statistical, computational, and AI methods for measurement under imperfect data."
 url                      : https://y-chu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               :
@@ -23,10 +23,10 @@ author:
   # Biographic information
   name             : "Yue Chu"
   avatar           : "headshot_YC.jpg"
-  bio              : "Global Health, Demography, Epidemiology, Population study, Data Science, Data Engineering"
+  bio              : "Population health scientist & demographer"
   location         : "Columbus, OH"
-  employer         : "IPR,TDAI,HEALMOD @ OSU"
-  email            : "ychu612@gmail.com"
+  employer         : "Institute for Population Research, The Ohio State University"
+  email            : "chu.282@osu.edu"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
@@ -192,6 +192,8 @@ collections:
   presentations:
     output: true
     permalink: /presentations/:path/
+  teaching:
+    output: true
 
 
 # Defaults
@@ -229,8 +231,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
   # _portfolio
   - scope:
       path: ""
@@ -244,6 +246,13 @@ defaults:
   - scope:
       path: ""
       type: presentations
+    values:
+      layout: single
+      author_profile: true
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
     values:
       layout: single
       author_profile: true

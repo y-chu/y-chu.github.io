@@ -10,8 +10,8 @@
 {% assign poster_url = publication.poster_url %}
 
 <div class="link-row publication-links">
-  {% if paper_page_url %}
-    <a class="link-chip" href="{{ paper_page_url }}">Paper page</a>
+  {% if paper_page_url and paper_page_url != doi_url %}
+    <a class="link-chip" href="{{ paper_page_url }}">{{ publication.paper_label | default: "Publication" }}</a>
   {% endif %}
   {% if doi_url %}
     <a class="link-chip" href="{{ doi_url }}">DOI</a>

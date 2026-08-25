@@ -4,6 +4,15 @@ collection: publications
 permalink: /publication/Chu2024_ALPHA
 date: 2024-03-04
 venue: 'Lancet Global Health'
+publication_type: peer_reviewed
+publication_order: 1
+publication_year: "2024"
+authors: "<strong>Yue Chu</strong>, M. Marston, A. Dube, C. Festo, E. Geubbels, S. Gregson, K. Herbst, et al."
+venue_details: "Lancet Global Health. 2024;12(8):e1278–e1287."
+featured: true
+detail_page: true
+tags:
+  - "First author"
 paperurl: 'https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(24)00171-2/fulltext'
 paper_page_url: 'https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(24)00171-2/fulltext'
 doi: '10.1016/S2214-109X(24)00171-2'

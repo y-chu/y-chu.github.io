@@ -159,8 +159,8 @@ Specialty in Preventive Medicine\newline
 
 ```{=latex}
 \begin{etaremune}
-\item \textbf{Chu, Y. et al.} Multimodal Artificial Intelligence for Cause-of-Death Assignment From Verbal Autopsy Records: Evaluation Across Two Independent Datasets}
-\item \textbf{Chu, Y. et al.} Sufficiency of Information in Population Surveys: Evidence from Verbal Autopsy}
+\item \textbf{Chu, Y. et al.} Multimodal Artificial Intelligence for Cause-of-Death Assignment From Verbal Autopsy Records: Evaluation Across Two Independent Datasets
+\item \textbf{Chu, Y. et al.} Sufficiency of Information in Population Surveys: Evidence from Verbal Autopsy
 
 \end{etaremune}
 ```
@@ -252,11 +252,14 @@ Principal Investigator: Samuel Clark. Role: Graduate Research Assistant}
 \cventry{AU2013--AU2014}{\textbf{380.603 (JHSPH)}, Teaching Assistant for Demographic Methods in Public Health}
 
 
-## Mentoring
+## Research Supervision and Mentoring
 
-\cventry{SP2024}{Elenzie France, Undergraduate Research Assistant, The Ohio State University}
-\cventry{SU2018}{Ambre Flowers, Undergraduate, JHSPH Diversity Summer Internship Program}
-\cventry{SU2017}{Jayla Johnson, Undergraduate, JHSPH Diversity Summer Internship Program}
+<!-- Public CV: student names intentionally withheld. -->
+\cventry{AU2025}{Provided day-to-day technical supervision to a PhD research assistant on data quality assessment, data cleaning, and coding for the Reference Data Archive project, The Ohio State University}
+\cventry{SP2024}{Mentored an undergraduate research assistant, The Ohio State University}
+\cventry{SU2023}{Provided day-to-day technical supervision to a PhD research assistant on data quality assessment, data cleaning, and coding for the Reference Data Archive project, Africa Health Research Institute}
+\cventry{2015--2018}{Provided day-to-day research supervision and technical mentoring to 10+ graduate research assistants across literature reviews, data extraction, data analysis, modeling support, and data visualization, JHSPH}
+\cventry{SU2017, SU2018}{Mentored two undergraduate students, JHSPH Diversity Summer Internship Program}
 
 ## Workshops
 

@@ -7,29 +7,32 @@ excerpt: "Research software and data infrastructure packages."
 entry_type: index
 packages:
   - title: "MultimodalVA"
-    language: "Python"
-    summary: "A Python package for multimodal automated cause-of-death classification from verbal autopsy data. It supports narrative, tabular, and ensemble workflows so researchers can build and evaluate models using one or both modalities in a unified pipeline."
+    language: "Python · pretrained language models · multimodal ML"
+    status: "Research software · repository currently private"
+    problem: "Automated verbal autopsy methods commonly use structured responses without incorporating the information in free-text narratives."
+    role: "Developer and maintainer; designed and implemented the package's unified research workflows."
+    technical_scope: "Narrative and tabular models, multimodal ensembles, training and prediction pipelines, hyperparameter optimization, evaluation, and visualization."
     links:
-      - label: "GitHub"
-        url: "https://github.com/y-chu/MultimodalVA"
       - label: "Project page"
         url: "/projects/multimodalva/"
-    placeholders:
-      - "Docs"
+      - label: "Dissertation preprint"
+        url: "https://arxiv.org/abs/2508.19274"
 
-  - title: "RDA Packages"
-    language: "Julia, R, Python"
-    summary: "A Julia package suite for creating and managing the Reference Data Archive (RDA), together with user-facing API packages in Julia, R, and Python for easier dataset loading, browsing, and navigation through the RDA ecosystem."
+  - title: "Reference Data Archive software and data platform"
+    language: "Julia · R · Python · APIs"
+    status: "Operational research infrastructure · public platform"
+    problem: "Reference mortality datasets need consistent ingestion, metadata, quality control, access, and analytics workflows across institutions."
+    role: "Core developer and platform manager for the WHO-hosted RDA."
+    technical_scope: "Data ingestion and curation, metadata, automated workflows, NADA and user-facing APIs, analytics environments, documentation, and user/data management."
     links:
       - label: "RDA platform"
         url: "https://data.who.int/rda"
-    placeholders:
-      - "GitHub"
-      - "Docs"
+      - label: "Project page"
+        url: "/projects/reference-data-archive/"
 ---
 
 <div class="page-intro">
-  <p class="page-lead">This page highlights software packages and package suites that support my work in verbal autopsy, mortality measurement, and data infrastructure.</p>
+  <p class="page-lead">I design and implement reusable research software and data systems that move population-health methods into reproducible analysis and operational infrastructure.</p>
 </div>
 
 <div class="feature-grid">

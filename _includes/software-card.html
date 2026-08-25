@@ -9,18 +9,17 @@
     </div>
   </div>
 
-  {% if package.summary %}
-    <p class="feature-card__summary">{{ package.summary }}</p>
-  {% endif %}
+  {% if package.status %}<p class="software-card__status">{{ package.status }}</p>{% endif %}
+
+  <dl class="software-facts">
+    {% if package.problem %}<div><dt>Problem</dt><dd>{{ package.problem }}</dd></div>{% endif %}
+    {% if package.role %}<div><dt>My role</dt><dd>{{ package.role }}</dd></div>{% endif %}
+    {% if package.technical_scope %}<div><dt>Technical scope</dt><dd>{{ package.technical_scope }}</dd></div>{% endif %}
+  </dl>
 
   <div class="link-row">
     {% for link in package.links %}
       <a class="link-chip" href="{{ link.url }}">{{ link.label }}</a>
     {% endfor %}
-    {% if package.placeholders %}
-      {% for label in package.placeholders %}
-        <span class="link-chip link-chip--muted">{{ label }}</span>
-      {% endfor %}
-    {% endif %}
   </div>
 </article>

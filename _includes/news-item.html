@@ -10,7 +10,7 @@
   </div>
   <h3 class="news-item__title">{{ item.title }}</h3>
   {% if item.blurb %}
-    <p class="news-item__blurb">{{ item.blurb }}</p>
+    <div class="news-item__blurb">{{ item.blurb | markdownify }}</div>
   {% endif %}
   {% if item.url %}
     <a class="news-item__link" href="{{ item.url }}">{{ item.link_label | default: "Learn more" }}</a>

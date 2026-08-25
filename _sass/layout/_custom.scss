@@ -17,6 +17,81 @@
   margin-bottom: 0.85rem;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #c58b35;
+  outline-offset: 3px;
+}
+
+.home-positioning {
+  margin: 0 0 1.6rem;
+  padding-bottom: 1.35rem;
+  border-bottom: 1px solid var(--yc-border);
+}
+
+.home-positioning__kicker {
+  margin: 0 0 0.35rem;
+  color: var(--yc-accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.home-positioning__title {
+  margin: 0 0 0.75rem;
+  max-width: 18ch;
+  color: #1d2f36;
+  font-size: clamp(2rem, 4vw, 3.15rem);
+  line-height: 1.08;
+}
+
+.home-positioning__descriptor {
+  margin: 0.2rem 0 1rem;
+  color: var(--yc-ink-soft);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.evidence-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 1.5rem 0;
+  border-top: 1px solid var(--yc-border);
+  border-bottom: 1px solid var(--yc-border);
+}
+
+.evidence-strip a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.85rem 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.evidence-strip a:nth-child(odd) {
+  border-right: 1px solid var(--yc-border);
+}
+
+.evidence-strip a:nth-child(-n + 2) {
+  border-bottom: 1px solid var(--yc-border);
+}
+
+.evidence-strip a:hover {
+  background: var(--yc-accent-soft);
+}
+
+.evidence-strip strong {
+  color: var(--yc-accent);
+  font-size: 0.96rem;
+}
+
+.evidence-strip span {
+  color: var(--yc-ink-soft);
+  font-size: 0.82rem;
+}
+
 .feature-grid {
   display: grid;
   gap: 1.2rem;
@@ -225,6 +300,14 @@
   margin: 1.5rem 0;
 }
 
+.news-item__blurb p {
+  margin: 0 0 0.6rem;
+}
+
+.news-item__blurb p:last-child {
+  margin-bottom: 0;
+}
+
 .priorities {
   list-style: none;
   margin: 1.1rem 0 1.8rem;
@@ -362,6 +445,132 @@
 
 .compact-item .link-row {
   margin-top: 0.45rem;
+}
+
+.software-facts {
+  margin: 1rem 0 1.75rem;
+}
+
+.software-facts > div {
+  display: grid;
+  grid-template-columns: minmax(105px, 0.55fr) minmax(0, 2.45fr);
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-top: 1px solid var(--yc-border);
+}
+
+.software-facts > div:last-child {
+  border-bottom: 1px solid var(--yc-border);
+}
+
+.software-facts dt {
+  color: var(--yc-accent);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.software-facts dd {
+  margin: 0;
+  color: #31444d;
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.software-card__status {
+  display: inline-block;
+  margin: 0 0 0.35rem;
+  color: var(--yc-accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.software-card .software-facts {
+  margin: 0.5rem 0 0.85rem;
+}
+
+.software-card .software-facts > div {
+  display: block;
+  padding: 0.55rem 0;
+}
+
+.software-card .software-facts dt {
+  margin-bottom: 0.18rem;
+}
+
+.experience-list {
+  margin: 1rem 0 1.75rem;
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.7fr) minmax(0, 2.3fr);
+  gap: 1.2rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--yc-border);
+}
+
+.experience-item:last-child {
+  border-bottom: 1px solid var(--yc-border);
+}
+
+.experience-item__date {
+  color: var(--yc-accent);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.experience-item h3,
+.experience-item p {
+  margin: 0;
+}
+
+.experience-item h3 {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.experience-item p {
+  margin-top: 0.2rem;
+  color: var(--yc-ink-soft);
+  font-size: 0.92rem;
+}
+
+.course-list {
+  columns: 2 240px;
+  column-gap: 2rem;
+}
+
+.course-list li {
+  break-inside: avoid;
+  margin-bottom: 0.35rem;
+}
+
+.page__footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: baseline;
+  margin-bottom: 0.6rem;
+  font-size: 0.83rem;
+}
+
+.page__footer-nav-label {
+  font-weight: 700;
+}
+
+.page__footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page__footer-nav a {
+  color: inherit;
 }
 
 .presentation-list {
@@ -517,6 +726,31 @@
 
   .page-lead {
     font-size: 1.08rem;
+  }
+
+  .home-positioning__title {
+    font-size: 2rem;
+  }
+
+  .evidence-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .evidence-strip a,
+  .evidence-strip a:nth-child(odd),
+  .evidence-strip a:nth-child(-n + 2) {
+    border-right: 0;
+    border-bottom: 1px solid var(--yc-border);
+  }
+
+  .evidence-strip a:last-child {
+    border-bottom: 0;
+  }
+
+  .software-facts > div,
+  .experience-item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
   }
 }
 

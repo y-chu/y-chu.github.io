@@ -22,14 +22,15 @@ Top-level navigation content should live in folders that match the nav tabs.
 - Home: `_pages/about.md`
 - Research: `_research/index.md`
 - Projects: `_projects/index.md` plus item pages in `_projects/*.md`
-- Publications: `_publications/index.md` (full list lives in the page front matter)
+- Publications: `_publications/index.md` plus structured entries in `_publications/*.md`
 - Presentations: `_presentations/index.md` (full list lives in the page front matter; replaced the old `_talks/` collection)
 - Software: `_software/index.md`
+- Teaching & Mentoring: `_teaching/index.md`
 - News: `_news/index.md`
-- Personal: `_personal/index.md` (kept but currently unlinked from the nav)
+- Personal: `_personal/index.md` (kept in secondary/footer navigation)
 - CV route: `_pages/cv.md`
 
-Nav order is defined in `_data/navigation.yml`. Removed sections: Profile (merged into Home), Teaching (covered by the CV). Their folders/collections were deleted in cleanup.
+Primary and secondary navigation are defined in `_data/navigation.yml`. The primary job-market navigation is Research, Publications, Projects, Software, Teaching & Mentoring, and CV. Presentations, News, and Personal are secondary/footer links.
 - Served CV file: `files/Yue_Chu_CV.pdf`
 - CV source materials: `_CV/`
 - CV build command (outputs the source directly to the served file, so no manual copy/drift):
@@ -51,12 +52,12 @@ That means:
 There are two patterns in use:
 
 1. Single-file section pages
-- Used for `profile`, `research`, `software`, `news`, and `personal`
+- Used for `research`, `software`, `teaching`, `news`, and `personal`
 - The section lives in that folder's `index.md`
 - Structured lists for that section live in front matter arrays on the same file
 
 2. Collection-backed sections
-- Used for `projects`, `publications`, `talks`, and `teaching`
+- Used for `projects` and `publications`
 - The section landing page lives at that folder's `index.md`
 - Individual items live as separate Markdown files in the same folder
 - Consulting and technical assistance entries are part of `_projects/*.md` and should use `project_group: consulting`
@@ -75,7 +76,6 @@ Examples:
 
 - `_projects/index.md`
 - `_publications/index.md`
-- `_talks/index.md`
 - `_teaching/index.md`
 
 When filtering collection items, always exclude `entry_type: index`.
@@ -87,17 +87,24 @@ When filtering collection items, always exclude `entry_type: index`.
 - For software listings, edit `_software/index.md`.
 - For curated news items, edit `_news/index.md`.
 - For curated personal sections and fun updates, edit `_personal/index.md`.
-- For featured publications used on the home and profile pages, edit `_publications/index.md`.
-- For featured talks used on the talks landing page, edit `_talks/index.md`.
+- For publications used on the landing page and homepage, edit the structured entries in `_publications/*.md`; use `featured: true` sparingly for homepage selections.
+- For presentations, edit `_presentations/index.md`.
 - For project cards and project detail pages, edit `_projects/*.md`.
 - For consulting and technical assistance entries, create or edit `_projects/*.md` with `project_group: consulting`.
 - For publication detail pages, edit `_publications/*.md`.
-- For talk detail pages, edit `_talks/*.md`.
-- For teaching entries, edit `_teaching/*.md`.
+- For Teaching & Mentoring content, edit `_teaching/index.md`.
 
 ## Publication Schema
 
 Publication entries in `_publications/*.md` should use these fields when available:
+
+- `publication_type`: `peer_reviewed`, `working_paper`, `dissertation`, `thesis`, or `report`
+- `publication_order`: numeric display order within its type (ascending, newest first)
+- `publication_year`: display year
+- `authors`: compact HTML-ready author string with Yue Chu emphasized using `<strong>` when named
+- `venue_details`: journal/report details shown on the landing page
+- `featured`: optional boolean for the small homepage selection
+- `detail_page`: boolean controlling whether the landing-page title links to the detail page
 
 - `paper_page_url`: external landing page for the paper
 - `doi`: DOI string without extra prose
@@ -151,8 +158,9 @@ Current status:
 
 - The homepage remains in `_pages/about.md` because it is the root route and is not part of the main nav list.
 - The CV remains a direct PDF experience. `/cv/` redirects to `files/Yue_Chu_CV.pdf`.
-- Featured papers are stored with the publications landing page because they belong to the publications section.
-- Featured talks are stored with the talks landing page because they belong to the talks section.
+- Publication records live in the publications collection; homepage selections use `featured: true`.
+- Presentations remain available as a secondary/footer destination, with legacy `/talks/` routes redirected to `/presentations/`.
+- Teaching & Mentoring is a primary-navigation page backed by `_teaching/index.md`.
 - Consulting is no longer a standalone navigation tab; consulting and technical assistance work now lives inside the projects collection.
 - Research, news, and personal currently use single landing files with front matter arrays instead of one-file-per-item. This keeps the nav-to-folder mapping clean without generating unwanted extra pages.
 
@@ -169,15 +177,16 @@ Completed in the current structure pass:
 
 ## Known Follow-Ups
 
-- Some talk item permalinks still end with `.md` in `_talks/*.md`; this is functional but not especially polished.
-- Some talk front matter uses inconsistent `collection` labels such as `Presentation` or `Poster`; the pages still render, but normalization would be a good cleanup pass.
-- If desired later, Home could also be moved to a dedicated `_home/index.md` pattern for total symmetry.
+- The active served CV remains the April 1, 2026 version until a newer job-market CV is added.
+- No Research Résumé is currently present, so the site exposes only the Academic CV.
+- MultimodalVA has no verified public repository or documentation URL; keep the private-repository status until a public release exists.
+- Working-paper statuses and links should be updated only from an authoritative CV or manuscript record.
 
 ## Safe Next Steps
 
 If we continue improving the site, these are good next tasks:
 
-1. Normalize talk permalinks to cleaner URLs.
-2. Normalize talk front matter fields across all talk entries.
-3. Decide whether news should stay curated in one file or become one-file-per-update with a custom non-output workflow.
-4. Add a lightweight maintenance note to the README pointing editors to `CLAUDE.md`.
+1. Replace `files/Yue_Chu_CV.pdf` when the next dated job-market CV is ready.
+2. Convert `/cv/` into a two-document landing page if a Research Résumé is added.
+3. Add verified repository or documentation links when MultimodalVA or RDA packages become public.
+4. Refresh working-paper status labels as manuscripts move through review.

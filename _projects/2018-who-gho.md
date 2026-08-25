@@ -17,4 +17,4 @@ links:
     url: "https://www.who.int/data/gho"
 ---
 
-I designed evaluation plan for reviewing data quality of the cause-of-death related estimates in Global Health Observatory. 
+I designed an evaluation plan for reviewing the quality of cause-of-death estimates in the Global Health Observatory.

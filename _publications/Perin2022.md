@@ -4,6 +4,12 @@ collection: publications
 permalink: /publication/Perin2022
 date: 2022-01-10
 venue: 'Population health metrics'
+publication_type: peer_reviewed
+publication_order: 4
+publication_year: "2022"
+authors: "J. Perin, <strong>Yue Chu</strong>, F. Villavicencio, A. Schumacher, T. McCormick, M. Guillot, L. Liu."
+venue_details: "Population Health Metrics. 2022;20(1):3."
+detail_page: true
 paperurl: 'https://pophealthmetrics.biomedcentral.com/articles/10.1186/s12963-021-00277-w'
 paper_page_url: 'https://pophealthmetrics.biomedcentral.com/articles/10.1186/s12963-021-00277-w'
 doi: '10.1186/s12963-021-00277-w'
@@ -30,4 +36,3 @@ We estimate U5ACSM within 0.1–0.7 deaths per 1000 livebirths in hold out strat
 Conclusion
 
 The log quadratic model is a significant improvement over the standard approach for deriving U5ACSM based on both simulation and empirical results.
-

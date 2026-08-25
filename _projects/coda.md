@@ -5,8 +5,12 @@ permalink: /projects/coda/
 date: 2026-03-04
 status: active
 project_group: active
-role: "Core member designing and developing algorithms"
+role: "Core team member contributing to algorithm design and development"
 excerpt: "A Gates Foundation-initiated consortium project developing AI-enabled methods to improve cause-of-death determination in low-resource settings."
+problem: "Many deaths occur without reliable cause documentation, limiting mortality statistics and public-health planning."
+contribution: "Contribute to the collaborative design and development of AI-enabled algorithms for cause-of-death determination."
+technical_scope: "Cause-of-death classification, AI method development, research design, and consortium-based testing."
+outputs: "A three-year international consortium project launched in 2026; methods and tools are in development."
 tags:
   - "AI"
   - "Cause of Death"
@@ -21,7 +25,7 @@ links:
 
 The Cause of Death Determination Ascertainment (CODA) project is a Gates Foundation initiative focused on improving cause-of-death assignment using artificial intelligence. The project is being coordinated through a global consortium led by Vital Strategies and is aimed at strengthening death data in settings where reliable cause-of-death information is still limited.
 
-I am a core member of the project team, contributing to the design and development of algorithms for AI-enabled cause-of-death determination.
+I am a core team member contributing to the collaborative design and development of AI-enabled algorithms for cause-of-death determination.
 
 ## Project focus
 
@@ -31,4 +35,4 @@ I am a core member of the project team, contributing to the design and developme
 
 ## Why it matters
 
-Cause-of-death data is foundational for public health decision-making, but many deaths worldwide still occur without reliable documentation. CODA is part of a broader effort to make death data more accurate, scalable, and useful for health systems.
+Cause-of-death data are foundational for public-health decision-making, but many deaths worldwide still occur without reliable documentation. CODA is part of a broader effort to make death data more accurate, scalable, and useful for health systems.

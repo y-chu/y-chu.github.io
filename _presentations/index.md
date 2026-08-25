@@ -5,6 +5,9 @@ permalink: /presentations/
 author_profile: true
 entry_type: index
 excerpt: "Invited talks, conference presentations, and seminars."
+redirect_from:
+  - /talks/
+  - /talks.html
 talks:
   - title: "Leveraging language models and machine learning techniques for verbal autopsy analysis"
     venues:
@@ -19,14 +22,15 @@ talks:
 
   - title: "AI as Measurement Infrastructure: Adaptive Survey Design in Verbal Autopsy"
     venues:
-      - event: "Institute for Foundations of Data Science"
-        date: "May 2025"
+      - event: "FDS Workshop: AI for Social Science Research Methods, Yale University"
+        location: "New Haven, CT"
+        date: "May 2026"
         type: "Poster"
 
   - title: "Automating cause of death classification from verbal autopsy: Using pretrained language models and multimodal learning"
     venues:
       - event: "Annual Meeting of the Population Association of America"
-        location: "St. Louis, MO"
+        location: "Washington, DC"
         date: "Apr 2025"
       - event: "HEALMOD Professional Seminar, The Ohio State University"
         location: "Columbus, OH"
@@ -36,7 +40,7 @@ talks:
     venues:
       - event: "Annual Meeting of the Population Association of America"
         location: "St. Louis, MO"
-        date: "Apr 2025"
+        date: "May 2026"
         type: "Poster"
 
   - title: "Leveraging machine learning techniques for verbal autopsy analysis"
