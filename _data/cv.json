@@ -32,6 +32,11 @@
         "network": "ResearchGate",
         "username": "Yue-Chu",
         "url": "https://www.researchgate.net/profile/Yue-Chu"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "sophiaychu",
+        "url": "https://www.linkedin.com/in/sophiaychu/"
       }
     ]
   },
@@ -92,13 +97,13 @@
       "date": "2024-11-05",
       "location": "Rostock, Germany",
       "description": "Yue Chu, Zehang Li, Zhenke Wu, Samuel Clark"
-    },
+    }
   ],
   "teaching": [
     {
       "course": "Statistics in Sociology",
       "institution": "Department of Sociology, The Ohio State University",
-      "date": "2021",
+      "date": "2020",
       "role": "Recitation leader",
       "description": ""
     }

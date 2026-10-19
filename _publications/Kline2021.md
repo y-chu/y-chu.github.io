@@ -9,7 +9,7 @@ publication_order: 7
 publication_year: "2021"
 authors: "D. Kline, Z. Li, <strong>Yue Chu</strong>, J. Wakefield, W. C. Miller, A. N. Turner, S. J. Clark."
 venue_details: "Proceedings of the National Academy of Sciences of the United States of America. 2021;118(26):e2023947118."
-featured: true
+featured: false
 detail_page: true
 paperurl: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8255994/'
 paper_page_url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8255994/'

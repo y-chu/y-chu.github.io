@@ -7,7 +7,7 @@ publication_type: report
 publication_order: 2
 publication_year: "2016"
 authors: "L. Liu, K. Hill, S. Oza, D. Hogan, <strong>Yue Chu</strong>, S. Cousens, C. Mathers, C. Stanton, J. Lawn, R. E. Black."
-status: "Book chapter"
+publication_status: "Book chapter"
 venue_details: "In Reproductive, Maternal, Newborn, and Child Health: Disease Control Priorities, Third Edition (Volume 2). World Bank; 2016. Chapter 4."
 doi: "10.1596/978-1-4648-0348-2_ch4"
 doi_url: "https://doi.org/10.1596/978-1-4648-0348-2_ch4"

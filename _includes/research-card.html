@@ -2,6 +2,7 @@
 <article class="feature-card research-theme" id="{{ theme.slug | default: theme.title | slugify }}">
   <div class="feature-card__header">
     <div>
+      {% if theme.area %}<p class="research-theme__area">{{ theme.area }}</p>{% endif %}
       <h2 class="feature-card__title">{{ theme.title }}</h2>
       {% if theme.tags %}
         <div class="tag-row">

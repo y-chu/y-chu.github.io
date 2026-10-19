@@ -13,7 +13,7 @@ doi: "10.1214/21-AOAS1489"
 doi_url: "https://doi.org/10.1214/21-AOAS1489"
 paperurl: "https://doi.org/10.1214/21-AOAS1489"
 paper_page_url: "https://doi.org/10.1214/21-AOAS1489"
-featured: true
+featured: false
 detail_page: false
 sitemap: false
 ---

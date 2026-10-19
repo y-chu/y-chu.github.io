@@ -6,6 +6,20 @@ author_profile: true
 excerpt: "Recent updates on papers, talks, and milestones."
 entry_type: index
 items:
+  - date: "2026-10-16"
+    title: "New medRxiv preprint on multimodal AI for verbal autopsy"
+    category: "Research"
+    blurb: "Released a national South African benchmark comparing narrative, structured-data, multimodal, and large-language-model approaches to cause-of-death assignment from verbal autopsy records."
+    url: "https://www.medrxiv.org/content/10.64898/2026.10.15.26364476v1"
+    link_label: "Read the preprint"
+
+  - date: "2026-10-13"
+    title: "Multimodal cause-of-death benchmark selected as a NeurIPS 2026 poster"
+    category: "Research"
+    blurb: "A coauthored benchmark using child health and mortality data was selected for a NeurIPS 2026 ED Track poster, presented by the first author; the paper is available separately as a medRxiv preprint."
+    url: "https://www.medrxiv.org/content/10.64898/2026.07.13.26357980v1"
+    link_label: "Read the preprint"
+
   - date: "2026-05-21"
     title: "Presented work on AI-assisted population surveys at Yale University"
     category: "Presentation"

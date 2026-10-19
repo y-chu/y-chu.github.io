@@ -5,8 +5,12 @@ permalink: /projects/ohio-covid-prevalence/
 date: 2022-01-01
 status: past
 project_group: past
-role: "Statistical modeling and prevalence estimation"
+role: "Graduate Research Associate; statistical modeling and prevalence estimation"
 excerpt: "A statewide study estimating current and past COVID-19 prevalence among Ohio adults using survey, testing, and statistical modeling approaches."
+outputs: "Peer-reviewed estimates in PNAS (2021) and Annals of Epidemiology (2022)."
+technical_scope: "Bayesian multilevel regression and poststratification, with adjustment for imperfect diagnostic tests, low positivity, and nonresponse."
+contribution: "Contributed statistical modeling and data analysis for statewide prevalence estimates and coauthored the resulting papers."
+problem: "Early in the pandemic, case counts could not show how many Ohio adults had current or past infection."
 tags:
   - "COVID-19"
   - "Ohio"
@@ -19,10 +23,4 @@ links:
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8255994/"
 ---
 
-This project estimated the prevalence of current and past COVID-19 among adults in the state of Ohio during a period when timely, population-based evidence was urgently needed for public health decision-making.
-
-The work combined survey design, testing data, and statistical modeling to produce statewide prevalence estimates that accounted for uncertainty, sparse positives, and the realities of imperfect diagnostics in a rapidly evolving pandemic context.
-
-## Why it mattered
-
-In the early pandemic period, policymakers needed more than case counts to understand disease burden. This project helped provide population-level prevalence evidence for Ohio adults, supporting a more grounded picture of both active and past infection.
+This statewide study estimated the prevalence of current and past COVID-19 among Ohio adults at a time when population-based evidence was needed to complement case counts. It combined a population-based survey, diagnostic testing, and Bayesian modeling to produce estimates that account for sparse positives and imperfect tests.

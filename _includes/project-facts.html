@@ -1,0 +1,10 @@
+{% assign project = include.project | default: page %}
+{% if project.role or project.problem or project.contribution or project.technical_scope or project.outputs %}
+<dl class="software-facts project-facts">
+  {% if project.role %}<div><dt>Role</dt><dd>{{ project.role }}</dd></div>{% endif %}
+  {% if project.problem %}<div><dt>Problem</dt><dd>{{ project.problem }}</dd></div>{% endif %}
+  {% if project.contribution %}<div><dt>Contribution</dt><dd>{{ project.contribution }}</dd></div>{% endif %}
+  {% if project.technical_scope %}<div><dt>Methods &amp; tools</dt><dd>{{ project.technical_scope }}</dd></div>{% endif %}
+  {% if project.outputs %}<div><dt>Outputs</dt><dd>{{ project.outputs }}</dd></div>{% endif %}
+</dl>
+{% endif %}

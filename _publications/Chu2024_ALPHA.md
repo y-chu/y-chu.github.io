@@ -13,6 +13,7 @@ featured: true
 detail_page: true
 tags:
   - "First author"
+  - "Corresponding author"
 paperurl: 'https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(24)00171-2/fulltext'
 paper_page_url: 'https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(24)00171-2/fulltext'
 doi: '10.1016/S2214-109X(24)00171-2'

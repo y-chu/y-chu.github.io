@@ -5,6 +5,7 @@ permalink: /publication/liu-2022-adolescent-mortality-china/
 date: 2022-01-04
 publication_type: peer_reviewed
 publication_order: 3
+featured: true
 publication_year: "2022"
 authors: "Y. Liu, <strong>Yue Chu</strong>, D. Yeung, W. Wang, L. Wang, P. Yin, J. Liu, M. Zhou, L. Liu."
 venue: "Journal of Global Health"

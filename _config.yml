@@ -44,6 +44,9 @@ author:
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
+  # Professional networks
+  linkedin         : "sophiaychu"
+
 
 
 # Site Settings
@@ -122,6 +125,11 @@ include:
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - AGENT.md
+  - CLAUDE.md
+  - CONTRIBUTING.md
+  - Dockerfile
+  - docker-compose.yaml
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
@@ -138,9 +146,28 @@ exclude:
   - assets/js/vendor
   - config
   - gulpfile.js
+  - markdown_generator
   - log
   - node_modules
   - package.json
+  - scripts
+  - footprint/footprint.py
+  - files/ReadMe.md
+  - images/3953273590_704e3899d5_m.jpg
+  - images/500x300.png
+  - images/bio-photo-2.jpg
+  - images/bio-photo.jpg
+  - images/editing-talk.png
+  - images/foo-bar-identity-th.jpg
+  - images/foo-bar-identity.jpg
+  - images/homepage.png
+  - images/image-alignment-1200x4002.jpg
+  - images/image-alignment-150x150.jpg
+  - images/image-alignment-300x200.jpg
+  - images/image-alignment-580x300.jpg
+  - images/paragraph-indent.png
+  - images/paragraph-no-indent.png
+  - images/site-logo.png
   - tmp
   - vendor
 keep_files:
@@ -184,9 +211,6 @@ collections:
     output: true
     permalink: /projects/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
     output: true
     permalink: /:collection/:path/
   presentations:
@@ -233,15 +257,6 @@ defaults:
       author_profile: true
       share: false
       comments: false
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
   # _presentations
   - scope:
       path: ""
@@ -298,11 +313,11 @@ whitelist:
 #  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
 #  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
-  type: liquid
-  path: /categories/
+  type:
+  path:
 tag_archive:
-  type: liquid
-  path: /tags/
+  type:
+  path:
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:

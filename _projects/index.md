@@ -8,7 +8,7 @@ entry_type: index
 ---
 
 <div class="page-intro">
-  <p class="page-lead">My projects connect population-health measurement problems with methodological research, reusable software, data infrastructure, and implementation alongside international research and public-health partners.</p>
+  <p class="page-lead">Current and past projects, with my role and contribution in each. Consulting and technical assistance work is listed at the end.</p>
 </div>
 
 {% assign projects = site.projects | where_exp: "item", "item.entry_type != 'index'" | sort: "date" | reverse %}

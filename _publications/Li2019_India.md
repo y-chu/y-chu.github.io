@@ -7,6 +7,7 @@ date: 2019-06-13
 venue: 'Lancet Global Health'
 publication_type: peer_reviewed
 publication_order: 12
+featured: true
 publication_year: "2019"
 authors: "L. Liu, <strong>Yue Chu</strong>, S. Oza, D. Hogan, J. Perin, D. G. Bassani, U. Ram, et al."
 venue_details: "Lancet Global Health. 2019;7(6):e721–e734."

@@ -5,12 +5,12 @@ permalink: /projects/reference-data-archive/
 date: 2026-01-01
 status: active
 project_group: active
-role: "Core developer and platform manager"
-excerpt: "A WHO-hosted archive and analytics environment for mortality reference data, including verbal autopsy reference deaths and related datasets."
+role: "Platform manager and core developer"
+excerpt: "A WHO-hosted archive and secure analytics environment for mortality reference data, including verbal autopsy reference deaths."
 problem: "Mortality measurement research depends on reference datasets that are difficult to discover, document, curate, and reuse consistently across institutions."
-contribution: "Designed and implemented data-ingestion and dissemination infrastructure, user and administrator workflows, documentation, and technical coordination across OSU, AHRI, and WHO collaborators."
-technical_scope: "Julia, R, Python, data ingestion and curation, metadata, quality control, NADA and user-facing APIs, automated workflows, and analytics environments."
-outputs: "A public WHO-hosted archive and analytics platform with documented operational workflows for data providers, managers, administrators, and users."
+contribution: "Co-lead software development with the Africa Health Research Institute; wrote the platform documentation for users, administrators, data managers, and data providers; serve as sole data manager; coordinate technical implementation across Ohio State, AHRI, and WHO."
+technical_scope: "Julia, Python, R, SQL; data ingestion and curation, metadata, quality control, NADA and user-facing APIs, automated workflows, and analytics environments."
+outputs: "A public WHO-hosted metadata archive and secure analytics environment, launched with verbal autopsy reference deaths from São Paulo, Brazil. Listed among the platform's authors in WHO's recommended citation."
 tags:
   - "WHO"
   - "Data Infrastructure"
@@ -18,20 +18,22 @@ tags:
   - "Verbal Autopsy"
 links:
   - label: "RDA platform"
-    url: "https://data.who.int/rda"
+    url: "https://data.who.int/platforms/rda"
+  - label: "RDAIngest.jl"
+    url: "https://github.com/RDAORG/RDAIngest.jl"
+  - label: "juRDA.jl"
+    url: "https://github.com/RDAORG/juRDA.jl"
 ---
 
-The Reference Data Archive (RDA) is a publicly accessible archive and analytics infrastructure for mortality data hosted by the World Health Organization. It is designed to make mortality-related datasets easier to discover, understand, and reuse, including verbal autopsy reference deaths with trustworthy reference causes and supporting metadata.
+The Reference Data Archive (RDA) is a publicly accessible archive and analytics infrastructure for mortality data, hosted by the World Health Organization. It makes mortality reference datasets easier to discover, understand, and reuse, starting with verbal autopsy reference deaths that have trustworthy reference causes and supporting pathology information.
 
-## My roles and contributions
+[RDA platform](https://data.who.int/platforms/rda) · [RDAIngest.jl](https://github.com/RDAORG/RDAIngest.jl) · [juRDA.jl](https://github.com/RDAORG/juRDA.jl)
 
-As a core developer and platform manager, I led design and implementation work for the software infrastructure supporting end-to-end data ingestion, processing, and dissemination, including integration with the NADA API and user-facing APIs. I developed operational workflows and documentation for users, administrators, data managers, and data providers, including user guides, training materials, standard operating procedures, and protocols. I also coordinated technical implementation with data engineering and IT collaborators at OSU, AHRI, and WHO.
+## My role
 
-## What the project enables
+I am the platform manager and a core developer, co-lead software development with the Africa Health Research Institute, and serve as the sole data manager. I wrote the platform documentation, including user guides, tutorials, standard operating procedures, and protocols, and I coordinate technical implementation with data engineering and IT collaborators at Ohio State, AHRI, and WHO. I have also supervised doctoral research assistants on data-quality checks, data cleaning, and coding for the archive.
 
-- A browsable and searchable metadata archive for mortality surveillance and global health datasets, with supporting documentation and metadata
-- A trusted analytics environment that supports reproducible work with archived datasets, code, and documentation
+## What the platform provides
 
-## Why it matters
-
-Reliable mortality measurement depends not only on algorithms, but also on the infrastructure that makes high-quality data usable. The RDA strengthens the global mortality research ecosystem by improving access to curated reference datasets, centralizing methodological documentation, and lowering barriers to data access, reuse, and reproducible research.
+- A browsable, searchable metadata archive for mortality datasets, with supporting documentation
+- A secure analytics environment in which approved researchers analyze vetted data and produce new aggregate outputs

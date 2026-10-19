@@ -7,7 +7,7 @@ publication_type: thesis
 publication_order: 1
 publication_year: "2020"
 authors: "<strong>Yue Chu</strong>"
-status: "Master's thesis"
+publication_status: "Master's thesis"
 venue: "The Ohio State University"
 venue_details: "Master's thesis, The Ohio State University."
 paperurl: "https://rave.ohiolink.edu/etdc/view?acc_num=osu1609638415015896"

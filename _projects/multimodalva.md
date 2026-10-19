@@ -4,43 +4,36 @@ collection: projects
 permalink: /projects/multimodalva/
 redirect_from:
   - /projects/automating-verbal-autopsy/
-  - /projects/2025Ensem_VA.md
 date: 2025-01-01
 status: active
 project_group: active
 role: "Developer and maintainer"
-excerpt: "A Python package for cause-of-death classification from verbal autopsy data using text, tabular, and ensemble multimodal pipelines."
-problem: "Most automated verbal autopsy algorithms use structured questions while leaving narrative information unused."
-contribution: "Designed and implemented a unified Python research package for narrative, tabular, and multimodal training, prediction, optimization, and evaluation workflows."
-technical_scope: "Python, pretrained language models, tabular machine learning, multimodal ensembles, hyperparameter optimization, and model evaluation."
-outputs: "Research software supporting dissertation and working-paper analyses; repository currently private."
+excerpt: "A Python package for cause-of-death classification from verbal autopsy data using narrative, structured, and multimodal models."
+problem: "Most automated verbal autopsy algorithms use only structured questionnaire responses and leave the free-text narrative unused."
+contribution: "Designed and implemented a unified Python package for narrative-only, structured-data, and multimodal models, with shared training, prediction, optimization, evaluation, and visualization workflows."
+technical_scope: "Python, pretrained language models, machine learning, multimodal learning (data fusion, feature fusion, soft voting, stacking), hyperparameter optimization, and model evaluation."
+outputs: "Open-source research software underlying my dissertation research on verbal autopsy."
 tags:
   - "Python"
-  - "Machine Learning"
-  - "Verbal Autopsy"
+  - "Language Models"
   - "Multimodal Learning"
+  - "Verbal Autopsy"
 links:
+  - label: "GitHub"
+    url: "https://github.com/y-chu/MultimodalVA"
+  - label: "Preprint (medRxiv)"
+    url: "https://www.medrxiv.org/content/10.64898/2026.10.15.26364476v1"
   - label: "Dissertation preprint"
     url: "https://arxiv.org/abs/2508.19274"
-  - label: "Research page"
-    url: "/research/"
 ---
 
-MultimodalVA is a Python package I developed for cause-of-death classification using verbal autopsy data. The package supports text-only, tabular-only, and ensemble workflows so researchers can work with narrative responses, structured questionnaire data, or both together in a unified modeling pipeline.
+Verbal autopsy interviews record both structured symptom questions and a free-text narrative of the circumstances before a death. MultimodalVA brings the two sources together in one reproducible workflow, so researchers can train and compare narrative-only, structured-data, and multimodal cause-of-death classifiers under consistent data splits and evaluation metrics.
 
-The package was built to make verbal autopsy modeling more reproducible and more extensible. It includes end-to-end training and prediction workflows, hyperparameter optimization support, evaluation tools, and multiple ensemble strategies for combining modalities.
+[GitHub](https://github.com/y-chu/MultimodalVA) · [Preprint (medRxiv)](https://www.medrxiv.org/content/10.64898/2026.10.15.26364476v1) · [Dissertation preprint](https://arxiv.org/abs/2508.19274)
 
 ## Package scope
 
-- Text classification for verbal autopsy narratives
-- Tabular classification for structured symptom-response data
-- Ensemble and multimodal pipelines for combining text and tabular information
-- Shared utilities for splitting data, training models, scoring predictions, and visualizing results
-
-## Why it matters
-
-Verbal autopsy data often contain both structured symptom questions and free-text narratives. MultimodalVA is designed to bring those information sources together in a practical research workflow, making it easier to experiment with models that better reflect the richness of the underlying data.
-
-## Current focus
-
-The package continues to support my broader work on AI for global health and verbal autopsy analysis, including model development, benchmarking, and reusable workflows for research collaborators. The repository is currently private.
+- Text classification of verbal autopsy narratives with pretrained language models
+- Classification of structured symptom-response data with machine learning models
+- Multimodal pipelines that combine narratives and structured responses
+- Shared utilities for data splitting, training, hyperparameter optimization, scoring, and visualization

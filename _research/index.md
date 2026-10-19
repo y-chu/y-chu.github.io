@@ -3,170 +3,127 @@ layout: single
 title: "Research"
 permalink: /research/
 author_profile: true
-excerpt: "Research themes and selected publications, with links to papers."
+excerpt: "Research on population measurement under incomplete and imperfect information."
 entry_type: index
-agenda:
-  - title: "Measuring population health when data are incomplete"
-    summary: "I develop demographic and statistical approaches for estimating mortality, fertility, and disease burden from sparse, incomplete, or heterogeneous survey and surveillance data, with uncertainty made explicit."
-    methods:
-      - "Demographic estimation"
-      - "Bayesian methods"
-      - "Mortality and fertility"
-  - title: "Understanding how measurement processes shape observed health patterns"
-    summary: "I study how reporting, classification, survey design, and data quality influence the health patterns and inequalities researchers observe, including validation work that connects reported events with surveillance records."
-    methods:
-      - "Measurement error"
-      - "Survey methods"
-      - "Data quality and disparities"
-  - title: "Building next-generation measurement systems"
-    summary: "I design AI and multimodal methods, reusable research software, and data infrastructure that connect methodological advances to verbal autopsy, adaptive data collection, and operational population-health systems."
-    methods:
-      - "AI and multimodal learning"
-      - "Research software"
-      - "Data infrastructure"
-themes:
-  - title: "AI in Global Health"
-    slug: "ai-global-health"
-    summary: "I study how language models and multimodal machine learning can strengthen health measurement in low-resource settings. This work focuses on verbal autopsy analysis, where narrative text and structured symptom data can be combined to improve cause-of-death assignment and make health estimates more timely and scalable."
-    tags:
-      - "Language Models"
-      - "Machine Learning"
-      - "Verbal Autopsy"
-      - "Multimodal Data"
+established:
+  - title: "Population Inference with Incomplete and Heterogeneous Data"
+    slug: "population-inference"
+    home_summary: "Demographic, statistical, computational, and AI approaches for more reliable population estimates from incomplete, uneven, and heterogeneous evidence."
+    summary: "I develop demographic, statistical, computational, and AI approaches that turn incomplete and uneven observations into population estimates with interpretable uncertainty."
     links:
-      - label: "Related project"
+      - label: "Selected evidence"
+        url: "#inference-evidence"
+      - label: "Publications"
+        url: "/publications/"
+  - title: "Measurement Processes and Data Quality"
+    slug: "measurement-processes"
+    home_summary: "How data collection, reporting, and classification processes shape the quality, comparability, and interpretation of population evidence."
+    summary: "I treat measurement error as an outcome to be explained: how interviews, reporting, recording, and classification processes shape the evidence used for demographic and health inference."
+    links:
+      - label: "Selected evidence"
+        url: "#measurement-evidence"
+      - label: "Projects"
+        url: "/projects/"
+  - title: "Computational Research Tools and Data Infrastructure"
+    slug: "research-infrastructure"
+    home_summary: "Reusable research software and data infrastructure for reproducible analysis, collaborative research, and translation into practice."
+    summary: "I translate methods into reusable software and data systems that support reproducible analysis, multi-institutional collaboration, and implementation in global health research."
+    links:
+      - label: "Selected evidence"
+        url: "#infrastructure-evidence"
+      - label: "Software"
+        url: "/software/"
+evidence:
+  - area: "Population inference"
+    slug: "inference-evidence"
+    title: "From incomplete observations to population estimates"
+    summary: "My work spans Bayesian and demographic estimation, mortality surveillance, and AI-assisted cause-of-death inference. It includes first- and joint-first-author studies of mortality across six African countries, India, and China, alongside a dissertation on language models and multimodal learning for verbal autopsy."
+    links:
+      - label: "First-author multi-country study"
+        url: "/publication/Chu2024_ALPHA"
+      - label: "Dissertation and arXiv preprint"
+        url: "https://arxiv.org/abs/2508.19274"
+      - label: "All publications"
+        url: "/publications/"
+  - area: "Measurement processes"
+    slug: "measurement-evidence"
+    title: "Making information loss and reporting error visible"
+    summary: "Validation studies in Guinea-Bissau and Malawi show how survey interactions and classification processes can distort mortality measurement. Current work extends this logic to information sufficiency: identifying which parts of an interview preserve the evidence needed for reliable inference."
+    links:
+      - label: "Survey validation study"
+        url: "/publication/helleringer-2020-neonatal-mortality-bias/"
+      - label: "Information sufficiency"
+        url: "/publication/working-information-sufficiency/"
+  - area: "Research infrastructure"
+    slug: "infrastructure-evidence"
+    title: "Turning methods into durable research infrastructure"
+    summary: "I am platform manager and core developer of the WHO-hosted Reference Data Archive, co-leading software development with the Africa Health Research Institute, and the developer of MultimodalVA. These systems make mortality reference data and multimodal cause-of-death workflows more reusable, auditable, and accessible to research teams."
+    links:
+      - label: "WHO Reference Data Archive"
+        url: "/projects/reference-data-archive/"
+      - label: "MultimodalVA"
         url: "/projects/multimodalva/"
-    publications:
-      - title: "Leveraging Language Models and Machine Learning in Verbal Autopsy Analysis"
-        citation: "arXiv preprint, 2025."
-        blurb: "This paper examines how modern language models can learn from verbal autopsy narratives and how multimodal pipelines can combine text with structured questionnaire responses for more reliable cause-of-death classification."
-        paper_url: "https://arxiv.org/abs/2508.19274"
-        download_url: "https://arxiv.org/pdf/2508.19274.pdf"
-
-  - title: "Disease Surveillance and Global Epidemiology"
-    slug: "disease-surveillance-global-epidemiology"
-    summary: "I use surveillance, survey, and modeled mortality data to study how health risks and causes of death change across place and time. The goal is to produce population-level evidence that is locally grounded enough to guide policy, while still allowing meaningful cross-country comparison."
-    tags:
-      - "Disease Surveillance"
-      - "Mortality"
-      - "Global Epidemiology"
-      - "Population Health"
-    links:
-      - label: "Google Scholar"
-        url: "https://scholar.google.com/citations?user=35jZ0usAAAAJ&hl=en&oi=ao"
-    publications:
-      - title: "Temporal changes in cause of death among adolescents and adults in six countries in eastern and southern Africa in 1995-2019"
-        citation: "The Lancet Global Health, 2024."
-        blurb: "A multi-country surveillance study using verbal autopsy data to trace how cause-specific mortality changed across eastern and southern Africa, with a clear picture of shifting burdens by age, sex, site, and period."
-        paper_url: "https://www.thelancet.com/journals/langlo/article/PIIS2214-109X(24)00171-2/fulltext"
-        download_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11416856/pdf/main.pdf"
-      - title: "National and sub-national levels and causes of mortality among 5-19-year-olds in China in 2004-2019"
-        citation: "Journal of Global Health, 2022."
-        blurb: "This analysis maps mortality patterns among older children and adolescents in China, highlighting regional disparities, changing injury profiles, and the importance of sustainable surveillance systems."
-        paper_url: "https://pubmed.ncbi.nlm.nih.gov/36181508/"
-        download_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9526435/pdf/jogh-12-11008.pdf"
-      - title: "Estimating seroprevalence of SARS-CoV-2 in Ohio: A Bayesian multilevel poststratification approach with multiple diagnostic tests"
-        citation: "PNAS, 2021."
-        blurb: "This work develops a Bayesian multilevel poststratification framework for estimating SARS-CoV-2 seroprevalence under low positivity, imperfect diagnostics, and nonresponse, showing how rigorous statistical modeling can strengthen public health surveillance."
-        paper_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8255994/"
-        download_url: "/files/pnas.2023947118.pdf"
-      - title: "Global, regional, and national causes of under-5 mortality in 2000-15: an updated systematic analysis with implications for the Sustainable Development Goals"
-        citation: "The Lancet, 2016."
-        blurb: "An updated global cause-of-death analysis for children under five, designed to support SDG-era priority setting by showing where preventable child deaths remain concentrated."
-        paper_url: "https://pubmed.ncbi.nlm.nih.gov/27839855/"
-        download_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5161777/pdf/main.pdf"
-
-  - title: "Demographic Methodology"
-    slug: "demographic-methodology"
-    summary: "I build demographic estimation methods for settings where data are incomplete, sparse, or uneven across age groups. Much of this work uses Bayesian modeling to recover age-specific mortality and fertility schedules with transparent uncertainty, so estimates remain useful for planning and evaluation."
-    tags:
-      - "Bayesian Methods"
-      - "Demography"
-      - "Mortality Estimation"
-      - "Fertility"
-    links:
-      - label: "Google Scholar"
-        url: "https://scholar.google.com/citations?user=35jZ0usAAAAJ&hl=en&oi=ao"
-    publications:
-      - title: "A flexible Bayesian framework to estimate age- and cause-specific child mortality over time from sample registration data"
-        citation: "The Annals of Applied Statistics, 2022."
-        blurb: "This paper proposes a flexible Bayesian framework for estimating child mortality jointly across age, cause, and time, offering a principled alternative to fragmented multistage workflows."
-        paper_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10448806/"
-        download_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10448806/pdf/nihms-1862449.pdf"
-      - title: "Adapting and validating the log quadratic model to derive under-five age- and cause-specific mortality (U5ACSM): a preliminary analysis"
-        citation: "Population Health Metrics, 2022."
-        blurb: "A methodological extension of the log-quadratic model that improves estimation of under-five mortality by both age and cause, using China sample registration data as an empirical test bed."
-        paper_url: "https://pophealthmetrics.biomedcentral.com/articles/10.1186/s12963-021-00277-w"
-        download_url: "https://pophealthmetrics.biomedcentral.com/counter/pdf/10.1186/s12963-021-00277-w.pdf"
-      - title: "SVD-Bayes: A Singular Value Decomposition-based Approach Under Bayesian Framework for Indirect Estimation of Age-specific Fertility and Mortality"
-        citation: "Master's thesis, The Ohio State University, 2020."
-        blurb: "My master's thesis introduces an SVD-based Bayesian approach for recovering detailed age schedules of fertility and child mortality from summary birth history data, with uncertainty estimates included from the start."
-        paper_url: "https://rave.ohiolink.edu/etdc/view?acc_num=osu1609638415015896"
-        download_url: "https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=osu1609638415015896&disposition=inline"
-
-  - title: "Data Quality in Population Surveys"
-    slug: "data-quality-population-surveys"
-    summary: "I examine how measurement error enters demographic and health data, especially when survey instruments ask respondents to reconstruct difficult or sensitive life events. This research looks closely at reporting processes, classification error, and validation against surveillance data to improve the reliability of population estimates."
-    tags:
-      - "Survey Methods"
-      - "Data Quality"
-      - "Validation"
-      - "Measurement Error"
-    links:
-      - label: "Google Scholar"
-        url: "https://scholar.google.com/citations?user=35jZ0usAAAAJ&hl=en&oi=ao"
-    publications:
-      - title: "Provider-mother interactions are associated with birth outcome misclassifications in household surveys: A case-control study in Guinea-Bissau"
-        citation: "Journal of Global Health, 2023."
-        blurb: "This study shows how provider-mother interactions can shape whether births are later reported as stillbirths or neonatal deaths in household surveys, with implications for the validity of mortality measurement."
-        paper_url: "https://pubmed.ncbi.nlm.nih.gov/37590896/"
-        download_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10435094/pdf/jogh-13-04086.pdf"
-      - title: "Biases in survey estimates of neonatal mortality: results from a validation study in urban areas of Guinea-Bissau"
-        citation: "Demography, 2020."
-        blurb: "A validation study comparing survey reports against HDSS records to show how reporting error can systematically bias neonatal mortality estimates in low-resource settings."
-        paper_url: "https://pubmed.ncbi.nlm.nih.gov/32914335/"
-        download_url: "https://link.springer.com/content/pdf/10.1007/s13524-020-00911-6.pdf"
-
-  - title: "Health Outcomes Research"
-    slug: "health-outcome-research"
-    summary: "Alongside demographic and population-health methods, I have contributed to applied health outcomes research that synthesizes evidence for clinical decision-making. This work reflects a broader interest in connecting rigorous analysis with questions that matter directly for patient care and health systems."
-    tags:
-      - "Evidence Synthesis"
-      - "Clinical Outcomes"
-      - "Systematic Review"
-      - "Meta-analysis"
-    links:
-      - label: "PubMed profile"
-        url: "https://pubmed.ncbi.nlm.nih.gov/?term=Yue+Chu"
-    publications:
-      - title: "Diabetes medications as monotherapy or metformin-based combination therapy for type 2 diabetes: a systematic review and meta-analysis"
-        citation: "Annals of Internal Medicine, 2016."
-        blurb: "This systematic review and meta-analysis compares common medication strategies for type 2 diabetes, helping clarify the evidence base behind treatment choice and escalation."
-        paper_url: "https://pubmed.ncbi.nlm.nih.gov/27088241/"
-        download_url: "https://www.acpjournals.org/doi/pdf/10.7326/M15-2650"
+      - label: "Software"
+        url: "/software/"
+future_agenda:
+  title: "Advancing Population Measurement under Imperfect Information"
+  intro: "My next stage of work moves from diagnosing measurement problems to validating and designing better measurement, while keeping completed contributions distinct from future directions."
+  themes:
+    - title: "Understand information, error, and uncertainty"
+      summary: "Examine what population data capture and miss, how error arises in reporting and classification, and how uncertainty should carry through to estimates."
+    - title: "Validate measurement across populations and settings"
+      summary: "Test whether statistical and AI-based measurement tools perform reliably and equitably across populations, settings, and data sources."
+    - title: "Design more effective and equitable measurement strategies"
+      summary: "Use that evidence to improve data collection and analysis under limited resources and to better represent under-measured populations."
 ---
 
 <div class="page-intro">
-  <p class="page-lead">My research program addresses a common problem: how to measure population health when the available data are incomplete, heterogeneous, or shaped by imperfect observation processes.</p>
-  <p>Across demographic estimation, survey data quality, verbal autopsy, AI, and research infrastructure, I move from identifying a measurement problem to developing methods, testing them with empirical data, and translating them into reusable systems.</p>
+  <p class="page-lead">My research asks how a health event becomes a report, a record, a classification, and ultimately a population estimate—and where information is lost or distorted along that chain.</p>
+  <p>This perspective connects demographic estimation, survey validation, cause-of-death inference, and research infrastructure within one program of population measurement under incomplete and imperfect information.</p>
 </div>
 
-## Research Agenda
+## Established Research
 
-{% for item in page.agenda %}
-### {{ forloop.index }}. {{ item.title }}
+<ol class="priorities">
+  {% for item in page.established %}
+    <li id="{{ item.slug }}">
+      <span class="priority__title">{{ item.title }}</span>
+      <span class="priority__desc">{{ item.summary }}</span>
+      <span class="research-area__work">{% for link in item.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</span>
+    </li>
+  {% endfor %}
+</ol>
 
-{{ item.summary }}
+## Selected Evidence
 
-**Methods and applications:** {{ item.methods | join: " · " }}
-{% endfor %}
-
-## Research Themes
-
-These questions connect my work across verbal autopsy, surveillance, demographic methods, data quality, and health outcomes research.
-
-<div class="stacked-sections">
-  {% for theme in page.themes %}
-    {% include research-card.html theme=theme %}
+<div class="info-rows">
+  {% for item in page.evidence %}
+    <article class="info-row" id="{{ item.slug }}">
+      <div class="info-row__side"><p class="info-row__meta">{{ item.area }}</p></div>
+      <div class="info-row__body">
+        <h3 class="info-row__title">{{ item.title }}</h3>
+        <p>{{ item.summary }}</p>
+        <div class="link-row">{% for link in item.links %}<a class="link-chip" href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</div>
+      </div>
+    </article>
   {% endfor %}
 </div>
+
+## Future Research Agenda
+
+### {{ page.future_agenda.title }}
+
+{{ page.future_agenda.intro }}
+
+<ol class="agenda-list">
+  {% for theme in page.future_agenda.themes %}
+    <li>
+      <span class="priority__title">{{ theme.title }}</span>
+      <span class="priority__desc">{{ theme.summary }}</span>
+    </li>
+  {% endfor %}
+</ol>
+
+## Additional Collaborative Research
+
+I have also contributed to clinical evidence synthesis, including systematic reviews and meta-analyses of treatments for diabetes and osteoporosis in chronic kidney disease. These collaborations broaden the settings in which I apply rigorous evidence assessment without constituting a fourth core research area.

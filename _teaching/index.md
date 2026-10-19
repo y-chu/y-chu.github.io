@@ -3,17 +3,26 @@ layout: single
 title: "Teaching & Mentoring"
 permalink: /teaching/
 author_profile: true
-excerpt: "Quantitative and computational teaching, research mentoring, and technical workshops."
+excerpt: "Quantitative and population-health teaching, research supervision, and technical workshops."
 entry_type: index
+approach:
+  - title: "Make reasoning visible"
+    summary: "I ask students to articulate the substantive question, measure, estimand, assumptions, and limits behind an analysis—not only reproduce a procedure."
+  - title: "Scaffold reproducible independence"
+    summary: "Worked examples, annotated code, and structured checkpoints gradually give way to independent choices and reproducible analysis."
+  - title: "Mentor toward ownership"
+    summary: "In research supervision, I move from technical guidance to student-led decisions, interpretation, documentation, and communication."
 teaching_experience:
   - term: "Spring 2026"
     course: "SOCIOL 8607: Causal Modeling"
     institution: "The Ohio State University"
     role: "Teaching Assistant"
-  - term: "Autumn 2021"
+    note: "Facilitated class discussion and provided coding and programming support."
+  - term: "Autumn 2020"
     course: "SOCIOL 3549: Statistics in Sociology"
     institution: "The Ohio State University"
     role: "Recitation Leader"
+    note: "Led synchronous recitation and lab sections with Stata examples; many students were taking their first statistics course."
   - term: "Autumn 2016–Autumn 2017"
     course: "380.651: Methods and Measures in Population Studies"
     institution: "Johns Hopkins Bloomberg School of Public Health"
@@ -25,41 +34,51 @@ teaching_experience:
 mentoring:
   - term: "Autumn 2025"
     title: "Doctoral research supervision · Reference Data Archive"
-    context: "Provided day-to-day technical supervision to a PhD research assistant at The Ohio State University on data-quality assessment, data cleaning, and coding"
+    context: "Supervised a PhD research assistant at The Ohio State University on data-quality checks, data cleaning, and coding."
   - term: "Spring 2024"
     title: "Undergraduate research mentoring"
-    context: "Mentored an undergraduate research assistant at The Ohio State University"
+    context: "Mentored an undergraduate research assistant at The Ohio State University."
   - term: "Summer 2023"
     title: "Doctoral research supervision · Reference Data Archive"
-    context: "Provided day-to-day technical supervision to a PhD research assistant during a visiting appointment at the Africa Health Research Institute on data-quality assessment, data cleaning, and coding"
+    context: "Supervised a PhD research assistant on data-quality checks, data cleaning, and coding during a visiting appointment at the Africa Health Research Institute."
   - term: "2015–2018"
     title: "Graduate research supervision"
-    context: "Provided day-to-day research supervision and technical mentoring to 10+ graduate research assistants at Johns Hopkins Bloomberg School of Public Health across literature reviews, data extraction, data analysis, modeling support, and data visualization"
+    context: "Supervised 10+ graduate research assistants at Johns Hopkins Bloomberg School of Public Health working on literature review, data extraction, data analysis, modeling support, and visualization."
   - term: "Summers 2017 & 2018"
     title: "Summer research mentoring"
-    context: "Mentored two undergraduate students through the Johns Hopkins Bloomberg School of Public Health Diversity Summer Internship Program"
+    context: "Mentored two undergraduate students through the Johns Hopkins Bloomberg School of Public Health Diversity Summer Internship Program."
 workshops:
   - date: "2022"
     title: "R workshops"
-    context: "Hosted by the Sociology Graduate Student Association"
+    context: "Hosted by the Sociology Graduate Student Association, The Ohio State University"
   - date: "2018–2020"
     title: "Verbal autopsy data analysis workshops"
-courses:
-  - "Demography / Population Studies"
-  - "Population Health"
-  - "Quantitative Methods"
-  - "Statistics / Applied Statistical Methods"
-  - "Computational Social Science"
-  - "Data Science for Population Research"
-  - "AI / Machine Learning Applications in Population Health"
+    context: "Hosted by the openVA team, The Ohio State University"
+teaching_areas:
+  - "Quantitative Methods and Applied Statistics"
+  - "Survey Methodology, Measurement, and Data Quality"
+  - "Demography and Population Health"
+  - "Computational Social Science and Data Science"
+  - "Global Health Data and Mortality Measurement"
 ---
 
 ## Teaching Approach
 
 <div class="page-intro">
-  <p class="page-lead">My teaching connects quantitative concepts to applied research questions, with an emphasis on demographic reasoning, statistical interpretation, and reproducible computational work.</p>
-  <p>Formal teaching and recitation roles span causal modeling, statistics, population studies, and demographic methods. I also provide research supervision and technical mentoring to undergraduate and graduate researchers and have completed pedagogical training through Ohio State's Drake Institute for Teaching and Learning.</p>
+  <p class="page-lead">My teaching goal is for students to move from a substantive population or public-health question to a defensible measure, estimand, dataset, method, interpretation, and statement of limits.</p>
+  <p>Students should be able to explain what evidence supports a conclusion, where uncertainty enters, and what additional evidence could change the answer. I use quantitative work as a setting for making that reasoning visible and reproducible.</p>
 </div>
+
+<ol class="priorities">
+  {% for principle in page.approach %}
+    <li>
+      <span class="priority__title">{{ principle.title }}</span>
+      <span class="priority__desc">{{ principle.summary }}</span>
+    </li>
+  {% endfor %}
+</ol>
+
+<p>I bring this approach to causal modeling, statistics, demographic methods, population studies, research supervision, and technical workshops. I completed pedagogical training through Ohio State's Drake Institute for Teaching and Learning in 2021.</p>
 
 ## Teaching Experience
 
@@ -70,6 +89,7 @@ courses:
       <div>
         <h3>{{ item.course }}</h3>
         <p><strong>{{ item.role }}</strong> · {{ item.institution }}</p>
+        {% if item.note %}<p>{{ item.note }}</p>{% endif %}
       </div>
     </article>
   {% endfor %}
@@ -89,8 +109,6 @@ courses:
   {% endfor %}
 </div>
 
-<p>Across these roles, I have supported students in developing applied quantitative, data-analysis, and population-health research skills.</p>
-
 ## Workshops & Training
 
 <div class="experience-list">
@@ -105,10 +123,8 @@ courses:
   {% endfor %}
 </div>
 
-## Courses I Can Teach
-
-Based on my training, research, and instructional record:
+## Teaching Areas
 
 <ul class="course-list">
-  {% for course in page.courses %}<li>{{ course }}</li>{% endfor %}
+  {% for area in page.teaching_areas %}<li>{{ area }}</li>{% endfor %}
 </ul>

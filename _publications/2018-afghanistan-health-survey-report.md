@@ -6,9 +6,9 @@ date: 2018-01-01
 publication_type: report
 publication_order: 1
 publication_year: "2018"
-authors: "Ministry of Public Health (Afghanistan); Royal Tropical Institute."
-status: "Technical report"
-venue_details: "Afghanistan Health Survey 2018."
+authors: "Ministry of Public Health (Afghanistan); KIT Royal Tropical Institute."
+publication_status: "Technical report"
+venue_details: "Amsterdam: KIT Royal Tropical Institute; 2018. Role: consultant demographer; conducted the mortality and cause-of-death analysis and drafted the corresponding report sections."
 paperurl: "https://www.kit.nl/wp-content/uploads/2026/03/AHS-2018-report-final_30.11.2018_erratum12.02.2026.pdf"
 paper_page_url: "https://www.kit.nl/wp-content/uploads/2026/03/AHS-2018-report-final_30.11.2018_erratum12.02.2026.pdf"
 paper_label: "Report"

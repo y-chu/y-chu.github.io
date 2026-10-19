@@ -13,6 +13,7 @@ doi: "10.1007/s13524-020-00911-6"
 doi_url: "https://doi.org/10.1007/s13524-020-00911-6"
 paperurl: "https://doi.org/10.1007/s13524-020-00911-6"
 paper_page_url: "https://doi.org/10.1007/s13524-020-00911-6"
+featured: true
 detail_page: false
 sitemap: false
 ---

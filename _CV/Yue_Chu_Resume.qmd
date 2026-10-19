@@ -1,0 +1,157 @@
+---
+title: ""
+author: ""
+format:
+  pdf:
+    pdf-engine: xelatex
+    documentclass: article
+    papersize: letter
+    fontsize: 10pt
+    geometry:
+      - left=0.7in
+      - right=0.7in
+      - top=0.6in
+      - bottom=0.6in
+    toc: false
+    colorlinks: true
+header-includes:
+  - |
+    \usepackage{fontspec}
+    \usepackage[dvipsnames]{xcolor}
+    \usepackage{titlesec}
+    \usepackage{enumitem}
+    \usepackage{fancyhdr}
+    \usepackage{hyperref}
+    \usepackage{setspace}
+    \usepackage{needspace}
+    \usepackage{etoolbox}
+    \setmainfont{Helvetica}
+    \setsansfont{Helvetica}
+    \definecolor{ink}{HTML}{1F242B}
+    \definecolor{muted}{HTML}{5E6870}
+    \definecolor{accent}{HTML}{345D7A}
+    \hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
+    \urlstyle{same}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyfoot[C]{\small\color{muted} Yue Chu -- Research Résumé -- \thepage}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+    \setstretch{1.0}
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{0.16em}
+    \setlength{\emergencystretch}{2em}
+    \raggedbottom
+    \widowpenalty=10000
+    \clubpenalty=10000
+    \color{ink}
+    \setlist[itemize]{leftmargin=1.1em,itemsep=0.06em,topsep=0.1em,parsep=0em,partopsep=0em}
+    \titleformat{\section}{\normalsize\bfseries\color{ink}}{}{0em}{\MakeUppercase}[{\vspace{0.06em}\color{muted}\titlerule[0.5pt]}]
+    \titlespacing*{\section}{0pt}{0.7em}{0.3em}
+    \pretocmd{\section}{\needspace{4\baselineskip}}{}{}
+    \newcommand{\role}[2]{\par\needspace{3\baselineskip}\textbf{#1}\hfill{\small\color{muted}#2}\par}
+    \newcommand{\org}[1]{{\small\color{muted}#1}\par\vspace{0.05em}}
+execute:
+  enabled: false
+---
+
+```{=latex}
+{\centering
+{\fontsize{22}{24}\selectfont\bfseries Yue Chu}\enspace{\large PhD, MSPH, MBBS}\par
+\vspace{0.15em}
+{\normalsize\color{accent} Population Health Scientist \& Demographer}\par
+\vspace{0.2em}
+{\small Columbus, Ohio \enspace|\enspace \href{mailto:chu.282@osu.edu}{chu.282@osu.edu} \enspace|\enspace \href{https://y-chu.github.io}{y-chu.github.io} \enspace|\enspace \href{https://www.linkedin.com/in/sophiaychu/}{LinkedIn} \enspace|\enspace \href{https://github.com/y-chu}{GitHub} \enspace|\enspace \href{https://scholar.google.com/citations?user=35jZ0usAAAAJ&hl=en&oi=ao}{Google Scholar}}\par
+}
+```
+
+# Summary
+
+Population health scientist and demographer with more than a decade of research on population measurement under incomplete and imperfect information. I develop demographic, statistical, computational, and AI methods for mortality and cause-of-death estimation, study measurement error and data quality in surveys and surveillance, and build research software and data infrastructure with WHO and international partners. Author or coauthor of 23 peer-reviewed publications, including first-author and joint-first-author work in *Lancet Global Health*.
+
+# Expertise
+
+**Methods:** Bayesian and demographic estimation; mortality and cause-of-death modeling; survey methods, measurement error, and validation; machine learning, pretrained language models, LLMs, and multimodal learning; evidence synthesis
+
+**Computing:** R, Python, Julia, SQL, Stata; Hugging Face, Optuna; Azure, Snowflake, AWS
+
+**Domains:** mortality surveillance and verbal autopsy; maternal, newborn, and child health; global health estimation; population health
+
+# Experience
+
+```{=latex}
+\role{Postdoctoral Fellow}{May 2025 -- present}
+\org{Institute for Population Research (from Feb 2026) and Health and Environment Modeling Laboratory, The Ohio State University}
+```
+
+- Core team member of CODA, a Gates Foundation-initiated international consortium developing AI-enabled cause-of-death determination: test multimodal fusion performance, contribute to model choice, development, and interpretation, and coauthor consortium papers.
+- Research on language models, multimodal learning, and information sufficiency in verbal autopsy; first and corresponding author of a national multimodal cause-of-death benchmark released on *medRxiv*, and coauthor of a separate child-mortality benchmark presented as a NeurIPS 2026 poster by its first author.
+- Teaching Assistant, SOCIOL 8607 Causal Modeling (Spring 2026): facilitated discussion and provided coding support.
+
+```{=latex}
+\role{Platform Manager and Core Developer, Reference Data Archive}{2022 -- present}
+\org{WHO-hosted platform; Key Personnel on the Gates Foundation-funded archive award at Ohio State (2022--2026)}
+```
+
+- Co-lead software development for the WHO-hosted Reference Data Archive with the Africa Health Research Institute as platform manager and core developer; serve as sole data manager (Julia, Python, R, SQL).
+- Built data ingestion, curation, metadata, quality-control, and dissemination workflows, including NADA and user-facing APIs; manage platform users and data.
+- Wrote the platform documentation (user guides, tutorials, standard operating procedures, protocols) and coordinate technical implementation across Ohio State, the Africa Health Research Institute, and WHO.
+- Supervised two doctoral research assistants on data-quality checks, data cleaning, and coding.
+
+```{=latex}
+\role{Graduate Research Associate}{Jan 2019 -- May 2025}
+\org{The Ohio State University; appointments supporting verbal autopsy methods, the Reference Data Archive, and customer-insights research}
+```
+
+- Dissertation: showed that fine-tuned pretrained language models using verbal autopsy narratives outperform leading questionnaire-only algorithms, and that multimodal models improve further; developed MultimodalVA, an open-source Python package for these workflows (\href{https://github.com/y-chu/MultimodalVA}{GitHub}).
+- Led the cross-site analysis of harmonized verbal autopsy data from nine surveillance sites in six countries in eastern and southern Africa (first author, *Lancet Global Health*, 2024).
+- Contributed statistical modeling to statewide COVID-19 prevalence estimation for Ohio using Bayesian multilevel poststratification with imperfect diagnostic tests (*PNAS*, 2021; *Annals of Epidemiology*, 2022).
+- Contributed to NICHD-funded verbal autopsy methods research (R01HD086227), openVA algorithm validation, and the Bloomberg Data for Health Probbase update.
+
+```{=latex}
+\role{Data Science Intern / Graduate Research Associate}{May 2022 -- May 2023}
+\org{Nationwide Mutual via InnoSource (May--Aug 2022); Nationwide Center for Advanced Customer Insights, Ohio State (Aug 2022--May 2023)}
+\role{Research Associate}{Jan 2015 -- Jul 2018}
+\org{Department of International Health, Johns Hopkins Bloomberg School of Public Health (research assistant roles, 2013--2015)}
+```
+
+- Research Associate on the Maternal and Child Epidemiology Estimation and IMPROVE projects and on NICHD-funded studies of survey data quality (R21HD087811) and age patterns of under-five mortality (R01HD090082).
+- Conducted systematic reviews, statistical modeling, and data analysis for global, national, and subnational estimates of child mortality and its causes (e.g., *Lancet*, 2016; *Lancet Global Health*, 2017), including a joint-first-author state-level analysis for India (*Lancet Global Health*, 2019).
+- Coauthored a validation study of survey-reported neonatal mortality against surveillance records (*Demography*, 2020).
+- Provided day-to-day supervision to 10+ graduate research assistants.
+
+```{=latex}
+\role{Selected Consulting, Technical Advisory, and Country Work}{2018 -- 2023}
+```
+
+- **Ministry of Health, Guinea-Bissau (2022--23):** set up ODK-based survey data collection and a centralized data system for verbal autopsy interviews.
+- **World Health Organization (2021):** technical input to the revision of the 2022 WHO standardized verbal autopsy instrument.
+- **KIT Royal Tropical Institute (2018):** consultant demographer for the Afghanistan Health Survey 2018; conducted the mortality and cause-of-death analysis and drafted the corresponding report sections.
+- **World Health Organization (2018):** designed an evaluation plan for reviewing the quality of cause-of-death estimates in the Global Health Observatory.
+
+# Education
+
+```{=latex}
+\role{PhD in Sociology, minor in Statistics and Demography}{2025}
+\org{The Ohio State University (MA in Sociology, 2020)}
+\role{MSPH, Population, Family and Reproductive Health}{2014}
+\org{Johns Hopkins Bloomberg School of Public Health}
+\role{Bachelor of Medicine, Preventive Medicine}{2012}
+\org{Fudan University, Shanghai, China}
+```
+
+# Selected Publications
+
+- **Chu Y**, Marston M, Dube A, et al. Temporal changes in cause of death among adolescents and adults in six countries in eastern and southern Africa in 1995--2019: a multi-country surveillance study of verbal autopsy data. *Lancet Global Health*. 2024;12(8):e1278--e1287.
+- Schumacher AE, McCormick TH, Wakefield J, **Chu Y**, et al. A flexible Bayesian framework to estimate age- and cause-specific child mortality over time from sample registration data. *Annals of Applied Statistics*. 2022;16(1):124--143.
+- Kline D, Li Z, **Chu Y**, et al. Estimating seroprevalence of SARS-CoV-2 in Ohio: a Bayesian multilevel poststratification approach with multiple diagnostic tests. *PNAS*. 2021;118(26):e2023947118.
+- Helleringer S, Liu L, **Chu Y**, Rodrigues A, Fisker AB. Biases in survey estimates of neonatal mortality: results from a validation study in urban areas of Guinea-Bissau. *Demography*. 2020;57(5):1705--1726.
+- **Chu Y**, Wu Z, McCormick TH, Li ZR, Clark SJ. Multimodal artificial intelligence for cause-of-death assignment from verbal autopsy records: a national benchmark study in South Africa. *medRxiv*. 2026. doi:10.64898/2026.10.15.26364476.
+
+Full record: 23 peer-reviewed publications, plus preprints and reports, in the \href{https://y-chu.github.io/files/Yue_Chu_CV.pdf}{academic CV}.
+
+# Teaching and Service
+
+**Teaching:** teaching assistant or recitation leader for four graduate and undergraduate courses in causal modeling, statistics, population studies, and demographic methods (Ohio State, Johns Hopkins).
+
+**Service:** session chair and discussant, Population Association of America (2021, 2025); peer reviewer for *PNAS*, *Nature*, *Demographic Research*, *Population Health Metrics*, *PLOS ONE*, and other journals.

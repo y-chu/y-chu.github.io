@@ -8,7 +8,7 @@ publication_order: 16
 publication_year: "2018"
 authors: "Countdown to 2030 Collaboration."
 venue: "Lancet"
-venue_details: "Lancet. 2018;391(10129):1538–1548."
+venue_details: "Lancet. 2018;391(10129):1538–1548. Group authorship; contributed as a Research Associate at Johns Hopkins Bloomberg School of Public Health."
 doi: "10.1016/S0140-6736(18)30104-1"
 doi_url: "https://doi.org/10.1016/S0140-6736(18)30104-1"
 paperurl: "https://doi.org/10.1016/S0140-6736(18)30104-1"

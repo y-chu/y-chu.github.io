@@ -5,7 +5,8 @@
       <h2 class="publication-card__title">
         {% if publication.detail_page %}<a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}
       </h2>
-      <p class="publication-card__meta">{% if publication.status %}{{ publication.status }}{% else %}{{ publication.venue }}{% endif %}</p>
+      {% assign display_status = publication.publication_status | default: publication.status | default: publication.venue %}
+      {% if display_status %}<p class="publication-card__meta">{{ display_status }}</p>{% endif %}
     </div>
     {% assign display_year = publication.publication_year %}
     {% if display_year == nil and publication.date %}
@@ -20,11 +21,15 @@
     <p class="publication-card__citation">
       {% if publication.authors %}{{ publication.authors }}{% endif %}
       {% if publication.venue_details %} {{ publication.venue_details }}{% endif %}
+      {% if publication.tags contains "First author" %} <strong>First author.</strong>{% endif %}
       {% if publication.tags contains "Joint first author" %} <strong>Joint first author.</strong>{% endif %}
+      {% if publication.tags contains "Corresponding author" %} <strong>Corresponding author.</strong>{% endif %}
     </p>
   {% elsif publication.citation %}
     <p class="publication-card__citation">{{ publication.citation }}</p>
   {% endif %}
+
+  {% if publication.author_note %}<p class="publication-card__meta">{{ publication.author_note }}</p>{% endif %}
 
   {% include publication-links.html publication=publication %}
 </article>

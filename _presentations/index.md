@@ -9,6 +9,13 @@ redirect_from:
   - /talks/
   - /talks.html
 talks:
+  - title: "A Multimodal Benchmark for Evaluating Cause-of-Death Inference Using Child Health and Mortality Data"
+    authors: "Yang, J., Pan, S., Lim, H. S., Chu, Y., et al."
+    venues:
+      - event: "NeurIPS 2026 ED Track"
+        date: "2026"
+        type: "Poster · presented by first author"
+
   - title: "Leveraging language models and machine learning techniques for verbal autopsy analysis"
     venues:
       - event: "Computational Demography Working Group Seminar, University of Washington"
@@ -58,7 +65,7 @@ talks:
   - title: "Indirect estimation of age-specific fertility and mortality: SVD-Bayes model"
     venues:
       - event: "Annual Meeting of the Population Association of America"
-        location: "St. Louis, MO"
+        location: "Virtual"
         date: "May 2021"
       - event: "Hayes Graduate Research Forum"
         location: "Columbus, OH"
@@ -66,13 +73,13 @@ talks:
         type: "Poster"
       - event: "TDAI Fall Forum, The Ohio State University"
         location: "Columbus, OH"
-        date: "2021"
+        date: "Oct 2021"
 
   - title: "Changes in age at last birth over the course of contemporary fertility declines"
     authors: "Hayford, S., Casterline, J., Chu, Y."
     venues:
       - event: "Annual Meeting of the Population Association of America"
-        location: "St. Louis, MO"
+        location: "Virtual"
         date: "May 2021"
 
   - title: "Understanding reporting errors of population survey-based neonatal mortality: A validation study from Guinea-Bissau"
