@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Yue Chu"
 title_separator          : "-"
 name                     : &name "Yue"
-description              : &description "Population health scientist and demographer developing statistical, computational, and AI methods for measurement under imperfect data."
+description              : &description "Interdisciplinary population health scientist and demographer working across epidemiology, data science, measurement, health information systems, and demographic inference."
 url                      : https://y-chu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               :
@@ -23,7 +23,7 @@ author:
   # Biographic information
   name             : "Yue Chu"
   avatar           : "headshot_YC.jpg"
-  bio              : "Population health scientist & demographer"
+  bio              : "Population Health Scientist · Demographer · Epidemiologist · Data Scientist"
   location         : "Columbus, OH"
   employer         : "Institute for Population Research, The Ohio State University"
   email            : "chu.282@osu.edu"
@@ -152,7 +152,6 @@ exclude:
   - package.json
   - scripts
   - footprint/footprint.py
-  - files/ReadMe.md
   - images/3953273590_704e3899d5_m.jpg
   - images/500x300.png
   - images/bio-photo-2.jpg

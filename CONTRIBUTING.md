@@ -1,8 +1,14 @@
-Contributions are welcome! 
+# Maintenance
 
-Please add issues and make pull requests. There are no stupid questions. All ideas are welcome. This is a volunteer project. Be excellent to each other.
+This is a personal academic website rather than the upstream Academic Pages
+template. Site-specific editorial and implementation guidance is maintained in
+[`CLAUDE.md`](CLAUDE.md).
 
-Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+Before proposing a change:
 
-Fork from master and go from there. Remember that this repository is intended to remain a generic, ready-to-fork template that demonstrates the features of academicpages.
-
+1. preserve verified authorship, publication status, presenter attribution, and
+   project-role wording;
+2. keep the three research themes and page responsibilities consistent;
+3. preserve GitHub Pages compatibility and existing public URLs where possible;
+4. build the site, run the internal-link checker, and inspect the relevant pages
+   at desktop and mobile widths.

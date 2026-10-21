@@ -1,35 +1,53 @@
 {% assign publication = include.publication %}
-<article class="publication-card publication-card--list" itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="publication-card__header">
-    <div>
-      <h2 class="publication-card__title">
-        {% if publication.detail_page %}<a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}
-      </h2>
-      {% assign display_status = publication.publication_status | default: publication.status | default: publication.venue %}
-      {% if display_status %}<p class="publication-card__meta">{{ display_status }}</p>{% endif %}
-    </div>
-    {% assign display_year = publication.publication_year %}
-    {% if display_year == nil and publication.date %}
-      {% assign display_year = publication.date | date: "%Y" %}
-    {% endif %}
-    {% if display_year %}
-      <p class="publication-card__year">{{ display_year }}</p>
+{% assign title_url = publication.doi_url %}
+{% if title_url == nil and publication.doi %}
+  {% capture title_url %}https://doi.org/{{ publication.doi }}{% endcapture %}
+{% endif %}
+{% if title_url == nil %}{% assign title_url = publication.paper_page_url | default: publication.paperurl | default: publication.paper_url %}{% endif %}
+{% if publication.publication_year %}
+  {% assign display_year = publication.publication_year %}
+{% else %}
+  {% assign display_year = publication.date | date: "%Y" %}
+{% endif %}
+{% assign display_status = publication.publication_status | default: publication.status %}
+
+<article class="paper-tile" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="paper-tile__body">
+    <h3 class="paper-tile__title" itemprop="name">
+      {% if title_url %}<a href="{{ title_url }}">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}
+    </h3>
+
+    {% if publication.authors %}<p class="paper-tile__authors">{{ publication.authors }}</p>{% endif %}
+
+    <p class="paper-tile__citation">
+      {% if publication.venue_details %}{{ publication.venue_details }}{% elsif publication.venue %}{{ publication.venue }}. {{ display_year }}.{% elsif display_status %}{{ display_status }}{% endif %}
+    </p>
+
+    {% capture publication_meta %}
+      {% if display_status and publication.venue_details %}{{ display_status }}{% endif %}
+      {% if publication.author_note %}{% if display_status and publication.venue_details %} · {% endif %}{{ publication.author_note }}{% endif %}
+      {% if publication.tags contains "First author" %}{% if display_status and publication.venue_details or publication.author_note %} · {% endif %}<strong>First author</strong>{% endif %}
+      {% if publication.tags contains "Joint first author" %}{% if display_status and publication.venue_details or publication.author_note %} · {% endif %}<strong>Joint first author</strong>{% endif %}
+      {% if publication.tags contains "Corresponding author" %} · <strong>Corresponding author</strong>{% endif %}
+    {% endcapture %}
+    {% assign publication_meta_text = publication_meta | strip_html | strip %}
+    {% unless publication_meta_text == "" %}<p class="paper-tile__meta">{{ publication_meta | strip }}</p>{% endunless %}
+
+    {% if publication.code_url %}
+      <p class="paper-tile__links">
+        <a href="{{ publication.code_url }}">{{ publication.code_label | default: "Code" }}</a>
+      </p>
     {% endif %}
   </div>
 
-  {% if publication.authors or publication.venue_details %}
-    <p class="publication-card__citation">
-      {% if publication.authors %}{{ publication.authors }}{% endif %}
-      {% if publication.venue_details %} {{ publication.venue_details }}{% endif %}
-      {% if publication.tags contains "First author" %} <strong>First author.</strong>{% endif %}
-      {% if publication.tags contains "Joint first author" %} <strong>Joint first author.</strong>{% endif %}
-      {% if publication.tags contains "Corresponding author" %} <strong>Corresponding author.</strong>{% endif %}
-    </p>
-  {% elsif publication.citation %}
-    <p class="publication-card__citation">{{ publication.citation }}</p>
-  {% endif %}
-
-  {% if publication.author_note %}<p class="publication-card__meta">{{ publication.author_note }}</p>{% endif %}
-
-  {% include publication-links.html publication=publication %}
+  {% if title_url %}<a class="paper-tile__visual" href="{{ title_url }}" aria-label="Open {{ publication.title }}">{% else %}<div class="paper-tile__visual">{% endif %}
+    {% if publication.thumbnail %}
+      <img src="{{ publication.thumbnail }}" alt="{{ publication.thumbnail_alt | default: publication.title }}">
+    {% else %}
+      <span class="paper-tile__fallback">
+        <strong>{{ display_year }}</strong>
+        <small>{{ publication.venue | default: publication.publication_type | replace: "_", " " }}</small>
+      </span>
+    {% endif %}
+  {% if title_url %}</a>{% else %}</div>{% endif %}
 </article>

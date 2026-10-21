@@ -7,60 +7,67 @@ excerpt: "Research software, data infrastructure, and computing tools."
 entry_type: index
 packages:
   - title: "Reference Data Archive platform"
-    language: "Julia · Python · R · SQL"
-    status: "Operational · public WHO-hosted platform"
-    problem: "Reference mortality datasets need consistent ingestion, metadata, quality control, access, and analytics workflows across institutions."
-    role: "Platform manager and core developer; co-lead of software development with the Africa Health Research Institute; sole data manager; author of the platform documentation."
-    technical_scope: "Data ingestion and curation, metadata, automated quality-control workflows, NADA and user-facing APIs, a secure analytics environment, and user and data management."
-    links:
-      - label: "RDA platform"
+    tags:
+      - "Julia"
+      - "Python"
+      - "R"
+      - "SQL"
+      - "APIs"
+      - "Data engineering"
+    problem: "Mortality reference datasets are difficult to discover, document, integrate, quality-check, and reuse consistently across institutions."
+    deployment: "Operational public archive and secure analytics environment hosted by WHO."
+    capabilities:
+      - "Ingest and integrate mortality reference data from research sites and partner organizations."
+      - "Harmonize variables and metadata, validate incoming data, and automate quality-control workflows."
+      - "Publish DDI metadata to a NADA catalogue and provide programmatic access through user-facing APIs."
+      - "Manage secure data access, users, and analysis workflows across collaborating institutions."
+    outputs:
+      - label: "WHO platform"
         url: "https://data.who.int/platforms/rda"
-      - label: "RDAIngest.jl"
-        url: "https://github.com/RDAORG/RDAIngest.jl"
-      - label: "juRDA.jl"
-        url: "https://github.com/RDAORG/juRDA.jl"
-      - label: "Project page"
+      - label: "RDA GitHub organization"
+        url: "https://github.com/RDAORG"
+      - label: "Project overview"
         url: "/projects/reference-data-archive/"
 
   - title: "MultimodalVA"
-    language: "Python · pretrained language models · machine learning · multimodal learning"
-    status: "Research software · open source"
-    problem: "Automated verbal autopsy methods commonly use structured responses without the information in free-text narratives."
-    role: "Developer and maintainer; designed and implemented the package."
-    technical_scope: "Narrative, structured-data, and multimodal classifiers; training and prediction pipelines; hyperparameter optimization; evaluation and visualization."
-    links:
+    tags:
+      - "Python"
+      - "NLP"
+      - "Machine learning"
+      - "Multimodal learning"
+      - "LLMs"
+    problem: "Automated verbal-autopsy methods commonly discard free-text narratives or evaluate narrative and structured symptom data in separate workflows."
+    deployment: "Open-source, MIT-licensed Python package archived at Zenodo."
+    capabilities:
+      - "Prepare narrative and structured verbal-autopsy records for reproducible cause-of-death modeling."
+      - "Train and compare narrative-only, indicator-only, and multimodal classifiers under consistent data splits and metrics."
+      - "Run data-fusion, feature-fusion, soft-voting, and stacking models with hyperparameter optimization."
+      - "Evaluate and visualize model performance, including prompt-based workflows for open-weight chat models."
+    outputs:
       - label: "GitHub"
         url: "https://github.com/y-chu/MultimodalVA"
-      - label: "Preprint (medRxiv)"
+      - label: "Zenodo release"
+        url: "https://doi.org/10.5281/zenodo.23036919"
+      - label: "medRxiv study preprint"
         url: "https://www.medrxiv.org/content/10.64898/2026.10.15.26364476v1"
-      - label: "Project page"
-        url: "/projects/multimodalva/"
       - label: "Dissertation preprint"
         url: "https://arxiv.org/abs/2508.19274"
-
-  - title: "ALPHA Network verbal-autopsy dataset (AHRI/uMkhanyakude)"
-    language: "Demography · epidemiology · verbal autopsy · HDSS"
-    status: "Data product · licensed access"
-    problem: "Comparative mortality research across ALPHA Network sites required harmonized demographic-surveillance and verbal-autopsy data."
-    role: "one of four named primary investigators in the catalogue record"
-    technical_scope: "Curated and anonymised verbal-autopsy, residency, HIV-surveillance, hospital-death, and physician-coded cause-of-death data from South Africa, 2000–2020."
-    links:
-      - label: "AHRI catalogue record"
-        url: "https://data.ahri.org/index.php/catalog/1030"
+      - label: "Software overview"
+        url: "/software/multimodalva/"
 tools:
-  - label: "Core research computing"
-    items: "R · Python · Julia · SQL · Stata"
-  - label: "Additional experience"
-    items: "SPSS · JMP · Bayesian modeling with JAGS and NIMBLE"
-  - label: "Machine learning and data platforms"
-    items: "Hugging Face · Optuna · prompt engineering · Azure · Kubeflow · Snowflake · AWS"
+  - label: "Programming & statistical computing"
+    items: "R · Python · Julia · SQL · Stata · JAGS · NIMBLE"
+  - label: "Machine learning & language models"
+    items: "Hugging Face · Optuna · pretrained language models · multimodal learning · prompt-based inference · Ollama"
+  - label: "Data systems & delivery"
+    items: "Data integration and harmonization · metadata and DDI · REST APIs · ODK · NADA · Azure · Kubeflow · Snowflake · AWS"
 ---
 
 <div class="page-intro">
-  <p class="page-lead">Research software and data infrastructure I have built for reproducible analysis and shared use.</p>
+  <p class="page-lead">I build software and data infrastructure when a methodological contribution must remain reproducible, inspectable, and usable beyond a single study. The systems below support two parts of my research program: validating cause-of-death methods and making mortality reference data easier to discover, evaluate, and reuse.</p>
 </div>
 
-<div class="feature-grid">
+<div class="software-list">
   {% for package in page.packages %}
     {% include software-card.html package=package %}
   {% endfor %}
@@ -68,6 +75,6 @@ tools:
 
 ## Methods & Tools
 
-<dl class="software-facts">
+<dl class="software-facts software-facts--page">
   {% for group in page.tools %}<div><dt>{{ group.label }}</dt><dd>{{ group.items }}</dd></div>{% endfor %}
 </dl>

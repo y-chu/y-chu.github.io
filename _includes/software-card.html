@@ -1,25 +1,21 @@
 {% assign package = include.package %}
-<article class="feature-card software-card">
-  <div class="feature-card__header">
-    <div>
-      <h2 class="feature-card__title">{{ package.title }}</h2>
-      {% if package.language %}
-        <p class="feature-card__meta">{{ package.language }}</p>
-      {% endif %}
-    </div>
-  </div>
+<article class="software-list__item">
+  <h2 class="software-list__title">{{ package.title }}</h2>
 
-  {% if package.status %}<p class="software-card__status">{{ package.status }}</p>{% endif %}
+  {% if package.tags %}
+    <div class="tag-row tag-row--software">
+      {% for tag in package.tags %}<span class="tag-pill">{{ tag }}</span>{% endfor %}
+    </div>
+  {% endif %}
 
   <dl class="software-facts">
     {% if package.problem %}<div><dt>Problem</dt><dd>{{ package.problem }}</dd></div>{% endif %}
-    {% if package.role %}<div><dt>My role</dt><dd>{{ package.role }}</dd></div>{% endif %}
-    {% if package.technical_scope %}<div><dt>Technical scope</dt><dd>{{ package.technical_scope }}</dd></div>{% endif %}
+    {% if package.deployment %}<div><dt>Deployment</dt><dd>{{ package.deployment }}</dd></div>{% endif %}
+    {% if package.capabilities %}
+      <div><dt>What it enables</dt><dd><ul>{% for item in package.capabilities %}<li>{{ item }}</li>{% endfor %}</ul></dd></div>
+    {% endif %}
+    {% if package.outputs %}
+      <div><dt>Related outputs</dt><dd class="inline-links">{% for link in package.outputs %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</dd></div>
+    {% endif %}
   </dl>
-
-  <div class="link-row">
-    {% for link in package.links %}
-      <a class="link-chip" href="{{ link.url }}">{{ link.label }}</a>
-    {% endfor %}
-  </div>
 </article>

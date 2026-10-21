@@ -1,6 +1,6 @@
 ---
 # PUBLIC WEBSITE ACADEMIC CV.
-# Reconciled with the TTAP master CV and claim ledger through 2026-10-17.
+# Reconciled with the TTAP master CV and claim ledger through 2026-10-20.
 # This public source keeps verified comprehensive-record updates while
 # excluding confidential, undisclosed, or still-unverified application material.
 title: ""
@@ -46,7 +46,7 @@ header-includes:
       pdftitle={Yue Chu - Curriculum Vitae}, pdfauthor={Yue Chu}}
     \urlstyle{same}
 
-    \newcommand{\CVDate}{October 18, 2026}
+    \newcommand{\CVDate}{October 20, 2026}
 
     \pagestyle{fancy}
     \fancyhf{}
@@ -115,13 +115,13 @@ Columbus, Ohio, USA\\
 
 \newcommand{\SecResearchAreas}{%
 \section{Research Areas}
-Population measurement under incomplete and heterogeneous information; mortality measurement and cause-of-death surveillance; verbal autopsy; survey validation and measurement error; demographic and Bayesian estimation; computational text analysis and multimodal machine learning; research software and data infrastructure; global health data systems.
+Measurement, reporting, and data quality; mortality measurement, validation, and health information systems; demographic inference under incomplete and misclassified data; verbal autopsy and cause-of-death surveillance; survey validation and measurement error; demographic and Bayesian estimation; computational text analysis and multimodal machine learning; research software, data infrastructure, and civil registration and vital statistics systems.
 }
 
 % Research-scientist variant only.
 \newcommand{\SecSummary}{%
 \section{Summary}
-Population health data scientist and demographer. Platform manager and core software developer of the WHO-hosted Reference Data Archive (2022--present), co-leading its software development, and author of MultimodalVA, an open-source package for cause-of-death classification from verbal-autopsy records. At Johns Hopkins (2015--2018), worked on the Maternal and Child Epidemiology Estimation group's child cause-of-death estimates; joint first author of the \emph{Lancet Global Health} study of state-level under-five mortality in India and first author of a 2024 \emph{Lancet Global Health} multi-country surveillance study. Contracts with WHO and KIT Royal Tropical Institute (2018) and technical work with the Ministry of Health of Guinea-Bissau; day-to-day supervision of more than ten graduate research assistants. R, Python, Julia, SQL; Bayesian and machine-learning methods.
+Interdisciplinary population health scientist, demographer, and global health epidemiologist studying how incomplete and imperfect health information becomes population evidence. Research spans reporting bias and survey validation, mortality measurement and health information systems, and demographic inference under incomplete and misclassified data. Platform manager and core developer of the WHO-hosted Reference Data Archive, co-leading software development with the Africa Health Research Institute, and developer of MultimodalVA. First- or joint-first-author population research in \emph{Lancet Global Health}; contracts with WHO and KIT Royal Tropical Institute and technical work with the Ministry of Health of Guinea-Bissau. R, Python, Julia, SQL; Bayesian, demographic, and machine-learning methods.
 }
 
 \newcommand{\SecEducation}{%

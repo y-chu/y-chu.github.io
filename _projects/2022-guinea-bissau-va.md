@@ -12,9 +12,6 @@ tags:
   - "Guinea-Bissau"
   - "ODK"
   - "Verbal Autopsy"
-links:
-  - label: "Related research publication"
-    url: "https://pubmed.ncbi.nlm.nih.gov/37590896/"
 ---
 
 For the Ministry of Health in Guinea-Bissau, I set up digital (ODK) survey data collection and a centralized data system for verbal autopsy interviews, so that field data could move reliably into cause-of-death analysis and reporting.

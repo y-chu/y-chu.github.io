@@ -7,6 +7,8 @@ venue: 'Lancet Global Health'
 publication_type: peer_reviewed
 publication_order: 1
 publication_year: "2024"
+thumbnail: "/images/publications/alpha-cause-fractions.png"
+thumbnail_alt: "Cause-specific mortality fractions across nine surveillance sites"
 authors: "<strong>Yue Chu</strong>, M. Marston, A. Dube, C. Festo, E. Geubbels, S. Gregson, K. Herbst, et al."
 venue_details: "Lancet Global Health. 2024;12(8):e1278–e1287."
 featured: true

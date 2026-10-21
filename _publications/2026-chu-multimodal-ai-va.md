@@ -7,6 +7,8 @@ publication_type: preprint
 publication_status: "medRxiv preprint · submitted for publication"
 publication_order: 0
 publication_year: "2026"
+thumbnail: "/images/publications/multimodalva-top1.png"
+thumbnail_alt: "Top-1 cause-of-death classification accuracy across operational, unimodal, and multimodal models"
 authors: "<strong>Yue Chu</strong>, Z. Wu, T. H. McCormick, Z. R. Li, S. J. Clark."
 venue: "medRxiv"
 venue_details: "medRxiv. 2026."

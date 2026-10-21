@@ -1,55 +1,75 @@
 ---
-layout: archive
+layout: publication-index
 title: "Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
 entry_type: index
-excerpt: "Preprints and manuscripts, peer-reviewed publications, dissertations and theses, and technical reports."
+excerpt: "Research portfolio organized by substantive and methodological themes."
+themes:
+  - title: "Measurement, Reporting, and Data Quality"
+    summary: "How respondents, interviewers, instruments, and collection settings generate omission, displacement, misclassification, and other bias in population-health data."
+    outputs:
+      - "/publication/adaptive-questioning-demographic-measurement/"
+      - "/publication/working-information-sufficiency/"
+      - "/publication/damerow-2023-birth-outcome-misclassification/"
+      - "/publication/helleringer-2020-neonatal-mortality-bias/"
+      - "/publication/Li2016"
+  - title: "Mortality Measurement, Validation, and Health Information Systems"
+    summary: "Designing, validating, monitoring, and integrating cause-of-death measurement tools across research, surveillance, and civil-registration environments."
+    outputs:
+      - "/publication/chu-2026-multimodal-ai-verbal-autopsy/"
+      - "/publication/yang-2026-multimodal-cod-benchmark/"
+      - "/publication/multimodalva-software/"
+      - "/publication/mits-beyond-verbal-autopsy/"
+      - "/publication/chandramohan-2021-verbal-autopsy/"
+  - title: "Demographic Inference Under Incomplete and Misclassified Data"
+    summary: "Estimating fertility, mortality, and cause-of-death patterns from incomplete histories and heterogeneous survey, surveillance, registration, and modeled evidence."
+    outputs:
+      - "/publication/joint-fertility-child-mortality-summary-birth-histories/"
+      - "/publication/casterline-age-at-last-birth/"
+      - "/publication/Chu2024_ALPHA"
+      - "/publication/liu-2022-adolescent-mortality-china/"
+      - "/publication/schumacher-2022-bayesian-child-mortality/"
+      - "/publication/Perin2022"
+      - "/publication/Li2019_India"
+      - "/publication/wahl-2020-pneumonia-india/"
+      - "/publication/mcallister-2019-pneumonia-global/"
+      - "/publication/wahl-2019-pneumococcal-hib-india/"
+      - "/publication/choudhary-2019-diarrhea-mortality-india/"
+      - "/publication/black-2019-diarrhea-mortality/"
+      - "/publication/wahl-2018-pneumococcal-hib-global/"
+      - "/publication/countdown-2018-universal-coverage/"
+      - "/publication/Li2016_China"
+      - "/publication/liu-2016-global-under-five-mortality/"
+      - "/publication/song-2016-child-mortality-china/"
+      - "/publication/liu-2016-dcp3-child-mortality/"
+      - "/publication/afghanistan-health-survey-2018/"
+  - title: "Additional Collaborative Epidemiology and Evidence Synthesis"
+    summary: "Selected collaborations applying epidemiologic, Bayesian, and evidence-synthesis methods beyond the three core research lines."
+    outputs:
+      - "/publication/turner-2022-covid-ohio/"
+      - "/publication/Kline2021"
+      - "/publication/wilson-2017-osteoporosis-ckd/"
+      - "/publication/maruthur-2016-diabetes-medications/"
+      - "/publication/bolen-2015-ahrq-diabetes-report/"
 ---
 
 {% include base_path %}
 
-{% assign preprints = site.publications | where: "publication_type", "preprint" %}
-{% assign manuscripts = site.publications | where: "publication_type", "manuscript" %}
-{% assign working_papers = site.publications | where: "publication_type", "working_paper" %}
-{% assign early_work = preprints | concat: manuscripts | concat: working_papers | sort: "publication_order" %}
-{% assign peer_reviewed = site.publications | where: "publication_type", "peer_reviewed" | sort: "publication_order" %}
-{% assign dissertations = site.publications | where: "publication_type", "dissertation" | sort: "publication_order" %}
-{% assign theses = site.publications | where: "publication_type", "thesis" | sort: "publication_order" %}
-{% assign reports = site.publications | where: "publication_type", "report" | sort: "publication_order" %}
-
 <div class="page-intro">
-  <p><strong>{{ peer_reviewed.size }} peer-reviewed publications</strong>, listed with preprints, manuscripts, dissertation work, and technical reports in reverse chronological order. Yue Chu is shown in bold; joint-first and corresponding authorship are noted where applicable.</p>
-  {% if site.author.googlescholar %}<p><a href="{{ site.author.googlescholar }}">Google Scholar profile</a> · <a href="/files/Yue_Chu_CV.pdf">Academic CV</a></p>{% endif %}
+  <p class="page-lead">This portfolio is organized by scientific problem rather than chronology. The three core sections mirror my research program, showing how individual studies contribute to better measurement, stronger health-information systems, and demographic inference under incomplete data.</p>
+  <p>Recent and ongoing work appears alongside established evidence within each theme. Paper titles and figures link directly to the DOI or publication page; publication status is shown inline. Yue Chu is shown in bold, with first, joint-first, and corresponding authorship identified where applicable. {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}">Google Scholar</a> · {% endif %}<a href="/files/Yue_Chu_CV.pdf">Full academic CV</a></p>
 </div>
 
-{% if early_work.size > 0 %}
-## Preprints and Manuscripts
-
-<div class="publication-list">
-  {% for publication in early_work %}{% include publication-list-item.html publication=publication %}{% endfor %}
-</div>
-{% endif %}
-
-## Peer-Reviewed Publications
-
-<div class="publication-list">
-  {% for publication in peer_reviewed %}{% include publication-list-item.html publication=publication %}{% endfor %}
-</div>
-
-{% if dissertations.size > 0 or theses.size > 0 %}
-## Dissertations & Theses
-
-<div class="publication-list">
-  {% for publication in dissertations %}{% include publication-list-item.html publication=publication %}{% endfor %}
-  {% for publication in theses %}{% include publication-list-item.html publication=publication %}{% endfor %}
-</div>
-{% endif %}
-
-{% if reports.size > 0 %}
-## Technical Reports & Book Chapters
-
-<div class="publication-list">
-  {% for publication in reports %}{% include publication-list-item.html publication=publication %}{% endfor %}
-</div>
-{% endif %}
+{% for theme in page.themes %}
+<section class="publication-theme">
+  <h2>{{ theme.title }}</h2>
+  <p class="publication-theme__summary">{{ theme.summary }}</p>
+  <div class="paper-grid">
+    {% for output_path in theme.outputs %}
+      {% assign publication = site.publications | where: "permalink", output_path | first %}
+      {% if publication %}{% include publication-list-item.html publication=publication %}{% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}

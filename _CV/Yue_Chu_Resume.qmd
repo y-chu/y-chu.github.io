@@ -59,7 +59,7 @@ execute:
 {\centering
 {\fontsize{22}{24}\selectfont\bfseries Yue Chu}\enspace{\large PhD, MSPH, MBBS}\par
 \vspace{0.15em}
-{\normalsize\color{accent} Population Health Scientist \& Demographer}\par
+{\normalsize\color{accent} Population Health Scientist · Demographer · Global Health Epidemiologist}\par
 \vspace{0.2em}
 {\small Columbus, Ohio \enspace|\enspace \href{mailto:chu.282@osu.edu}{chu.282@osu.edu} \enspace|\enspace \href{https://y-chu.github.io}{y-chu.github.io} \enspace|\enspace \href{https://www.linkedin.com/in/sophiaychu/}{LinkedIn} \enspace|\enspace \href{https://github.com/y-chu}{GitHub} \enspace|\enspace \href{https://scholar.google.com/citations?user=35jZ0usAAAAJ&hl=en&oi=ao}{Google Scholar}}\par
 }
@@ -67,15 +67,15 @@ execute:
 
 # Summary
 
-Population health scientist and demographer with more than a decade of research on population measurement under incomplete and imperfect information. I develop demographic, statistical, computational, and AI methods for mortality and cause-of-death estimation, study measurement error and data quality in surveys and surveillance, and build research software and data infrastructure with WHO and international partners. Author or coauthor of 23 peer-reviewed publications, including first-author and joint-first-author work in *Lancet Global Health*.
+Interdisciplinary population health scientist, demographer, and global health epidemiologist with more than a decade of research on how incomplete and imperfect health information becomes population evidence. My work spans measurement bias and survey validation; mortality measurement, tool validation, and health information systems; and demographic inference under incomplete and misclassified data. I combine applied research with Bayesian, computational, and AI methods and build reusable software and data infrastructure with WHO and international partners. Author or coauthor of 23 peer-reviewed publications, including first-author and joint-first-author work in *Lancet Global Health*.
 
 # Expertise
 
-**Methods:** Bayesian and demographic estimation; mortality and cause-of-death modeling; survey methods, measurement error, and validation; machine learning, pretrained language models, LLMs, and multimodal learning; evidence synthesis
+**Methods:** Bayesian and demographic estimation; mortality and cause-of-death modeling; survey methods, measurement error, validation, and monitoring; machine learning, pretrained language models, LLMs, and multimodal learning; evidence synthesis
 
 **Computing:** R, Python, Julia, SQL, Stata; Hugging Face, Optuna; Azure, Snowflake, AWS
 
-**Domains:** mortality surveillance and verbal autopsy; maternal, newborn, and child health; global health estimation; population health
+**Domains:** mortality surveillance and verbal autopsy; civil registration and vital statistics; health information systems; maternal, newborn, child, and adolescent health; global health estimation; population health
 
 # Experience
 

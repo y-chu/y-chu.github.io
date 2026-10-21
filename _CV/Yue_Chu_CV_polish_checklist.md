@@ -1,48 +1,42 @@
-# CV Polish Checklist
+# Public CV release checklist
 
-## Highest-Impact Fixes
+The website CV is the comprehensive public record. Targeted application CVs in
+the separate job-search workspace may be shorter or reordered, but verified
+factual changes should be reconciled here.
 
-- Replace the current `PUBLICATIONS` and `PRESENTATIONS` sections with the normalized entries in `Yue_Chu_CV_revised_sections.md`.
-- Bold your name in every publication and presentation as `**Chu, Y.**`.
-- Keep enough authors visible so your name appears before any `et al.` truncation.
-- Separate `Invited Talks` from `Conference and Professional Presentations`.
-- Separate `Peer-Reviewed Journal Articles`, `Reports and Other Scholarly Outputs`, and `Book Chapters`.
+## Content
 
-## Academic Website Priorities
+- Keep `Preprints and Working Papers` before `Peer-Reviewed Articles`.
+- State submitted, under-review, in-preparation, and poster status on each item;
+  never upgrade status by implication.
+- Keep the two 2026 multimodal records separate:
+  - Yue Chu's South Africa study: medRxiv preprint, submitted; first and
+    corresponding author.
+  - Yang et al. benchmark: medRxiv preprint; separate NeurIPS poster presented
+    by the first author; Yue Chu is not corresponding author.
+- Keep dissertation and thesis titles with links under Education.
+- Retain the new title for the summary-birth-history manuscript.
+- Keep WHO contractor work in `Consultancies and Contracts` when the verified
+  appointment and dates are stated accurately.
+- Use the verified public RDA role: platform manager and core developer;
+  co-lead of software development with AHRI; sole data manager.
+- Keep the ALPHA data product and exact catalogue-record role.
 
-- Add a `Selected Publications` subsection near the top of the website CV or About page with 5-8 strongest items.
-- Add a `Selected Invited Talks` subsection with the University of Washington and Gates Foundation talks.
-- Link software and infrastructure work more explicitly: MultimodalVA, Reference Data Archive, CODA.
-- Keep the full CV downloadable, but use curated lists on the website for scanability.
+## Consistency
 
-## Job Market Priorities
+- Align Research Areas with the website's three themes: measurement/reporting;
+  mortality validation and health information systems; demographic inference.
+- Keep the résumé consistent with the full CV without making it comprehensive.
+- Bold Yue Chu consistently and mark first/joint-first/corresponding authorship
+  only when verified.
+- Separate Yue-presented, invited, coauthored, and contributed presentations.
+- Omit mentee names from public versions.
 
-- Move recent first-author and methodologically distinctive work higher in visibility.
-- Add a short `Research Areas` or `Methods` block near the top:
-  `Verbal autopsy, mortality estimation, demographic methods, language models, survey data quality, Bayesian modeling.`
-- Consider splitting `Professional Experience` into:
-  `Academic Appointments`
-  `Research Experience`
-  `Consulting and Technical Assistance`
-- Consider adding a brief `Selected Software and Data Infrastructure` section for:
-  `MultimodalVA`
-  `Reference Data Archive`
-  `CODA`
+## Release
 
-## Formatting Cleanup
-
-- Fix merged lines in `Conference organization` and `Honors and Awards`.
-- Remove stray Word control characters and page-break remnants.
-- Standardize capitalization:
-  `Postdoctoral Fellow`
-  `Research Assistant`
-  `Global Health Action`
-  `Clinical Epidemiology`
-- Standardize date style across the document:
-  either `Month Year` or `Month Day, Year`, but not both for similar item types.
-
-## Optional Refinements
-
-- Add DOI links for selected major publications if you want a more web-friendly CV.
-- Mark joint first authorship inline only when it materially matters for search committees.
-- For the website version, consider showing only items from 2020 onward by default, with a link to the full CV.
+- Update the CV date.
+- Render the QMD source directly to `files/Yue_Chu_CV.pdf`.
+- Inspect every rendered page for broken entries, orphans, overflow, and link
+  problems.
+- Rebuild the website and confirm `/cv/` and the primary-nav CV link open the
+  current PDF.

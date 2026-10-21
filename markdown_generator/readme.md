@@ -1,7 +1,10 @@
-# Jupyter notebook markdown generator
+# Legacy generators
 
-These .ipynb files are Jupyter notebook files that convert a TSV containing structured data about talks (`talks.tsv`) or presentations (`presentations.tsv`) into individual markdown files that will be properly formatted for the academicpages template. The notebooks contain a lot of documentation about the process. The .py files are pure python that do the same things if they are executed in a terminal, they just don't have pretty documentation.
+These notebooks, scripts, and TSV files came from the Academic Pages template.
+They are retained only for reference and are not part of the current website
+maintenance workflow.
 
-
-
-
+Do not use them to regenerate Publications or Presentations: doing so would
+overwrite the curated research-theme organization and presenter metadata.
+Maintain publication records in `_publications/*.md` and presentations in
+`_presentations/index.md`, following the current decisions in `CLAUDE.md`.

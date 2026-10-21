@@ -65,8 +65,8 @@ teaching_areas:
 ## Teaching Approach
 
 <div class="page-intro">
-  <p class="page-lead">My teaching goal is for students to move from a substantive population or public-health question to a defensible measure, estimand, dataset, method, interpretation, and statement of limits.</p>
-  <p>Students should be able to explain what evidence supports a conclusion, where uncertainty enters, and what additional evidence could change the answer. I use quantitative work as a setting for making that reasoning visible and reproducible.</p>
+  <p class="page-lead">I teach quantitative methods as a sequence of substantive decisions: define the question, choose a defensible measure and estimand, understand how the data were produced, select a method, interpret the result, and state its limits.</p>
+  <p>Students should be able to explain what evidence supports a conclusion, where uncertainty enters, and what additional evidence could change the answer. My teaching makes that reasoning visible and reproducible rather than treating statistical procedures as ends in themselves.</p>
 </div>
 
 <ol class="priorities">

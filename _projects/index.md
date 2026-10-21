@@ -8,7 +8,7 @@ entry_type: index
 ---
 
 <div class="page-intro">
-  <p class="page-lead">Current and past projects, with my role and contribution in each. Consulting and technical assistance work is listed at the end.</p>
+  <p class="page-lead">These projects show how my research moves from question to evidence and from method to system: multi-country studies establish population patterns, active collaborations test new measurement tools, and technical assistance carries those methods into data collection and health-information practice.</p>
 </div>
 
 {% assign projects = site.projects | where_exp: "item", "item.entry_type != 'index'" | sort: "date" | reverse %}
@@ -18,7 +18,7 @@ entry_type: index
 
 {% if active_projects.size > 0 %}
   <h2>Active Projects</h2>
-  <div class="feature-grid">
+  <div class="project-list">
     {% for project in active_projects %}
       {% include project-card.html project=project %}
     {% endfor %}
@@ -27,7 +27,7 @@ entry_type: index
 
 {% if past_projects.size > 0 %}
   <h2>Past Research Projects</h2>
-  <div class="feature-grid">
+  <div class="project-list">
     {% for project in past_projects %}
       {% include project-card.html project=project %}
     {% endfor %}
@@ -43,9 +43,7 @@ entry_type: index
         {% if project.role %}<p class="compact-item__meta">{{ project.role }}</p>{% endif %}
         {% if project.excerpt %}<p class="compact-item__summary">{{ project.excerpt | markdownify | strip_html | strip | truncate: 160 }}</p>{% endif %}
         {% if project.links %}
-          <div class="link-row">
-            {% for link in project.links %}<a class="link-chip" href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
-          </div>
+          <p class="inline-links"><span class="inline-links__label">Related:</span> {% for link in project.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
         {% endif %}
       </article>
     {% endfor %}

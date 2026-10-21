@@ -19,15 +19,13 @@ tags:
 links:
   - label: "RDA platform"
     url: "https://data.who.int/platforms/rda"
-  - label: "RDAIngest.jl"
-    url: "https://github.com/RDAORG/RDAIngest.jl"
-  - label: "juRDA.jl"
-    url: "https://github.com/RDAORG/juRDA.jl"
+  - label: "RDA GitHub organization"
+    url: "https://github.com/RDAORG"
 ---
 
 The Reference Data Archive (RDA) is a publicly accessible archive and analytics infrastructure for mortality data, hosted by the World Health Organization. It makes mortality reference datasets easier to discover, understand, and reuse, starting with verbal autopsy reference deaths that have trustworthy reference causes and supporting pathology information.
 
-[RDA platform](https://data.who.int/platforms/rda) · [RDAIngest.jl](https://github.com/RDAORG/RDAIngest.jl) · [juRDA.jl](https://github.com/RDAORG/juRDA.jl)
+[RDA platform](https://data.who.int/platforms/rda) · [RDA GitHub organization](https://github.com/RDAORG)
 
 ## My role
 

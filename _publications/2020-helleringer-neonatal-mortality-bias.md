@@ -6,6 +6,8 @@ date: 2020-01-02
 publication_type: peer_reviewed
 publication_order: 9
 publication_year: "2020"
+thumbnail: "/images/publications/gb-reporting-errors.png"
+thumbnail_alt: "Sources of neonatal and postneonatal death reporting error"
 authors: "S. Helleringer, L. Liu, <strong>Yue Chu</strong>, A. Rodrigues, A. B. Fisker."
 venue: "Demography"
 venue_details: "Demography. 2020;57(5):1705–1726."
