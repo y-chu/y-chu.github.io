@@ -59,7 +59,7 @@ execute:
 {\centering
 {\fontsize{22}{24}\selectfont\bfseries Yue Chu}\enspace{\large PhD, MSPH, MBBS}\par
 \vspace{0.15em}
-{\normalsize\color{accent} Population Health Scientist · Demographer · Global Health Epidemiologist}\par
+{\normalsize\color{accent} Population Health Scientist · Demographer · Epidemiologist · Data Scientist}\par
 \vspace{0.2em}
 {\small Columbus, Ohio \enspace|\enspace \href{mailto:chu.282@osu.edu}{chu.282@osu.edu} \enspace|\enspace \href{https://y-chu.github.io}{y-chu.github.io} \enspace|\enspace \href{https://www.linkedin.com/in/sophiaychu/}{LinkedIn} \enspace|\enspace \href{https://github.com/y-chu}{GitHub} \enspace|\enspace \href{https://scholar.google.com/citations?user=35jZ0usAAAAJ&hl=en&oi=ao}{Google Scholar}}\par
 }
@@ -67,7 +67,7 @@ execute:
 
 # Summary
 
-Interdisciplinary population health scientist, demographer, and global health epidemiologist with more than a decade of research on how incomplete and imperfect health information becomes population evidence. My work spans measurement bias and survey validation; mortality measurement, tool validation, and health information systems; and demographic inference under incomplete and misclassified data. I combine applied research with Bayesian, computational, and AI methods and build reusable software and data infrastructure with WHO and international partners. Author or coauthor of 23 peer-reviewed publications, including first-author and joint-first-author work in *Lancet Global Health*.
+Interdisciplinary population health scientist and demographer working at the intersection of epidemiology and data science, with more than a decade of research on how incomplete and imperfect health information becomes population evidence. My work spans measurement bias and survey validation; mortality measurement, tool validation, and health information systems; and demographic inference under incomplete and misclassified data. I combine applied research with Bayesian, computational, and AI methods and build reusable software and data infrastructure with WHO and international partners. Author or coauthor of 23 peer-reviewed publications, including first-author and joint-first-author work in *Lancet Global Health*.
 
 # Expertise
 
@@ -89,8 +89,8 @@ Interdisciplinary population health scientist, demographer, and global health ep
 - Teaching Assistant, SOCIOL 8607 Causal Modeling (Spring 2026): facilitated discussion and provided coding support.
 
 ```{=latex}
-\role{Platform Manager and Core Developer, Reference Data Archive}{2022 -- present}
-\org{WHO-hosted platform; Key Personnel on the Gates Foundation-funded archive award at Ohio State (2022--2026)}
+\role{Platform Manager and Core Developer, Reference Data Archive}{2023 -- present}
+\org{Pilot contribution at Ohio State, 2023--May 2025; WHO contractor, Jun 2025--present; Key Personnel on the 2022--2026 archive award}
 ```
 
 - Co-lead software development for the WHO-hosted Reference Data Archive with the Africa Health Research Institute as platform manager and core developer; serve as sole data manager (Julia, Python, R, SQL).

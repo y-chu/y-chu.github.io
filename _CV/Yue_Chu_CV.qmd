@@ -46,7 +46,7 @@ header-includes:
       pdftitle={Yue Chu - Curriculum Vitae}, pdfauthor={Yue Chu}}
     \urlstyle{same}
 
-    \newcommand{\CVDate}{October 20, 2026}
+    \newcommand{\CVDate}{October 22, 2026}
 
     \pagestyle{fancy}
     \fancyhf{}
@@ -121,7 +121,7 @@ Measurement, reporting, and data quality; mortality measurement, validation, and
 % Research-scientist variant only.
 \newcommand{\SecSummary}{%
 \section{Summary}
-Interdisciplinary population health scientist, demographer, and global health epidemiologist studying how incomplete and imperfect health information becomes population evidence. Research spans reporting bias and survey validation, mortality measurement and health information systems, and demographic inference under incomplete and misclassified data. Platform manager and core developer of the WHO-hosted Reference Data Archive, co-leading software development with the Africa Health Research Institute, and developer of MultimodalVA. First- or joint-first-author population research in \emph{Lancet Global Health}; contracts with WHO and KIT Royal Tropical Institute and technical work with the Ministry of Health of Guinea-Bissau. R, Python, Julia, SQL; Bayesian, demographic, and machine-learning methods.
+Interdisciplinary population health scientist and demographer working at the intersection of epidemiology and data science. Research spans reporting bias and survey validation, mortality measurement and health information systems, and demographic inference under incomplete and misclassified data. Platform manager and core developer of the WHO-hosted Reference Data Archive, co-leading software development with the Africa Health Research Institute, and developer of MultimodalVA. First- or joint-first-author population research in \emph{Lancet Global Health}; contracts with WHO and KIT Royal Tropical Institute and technical work with the Ministry of Health of Guinea-Bissau. R, Python, Julia, SQL; Bayesian, demographic, and machine-learning methods.
 }
 
 \newcommand{\SecEducation}{%
@@ -145,7 +145,7 @@ Specialty in Preventive Medicine\newline
 \cventry{May 2025--Jan 2026}{\textbf{Postdoctoral Fellow}, Health and Environment Modeling Laboratory, The Ohio State University, Columbus, OH}
 \cventry{Aug 2023--Sep 2023}{\textbf{Visiting Scholar}, Africa Health Research Institute, Somkhele, South Africa}
 \cventry{May 2022--Aug 2022}{\textbf{Data Science Intern} (through InnoSource), Enterprise Analytics Office, Nationwide Mutual Insurance Company, Columbus, OH}
-\cventry{Jan 2019--May 2025}{\textbf{Graduate Research Associate}, The Ohio State University, Columbus, OH\newline Verbal autopsy methods (NICHD R01); Reference Data Archive (2022--2025); Nationwide Center for Advanced Customer Insights, Fisher College of Business (Aug 2022--May 2023)}
+\cventry{Jan 2019--May 2025}{\textbf{Graduate Research Associate}, The Ohio State University, Columbus, OH\newline Verbal autopsy methods (NICHD R01); Reference Data Archive pilot development (2023--May 2025); Nationwide Center for Advanced Customer Insights, Fisher College of Business (Aug 2022--May 2023)}
 \cventry{Jan 2015--Jul 2018}{\textbf{Research Associate}, Department of International Health, Johns Hopkins Bloomberg School of Public Health, Baltimore, MD}
 \cventry{Sep 2014--Jan 2015}{\textbf{Research Assistant} (full-time), Evidence-based Practice Center, Department of Health Policy and Management, Johns Hopkins Bloomberg School of Public Health}
 \cventry{Aug 2013--Sep 2014}{\textbf{Research Assistant}, Child Health Epidemiology Reference Group project, Department of International Health, Johns Hopkins Bloomberg School of Public Health}
@@ -258,8 +258,8 @@ Specialty in Preventive Medicine\newline
 \section{Research Software, Data Products, and Infrastructure}
 \cventry{2023--present}{\textbf{MultimodalVA} --- Python package for cause-of-death classification from verbal autopsy data.\newline
 Role: developer and maintainer. Unified interface for narrative-only, indicator-only, and multimodal models (data fusion, feature fusion, soft voting, and stacking), with hyperparameter optimization, evaluation metrics, and visualization. The development version also includes a prompt-based language-model pipeline for open-weight chat models, including gpt-oss, through Hugging Face or local serving with Ollama. Publicly released, MIT-licensed, typed Python package. \href{https://github.com/y-chu/MultimodalVA}{GitHub}; study preprint: \url{https://doi.org/10.64898/2026.10.15.26364476}}
-\cventry{2022--present}{\textbf{Reference Data Archive (RDA) software and data platform} --- WHO-hosted reference mortality data infrastructure. Julia, Python, R, SQL.\newline
-Platform in operation and open to users. Role: platform manager and core developer; co-lead of software development with the Africa Health Research Institute; sole data manager. Wrote the data processing pipeline, the Julia user API, and RDANada.jl, which publishes DDI metadata to the NADA catalogue through its REST API (sole author; deployed in the WHO-hosted analytics environment; available on request); co-developed the ingestion package, extending its original framework and schema. Protocols, standard operating procedures and user guidance; user and data-access management. Public repositories: \href{https://github.com/RDAORG/RDAIngest.jl}{RDAIngest.jl} (data ingestion; co-lead developer) and \href{https://github.com/RDAORG/juRDA.jl}{juRDA.jl} (Julia user API; author). \url{https://data.who.int/platforms/rda}}
+\cventry{2023--present}{\textbf{Reference Data Archive (RDA) software and data platform} --- WHO-hosted reference mortality data infrastructure. Julia, Python, R, SQL.\newline
+Pilot contribution at The Ohio State University, 2023--May 2025; continued under a formal WHO contract beginning June 2025. Platform in operation and open to users. Role: platform manager and core developer; co-lead of software development with the Africa Health Research Institute; sole data manager. Wrote the data processing pipeline, the Julia user API, and RDANada.jl, which publishes DDI metadata to the NADA catalogue through its REST API (sole author; deployed in the WHO-hosted analytics environment; available on request); co-developed the ingestion package, extending its original framework and schema. Protocols, standard operating procedures and user guidance; user and data-access management. Public repositories: \href{https://github.com/RDAORG/RDAIngest.jl}{RDAIngest.jl} (data ingestion; co-lead developer) and \href{https://github.com/RDAORG/juRDA.jl}{juRDA.jl} (Julia user API; author). \url{https://data.who.int/platforms/rda}}
 \cventry{2022}{\textbf{Verbal Autopsy: Reimagining Data and Automated Cause Assignment (ALPHA network data)} --- curated, anonymised verbal-autopsy, residency and HIV surveillance data for scientific use, South Africa, 2000--2020; NIH-funded; deposited in the Africa Health Research Institute data catalogue (AHRI.NIH.Verbal.Autopsy.Dataset.v1, version 1.0.0).\newline
 Role: one of four named primary investigators in the catalogue record, with S. J. Clark, C. Calvert and M. Marston. Licensed access administered by DataFirst, University of Cape Town. \url{https://data.ahri.org/index.php/catalog/1030}}
 }
@@ -318,6 +318,7 @@ Fudan University Xiyuan Undergraduate Research Program; Department of Maternal a
 
 \newcommand{\SecConsultancy}{%
 \section{Consultancies and Contracts}
+\cventry{Jun 2025--present}{\textbf{Contractor}, World Health Organization (remote). Reference Data Archive platform management, software and data infrastructure development, technical documentation, data management, and coordination with institutional collaborators.}
 \cventry{Jul 2018--Aug 2018}{\textbf{Contractor}, Department of Maternal, Newborn, Child and Adolescent Health, World Health Organization (remote). Data quality review of the 2016 WHO Global Health Estimates of causes of death among adolescents aged 10--19: estimate quality and data sources by country, search for new data sources, and a proposed validation case study.}
 \cventry{Jul 2018--Aug 2018}{\textbf{Consultant Demographer}, KIT Royal Tropical Institute, Amsterdam (remote). Verbal autopsy analysis and mortality and cause-specific mortality modeling for the Afghanistan Health Survey 2018; drafted the corresponding report sections.}
 \subsection{Technical Advisory and Country Work}

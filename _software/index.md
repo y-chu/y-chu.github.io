@@ -15,7 +15,7 @@ packages:
       - "APIs"
       - "Data engineering"
     problem: "Mortality reference datasets are difficult to discover, document, integrate, quality-check, and reuse consistently across institutions."
-    deployment: "Operational public archive and secure analytics environment hosted by WHO."
+    deployment: "Operational public archive and secure analytics environment hosted by WHO. My contribution began with pilot development in 2023 and has continued under a formal WHO contract since June 2025."
     capabilities:
       - "Ingest and integrate mortality reference data from research sites and partner organizations."
       - "Harmonize variables and metadata, validate incoming data, and automate quality-control workflows."

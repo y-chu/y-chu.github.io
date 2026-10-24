@@ -280,6 +280,11 @@ Verified high-risk records:
   software development with the Africa Health Research Institute; sole data
   manager`. Do not collapse this into the stronger and less precise `lead
   developer` claim.
+- RDA timeline: the funded project runs 2022--2026, but Yue's documented pilot
+  contribution began in 2023 and continued through May 2025 at Ohio State. Her
+  formal WHO contractor role began in June 2025 and continues to the present.
+  Do not use the 2022 grant start as Yue's personal work or WHO appointment
+  start date.
 - The ALPHA catalogue record may state: `one of four named primary investigators
   in the catalogue record`; access status is `Data product · licensed access`.
 - Do not infer corresponding authorship, presenter identity, grant PI status,

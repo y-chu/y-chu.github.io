@@ -16,8 +16,9 @@ factual changes should be reconciled here.
     by the first author; Yue Chu is not corresponding author.
 - Keep dissertation and thesis titles with links under Education.
 - Retain the new title for the summary-birth-history manuscript.
-- Keep WHO contractor work in `Consultancies and Contracts` when the verified
-  appointment and dates are stated accurately.
+- Keep the current WHO contractor role in `Consultancies and Contracts` as
+  `June 2025--present`. Keep RDA pilot contribution separate as
+  `2023--May 2025`; the 2022 grant start is not Yue's work start date.
 - Use the verified public RDA role: platform manager and core developer;
   co-lead of software development with AHRI; sole data manager.
 - Keep the ALPHA data product and exact catalogue-record role.

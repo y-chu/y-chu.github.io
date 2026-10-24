@@ -5,7 +5,7 @@ permalink: /projects/reference-data-archive/
 date: 2026-01-01
 status: active
 project_group: active
-role: "Platform manager and core developer"
+role: "Platform manager and core developer · pilot contribution since 2023 · WHO contractor since June 2025"
 excerpt: "A WHO-hosted archive and secure analytics environment for mortality reference data, including verbal autopsy reference deaths."
 problem: "Mortality measurement research depends on reference datasets that are difficult to discover, document, curate, and reuse consistently across institutions."
 contribution: "Co-lead software development with the Africa Health Research Institute; wrote the platform documentation for users, administrators, data managers, and data providers; serve as sole data manager; coordinate technical implementation across Ohio State, AHRI, and WHO."
@@ -29,7 +29,7 @@ The Reference Data Archive (RDA) is a publicly accessible archive and analytics 
 
 ## My role
 
-I am the platform manager and a core developer, co-lead software development with the Africa Health Research Institute, and serve as the sole data manager. I wrote the platform documentation, including user guides, tutorials, standard operating procedures, and protocols, and I coordinate technical implementation with data engineering and IT collaborators at Ohio State, AHRI, and WHO. I have also supervised doctoral research assistants on data-quality checks, data cleaning, and coding for the archive.
+I contributed to RDA pilot development at The Ohio State University from 2023 through May 2025 and have continued this work as a WHO contractor since June 2025. I am the platform manager and a core developer, co-lead software development with the Africa Health Research Institute, and serve as the sole data manager. I wrote the platform documentation, including user guides, tutorials, standard operating procedures, and protocols, and I coordinate technical implementation with data engineering and IT collaborators at Ohio State, AHRI, and WHO. I have also supervised doctoral research assistants on data-quality checks, data cleaning, and coding for the archive.
 
 ## What the platform provides
 
