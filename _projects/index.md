@@ -1,55 +1,50 @@
 ---
 layout: single
-title: "Projects"
-permalink: /projects/
+title: "Consulting"
+permalink: /consulting/
+redirect_from:
+  - /projects/
 author_profile: true
-excerpt: "Current and selected research projects."
+excerpt: "Consulting, technical assistance, and capacity building for public-health data and decision systems."
 entry_type: index
 ---
 
 <div class="page-intro">
-  <p class="page-lead">These projects show how my research moves from question to evidence and from method to system: multi-country studies establish population patterns, active collaborations test new measurement tools, and technical assistance carries those methods into data collection and health-information practice.</p>
+  <p class="page-lead">I provide technical consulting where mortality measurement, health-information systems, and applied data science meet. I help public-health partners move from data collection to validated evidence and operational systems through analysis, reproducible workflows, documentation, training, and local capacity building.</p>
 </div>
 
 {% assign projects = site.projects | where_exp: "item", "item.entry_type != 'index'" | sort: "date" | reverse %}
-{% assign active_projects = projects | where: "project_group", "active" %}
+{% assign current_projects = projects | where: "project_group", "consulting_current" %}
 {% assign consulting_projects = projects | where: "project_group", "consulting" %}
-{% assign past_projects = projects | where: "project_group", "past" %}
+{% assign capacity_projects = projects | where: "project_group", "capacity" %}
 
-{% if active_projects.size > 0 %}
-  <h2>Active Projects</h2>
+{% if current_projects.size > 0 %}
+  <h2>Current Engagement</h2>
   <div class="project-list">
-    {% for project in active_projects %}
-      {% include project-card.html project=project %}
-    {% endfor %}
-  </div>
-{% endif %}
-
-{% if past_projects.size > 0 %}
-  <h2>Past Research Projects</h2>
-  <div class="project-list">
-    {% for project in past_projects %}
+    {% for project in current_projects %}
       {% include project-card.html project=project %}
     {% endfor %}
   </div>
 {% endif %}
 
 {% if consulting_projects.size > 0 %}
-  <h2 id="consulting-and-technical-assistance">Consulting and Technical Assistance</h2>
-  <div class="compact-list">
+  <h2>Selected Consulting and Technical Assistance</h2>
+  <div class="project-list">
     {% for project in consulting_projects %}
-      <article class="compact-item">
-        <h3 class="compact-item__title"><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-        {% if project.role %}<p class="compact-item__meta">{{ project.role }}</p>{% endif %}
-        {% if project.excerpt %}<p class="compact-item__summary">{{ project.excerpt | markdownify | strip_html | strip | truncate: 160 }}</p>{% endif %}
-        {% if project.links %}
-          <p class="inline-links"><span class="inline-links__label">Related:</span> {% for link in project.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
-        {% endif %}
-      </article>
+      {% include project-card.html project=project %}
     {% endfor %}
   </div>
 {% endif %}
 
-{% if active_projects.size == 0 and consulting_projects.size == 0 and past_projects.size == 0 %}
-  <p>No projects are published yet.</p>
+{% if capacity_projects.size > 0 %}
+  <h2>Training and Capacity Building</h2>
+  <div class="project-list">
+    {% for project in capacity_projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+{% endif %}
+
+{% if current_projects.size == 0 and consulting_projects.size == 0 and capacity_projects.size == 0 %}
+  <p>No consulting engagements are published yet.</p>
 {% endif %}

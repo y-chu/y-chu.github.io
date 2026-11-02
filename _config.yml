@@ -34,7 +34,7 @@ author:
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0001-8671-5362"
   pubmed           : # URL
-  researchgate     : "https://www.researchgate.net/profile/Yue-Chu"
+  researchgate     :
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site

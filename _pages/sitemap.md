@@ -12,7 +12,7 @@ A concise directory of the site's public professional content. An [XML sitemap](
 - [Home](/)
 - [Research](/research/)
 - [Publications](/publications/)
-- [Projects](/projects/)
+- [Consulting](/consulting/)
 - [Software](/software/)
 - [Teaching & Mentoring](/teaching/)
 - [Academic CV](/files/Yue_Chu_CV.pdf)

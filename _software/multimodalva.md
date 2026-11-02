@@ -20,4 +20,4 @@ Verbal autopsy interviews record both structured symptom questions and a free-te
 - Train narrative-only, indicator-only, and multimodal cause-of-death classifiers
 - Compare data fusion, feature fusion, soft voting, and stacking under shared data splits and metrics
 - Run hyperparameter optimization, evaluation, and visualization workflows
-- Use prompt-based pipelines for open-weight chat models through Hugging Face or local serving with Ollama
+- Run prompt-based LLM pipelines with open-weight models loaded from Hugging Face or served locally through Ollama; closed-source API models are not currently supported

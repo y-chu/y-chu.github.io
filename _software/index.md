@@ -6,7 +6,7 @@ author_profile: true
 excerpt: "Research software, data infrastructure, and computing tools."
 entry_type: index
 packages:
-  - title: "Reference Data Archive platform"
+  - title: "Reference Data Archive software ecosystem"
     tags:
       - "Julia"
       - "Python"
@@ -15,19 +15,19 @@ packages:
       - "APIs"
       - "Data engineering"
     problem: "Mortality reference datasets are difficult to discover, document, integrate, quality-check, and reuse consistently across institutions."
-    deployment: "Operational public archive and secure analytics environment hosted by WHO. My contribution began with pilot development in 2023 and has continued under a formal WHO contract since June 2025."
+    deployment: "Operational software supporting the WHO-hosted public catalogue and secure analytics environment for mortality reference data."
     capabilities:
       - "Ingest and integrate mortality reference data from research sites and partner organizations."
       - "Harmonize variables and metadata, validate incoming data, and automate quality-control workflows."
-      - "Publish DDI metadata to a NADA catalogue and provide programmatic access through user-facing APIs."
-      - "Manage secure data access, users, and analysis workflows across collaborating institutions."
+      - "Generate and publish DDI metadata to a NADA catalogue and provide programmatic access through user-facing APIs."
+      - "Support platform administration, controlled data access, user management, and secure analysis workflows across collaborating institutions."
     outputs:
       - label: "WHO platform"
         url: "https://data.who.int/platforms/rda"
       - label: "RDA GitHub organization"
         url: "https://github.com/RDAORG"
-      - label: "Project overview"
-        url: "/projects/reference-data-archive/"
+      - label: "Consulting engagement"
+        url: "/consulting/reference-data-archive/"
 
   - title: "MultimodalVA"
     tags:
@@ -42,7 +42,8 @@ packages:
       - "Prepare narrative and structured verbal-autopsy records for reproducible cause-of-death modeling."
       - "Train and compare narrative-only, indicator-only, and multimodal classifiers under consistent data splits and metrics."
       - "Run data-fusion, feature-fusion, soft-voting, and stacking models with hyperparameter optimization."
-      - "Evaluate and visualize model performance, including prompt-based workflows for open-weight chat models."
+      - "Run prompt-based LLM pipelines with open-weight models loaded from Hugging Face or served locally through Ollama; closed-source API models are not currently supported."
+      - "Evaluate and visualize model performance under consistent individual- and population-level metrics."
     outputs:
       - label: "GitHub"
         url: "https://github.com/y-chu/MultimodalVA"

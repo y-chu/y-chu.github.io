@@ -22,6 +22,10 @@ factual changes should be reconciled here.
 - Use the verified public RDA role: platform manager and core developer;
   co-lead of software development with AHRI; sole data manager.
 - Keep the ALPHA data product and exact catalogue-record role.
+- Keep the public CV comprehensive but avoid repeating the same operational
+  details across Experience, Software, Sponsored Projects, and Consultancies.
+  Preserve the distinct role of each section and keep the Software and Skills
+  descriptions compact.
 
 ## Consistency
 

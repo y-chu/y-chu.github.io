@@ -1,12 +1,14 @@
 ---
-title: "Reference Data Archive"
+title: "WHO Reference Data Archive"
 collection: projects
-permalink: /projects/reference-data-archive/
-date: 2026-01-01
+permalink: /consulting/reference-data-archive/
+redirect_from:
+  - /projects/reference-data-archive/
+date: 2025-06-01
 status: active
-project_group: active
-role: "Platform manager and core developer · pilot contribution since 2023 · WHO contractor since June 2025"
-excerpt: "A WHO-hosted archive and secure analytics environment for mortality reference data, including verbal autopsy reference deaths."
+project_group: consulting_current
+role: "Platform manager and core developer · WHO contractor, June 2025–present"
+excerpt: "Manage and co-develop a WHO-hosted mortality-data archive, spanning ingestion, DDI/NADA publication, access workflows, documentation, demonstrations, and user support."
 problem: "Mortality measurement research depends on reference datasets that are difficult to discover, document, curate, and reuse consistently across institutions."
 contribution: "Co-lead software development with the Africa Health Research Institute; wrote the platform documentation for users, administrators, data managers, and data providers; serve as sole data manager; coordinate technical implementation across Ohio State, AHRI, and WHO."
 technical_scope: "Julia, Python, R, SQL; data ingestion and curation, metadata, quality control, NADA and user-facing APIs, automated workflows, and analytics environments."
@@ -23,15 +25,16 @@ links:
     url: "https://github.com/RDAORG"
 ---
 
-The Reference Data Archive (RDA) is a publicly accessible archive and analytics infrastructure for mortality data, hosted by the World Health Organization. It makes mortality reference datasets easier to discover, understand, and reuse, starting with verbal autopsy reference deaths that have trustworthy reference causes and supporting pathology information.
+The Reference Data Archive (RDA) is a WHO-hosted public catalogue and secure analytics environment for mortality data. It helps researchers and public-health practitioners discover, understand, assess, and reuse reference datasets for validating cause-of-death methods and strengthening mortality surveillance.
 
 [RDA platform](https://data.who.int/platforms/rda) · [RDA GitHub organization](https://github.com/RDAORG)
 
-## My role
+## Technical delivery
 
-I contributed to RDA pilot development at The Ohio State University from 2023 through May 2025 and have continued this work as a WHO contractor since June 2025. I am the platform manager and a core developer, co-lead software development with the Africa Health Research Institute, and serve as the sole data manager. I wrote the platform documentation, including user guides, tutorials, standard operating procedures, and protocols, and I coordinate technical implementation with data engineering and IT collaborators at Ohio State, AHRI, and WHO. I have also supervised doctoral research assistants on data-quality checks, data cleaning, and coding for the archive.
+I contributed to pilot development at The Ohio State University from 2023 through May 2025 and have continued the work as a WHO contractor since June 2025. As platform manager, core developer, co-lead of software development with the Africa Health Research Institute, and sole data manager, I translate scientific and operational requirements into data-ingestion, harmonization, validation, DDI metadata, NADA publication, controlled-access, and user-support workflows. I coordinate implementation across Ohio State, AHRI, and WHO and supervise data-quality, cleaning, and coding work.
 
-## What the platform provides
+## Documentation and capacity building
 
-- A browsable, searchable metadata archive for mortality datasets, with supporting documentation
-- A secure analytics environment in which approved researchers analyze vetted data and produce new aggregate outputs
+I developed user guides, administrator and data-manager documentation, standard operating procedures, protocols, platform demonstrations, and tutorial videos, including a recorded WHO platform demonstration. These materials make the system usable by data providers, administrators, analysts, and new partner teams rather than leaving implementation knowledge in the codebase.
+
+To support this work, I co-developed the [RDA software ecosystem](/software/) for data ingestion, DDI publication to NADA, quality control, controlled analysis, platform administration, and user-facing APIs.

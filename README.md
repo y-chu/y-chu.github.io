@@ -1,7 +1,7 @@
 # Yue Chu — academic website
 
 Source for [y-chu.github.io](https://y-chu.github.io), an Academic Pages/Jekyll
-site presenting Yue Chu's research, publications, projects, software, teaching,
+site presenting Yue Chu's research, publications, consulting, software, teaching,
 presentations, and public CV.
 
 Before editing content or layout, read [`CLAUDE.md`](CLAUDE.md). It contains the

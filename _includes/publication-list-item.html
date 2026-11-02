@@ -26,9 +26,6 @@
     {% capture publication_meta %}
       {% if display_status and publication.venue_details %}{{ display_status }}{% endif %}
       {% if publication.author_note %}{% if display_status and publication.venue_details %} · {% endif %}{{ publication.author_note }}{% endif %}
-      {% if publication.tags contains "First author" %}{% if display_status and publication.venue_details or publication.author_note %} · {% endif %}<strong>First author</strong>{% endif %}
-      {% if publication.tags contains "Joint first author" %}{% if display_status and publication.venue_details or publication.author_note %} · {% endif %}<strong>Joint first author</strong>{% endif %}
-      {% if publication.tags contains "Corresponding author" %} · <strong>Corresponding author</strong>{% endif %}
     {% endcapture %}
     {% assign publication_meta_text = publication_meta | strip_html | strip %}
     {% unless publication_meta_text == "" %}<p class="paper-tile__meta">{{ publication_meta | strip }}</p>{% endunless %}
